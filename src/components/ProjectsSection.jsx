@@ -18,9 +18,7 @@ const ProjectsSection = () => {
                 TypeScript. The platform features a modern, responsive design
                 that adapts seamlessly across all devices. I implemented a
                 robust shopping cart system with real-time updates and
-                integrated Stripe for secure payment processing. The platform
-                includes user authentication, product search with filters, and
-                an intuitive admin dashboard for managing products and orders.
+                integrated Stripe for secure payment processing.
               </p>
             </div>
 
@@ -52,10 +50,7 @@ const ProjectsSection = () => {
                 A collaborative task management application that enables teams
                 to organize and track their projects effectively. The app
                 features a real-time synchronization system built with Firebase,
-                allowing multiple users to collaborate simultaneously. I
-                designed an intuitive drag-and-drop interface for task
-                organization and implemented a rich text editor for detailed
-                task descriptions.
+                allowing multiple users to collaborate simultaneously.
               </p>
             </div>
             <div className="mt-4 flex gap-4">

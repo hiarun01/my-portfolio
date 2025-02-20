@@ -10,11 +10,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-white">
       <About />
-      <main className="max-w-4xl mx-auto px-6 py-8">
-        <SkillsSection />
+      <main className="max-w-4xl mx-auto px-6">
         <ProjectsSection />
         {/* <ExperienceSection /> */}
-
+        <SkillsSection />
         <BlogSection />
       </main>
       <Footer />
