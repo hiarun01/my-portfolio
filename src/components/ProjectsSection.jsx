@@ -4,7 +4,7 @@ const ProjectsSection = () => {
   return (
     <>
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Projects</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">My Projects</h2>
 
         <div className="space-y-8">
           <div className="border-l-2 border-gray-200 pl-4">
