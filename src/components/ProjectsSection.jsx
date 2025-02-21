@@ -9,7 +9,10 @@ const ProjectsSection = () => {
         <div className="space-y-8">
           {projects.map((project, id) => {
             return (
-              <div className="border-l-2 border-gray-200 pl-4" key={id}>
+              <div
+                className="border-l-2 rounded-2xl border-gray-200 pl-4 "
+                key={id}
+              >
                 <h3 className="text-lg font-semibold text-gray-900">
                   {project.title}
                 </h3>

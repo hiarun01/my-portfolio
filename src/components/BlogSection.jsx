@@ -7,7 +7,10 @@ const BlogSection = () => {
       <h2 className="text-2xl font-bold mb-6">My Writting</h2>
       <div className="space-y-6">
         {blogPosts.map((post, index) => (
-          <div key={index} className="border-l-2 border-gray-200 pl-4">
+          <div
+            key={index}
+            className=" border-l-2 rounded-2xl border-gray-200 pl-4"
+          >
             <div className="flex items-center justify-between mb-1 ">
               <h3 className="text-xl font-semibold">
                 <a href={post.link} className="hover:text-gray-600">
