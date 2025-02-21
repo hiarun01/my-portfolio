@@ -4,7 +4,7 @@ import {blogPosts} from "../Api/BlogApi";
 const BlogSection = () => {
   return (
     <section className="mb-16">
-      <h2 className="text-2xl font-bold mb-6">Writting</h2>
+      <h2 className="text-2xl font-bold mb-6">My Writting</h2>
       <div className="space-y-6">
         {blogPosts.map((post, index) => (
           <div key={index} className="border-l-2 border-gray-200 pl-4">
