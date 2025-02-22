@@ -27,6 +27,7 @@ const ProjectsSection = () => {
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-1"
                   >
                     <Github size={16} />
+
                     <span>View Code</span>
                   </a>
                   <a

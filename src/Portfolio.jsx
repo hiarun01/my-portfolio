@@ -5,12 +5,14 @@ import Footer from "./components/Footer";
 import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
 import BlogSection from "./components/BlogSection";
+import FreelanceProjects from "./components/FreelanceProjects";
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-white">
       <About />
       <main className="max-w-4xl mx-auto px-6">
+        <FreelanceProjects />
         <ProjectsSection />
         {/* <ExperienceSection /> */}
         <SkillsSection />
