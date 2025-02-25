@@ -9,7 +9,7 @@ import FreelanceProjects from "./components/FreelanceProjects";
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#1e1e1f] text-[#fafafa] ">
       <About />
       <main className="max-w-4xl mx-auto px-6">
         <FreelanceProjects />

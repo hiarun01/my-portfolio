@@ -6,7 +6,7 @@ export const projects = [
     description:
       "AnimalSavior is a dedicated web platform that enables users to report animal-related incidents by submitting details like photos and location.Upon submission, the platform ensures that relevant volunteers in the area are promptly notified, allowing for quick action.",
     github: "https://github.com/hiarun01/AnimalSavior",
-    live: "https://github.com/hiarun01/AnimalSavior",
+    live: "https://animal-savior.vercel.app/",
   },
 
   {
