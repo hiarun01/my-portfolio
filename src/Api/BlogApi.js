@@ -5,10 +5,4 @@ export const blogPosts = [
     readTime: "5 min read",
     link: "https://hiarun.hashnode.dev/lets-understand-ci-cd-pipeline",
   },
-  {
-    title: "The Journey of Building AnimalSavior",
-    date: "Feb 21, 2025",
-    readTime: "1 min read",
-    link: "https://github.com/hiarun01/AniSavior",
-  },
 ];
