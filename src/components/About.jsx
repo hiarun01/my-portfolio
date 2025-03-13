@@ -28,7 +28,7 @@ const About = () => {
         <p className="mt-2 text-[#d6d6d6] ">
           Hey, stranger 👋 I'm <strong>Arun Kumar</strong>, Passionate about
           creating beautiful, responsive, and user-friendly web applications
-          <br />I love building software that solves real world problems which
+          <br />I love building stuff that solves real world problems which
           is probably why everything I build is Open Source.
         </p>
         <p className="mt-2 text-[#d6d6d6]">
