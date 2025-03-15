@@ -1,5 +1,5 @@
-import FreelanceProjects from "./FreelanceProjects";
-import ProjectsSection from "./ProjectsSection";
+import FreelanceProjects from "../components/FreelanceProjects";
+import ProjectsSection from "../components/ProjectsSection";
 
 const Projects = () => {
   return (

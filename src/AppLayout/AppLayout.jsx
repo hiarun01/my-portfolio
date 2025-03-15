@@ -4,7 +4,7 @@ import Footer from "./UI/Footer";
 
 const AppLayout = () => {
   return (
-    <div className="max-w-3xl my-7 m-auto px-6">
+    <div className="max-w-3xl my-5 m-auto">
       <Header />
       <Outlet />
       <Footer />

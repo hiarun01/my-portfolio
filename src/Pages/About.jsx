@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import {Github, Linkedin, Mail, X} from "lucide-react";
-import Skills from "../Skills";
+import Skills from "../components/Skills";
 
 const About = () => {
   return (
@@ -19,7 +18,7 @@ const About = () => {
         to network, feel free to reach out. Let's create something amazing
         together.
       </p>
-      <div className="flex gap-7 mt-6  w-fit py-2">
+      {/* <div className="flex gap-7 mt-6  w-fit py-2">
         <a
           href="mailto:hey.arunkumar05@gmail.com"
           className="text-[#ffdb70] hover:text-[#d2bb77] "
@@ -41,7 +40,7 @@ const About = () => {
         >
           <Github size={20} />
         </a>
-      </div>
+      </div> */}
       <Skills />
     </section>
   );

@@ -1,5 +1,5 @@
 import {ExternalLink} from "lucide-react";
-import {FreelanceProj} from "../../../Api/FreelanceProjectsAPi";
+import {FreelanceProj} from "../Api/FreelanceProjectsAPi";
 const FreelanceProjects = () => {
   return (
     <section className="mb-12">
@@ -10,7 +10,7 @@ const FreelanceProjects = () => {
         {FreelanceProj.map((FreelanceProj, id) => {
           return (
             <div
-              className="border-l-2 rounded-2xl text-[#ffdb70] pl-4 "
+              className="border-l-2 rounded-lg text-[#ffdb70] pl-4 "
               key={id}
             >
               <h3 className="text-lg font-semibold text-[#fafafa]">

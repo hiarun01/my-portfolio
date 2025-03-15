@@ -1,5 +1,5 @@
 import {ExternalLinkIcon, CalendarIcon} from "lucide-react";
-import {blogPosts} from "../../Api/BlogApi";
+import {blogPosts} from "../Api/BlogApi";
 
 const Blogs = () => {
   return (

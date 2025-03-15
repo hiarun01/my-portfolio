@@ -5,7 +5,7 @@ const ExperienceSection = () => {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Experience</h2>
 
         <div className="space-y-8">
-          <div className="border-l-2 border-gray-200 pl-4">
+          <div className="border-l-2 border-gray-200 rounded-lg pl-4">
             <h3 className="text-lg font-semibold text-gray-900">
               Senior Frontend Developer
             </h3>
