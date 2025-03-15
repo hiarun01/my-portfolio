@@ -1,7 +1,7 @@
 import {ExternalLinkIcon, CalendarIcon} from "lucide-react";
-import {blogPosts} from "../Api/BlogApi";
+import {blogPosts} from "../../Api/BlogApi";
 
-const BlogSection = () => {
+const Blogs = () => {
   return (
     <section className="mb-16">
       <h2 className="text-2xl font-bold mb-6">My Writting</h2>
@@ -35,4 +35,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default Blogs;

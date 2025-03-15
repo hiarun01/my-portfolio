@@ -1,11 +1,13 @@
 import {ExternalLink, Github} from "lucide-react";
-import {projects} from "../Api/ProjectsApi";
+import {projects} from "../../../Api/ProjectsApi";
 
 const ProjectsSection = () => {
   return (
     <>
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-[#fafafa] mb-6">My Projects</h2>
+        <h2 className="text-2xl font-bold text-[#fafafa] mb-6">
+          Personal Projects
+        </h2>
         <div className="space-y-8">
           {projects.map((project, id) => {
             return (
