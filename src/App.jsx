@@ -1,10 +1,11 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import "./App.css";
-import AppLayout from "./AppLayout/AppLAyout";
+
 import About from "./components/Pages/About";
 import Projects from "./components/Pages/Project/Projects";
 import Blogs from "./components/Pages/Blogs";
 import {Contact} from "lucide-react";
+import AppLayout from "./AppLayout/AppLAyout";
 
 const router = createBrowserRouter([
   {
