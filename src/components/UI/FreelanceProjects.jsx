@@ -1,4 +1,3 @@
-import {ExternalLink} from "lucide-react";
 import {FreelanceProj} from "../../Api/FreelanceProjectsAPi";
 const FreelanceProjects = () => {
   return (
@@ -26,7 +25,6 @@ const FreelanceProjects = () => {
                   href={FreelanceProj.live}
                   className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center gap-1"
                 >
-                  <ExternalLink size={16} />
                   <span>Live Demo</span>
                 </a>
               </div>

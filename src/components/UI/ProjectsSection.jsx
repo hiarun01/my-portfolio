@@ -1,4 +1,3 @@
-import {ExternalLink, Github} from "lucide-react";
 import {projects} from "../../Api/ProjectsApi";
 
 const ProjectsSection = () => {
@@ -28,16 +27,13 @@ const ProjectsSection = () => {
                     href={project.github}
                     className="text-[#ffdb70] hover:hover:text-[#d2bb77] flex items-center gap-1"
                   >
-                    <Github size={16} />
-
                     <span>View Code</span>
                   </a>
                   <a
                     href={project.live}
                     className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center gap-1"
                   >
-                    <ExternalLink size={16} />
-                    <span>Live Demo</span>
+                     <span>Live Demo</span>
                   </a>
                 </div>
               </div>

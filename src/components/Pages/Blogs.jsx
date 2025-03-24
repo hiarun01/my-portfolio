@@ -1,4 +1,3 @@
-import {ExternalLinkIcon, CalendarIcon} from "lucide-react";
 import {blogPosts} from "../../Api/BlogApi";
 
 const Blogs = () => {
@@ -20,12 +19,9 @@ const Blogs = () => {
               <a
                 href={post.link}
                 className="text-[#ffdb70] hover:text-[#d2bb77]"
-              >
-                <ExternalLinkIcon className="w-5 h-5" />
-              </a>
+              ></a>
             </div>
             <div className="flex items-center text-[#d6d6d6] text-sm">
-              <CalendarIcon className="w-4 h-4 mr-1" />
               {post.date} • {post.readTime}
             </div>
           </div>
