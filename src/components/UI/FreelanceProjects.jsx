@@ -1,5 +1,5 @@
 import {ExternalLink} from "lucide-react";
-import {FreelanceProj} from "../Api/FreelanceProjectsAPi";
+import {FreelanceProj} from "../../Api/FreelanceProjectsAPi";
 const FreelanceProjects = () => {
   return (
     <section className="mb-12">

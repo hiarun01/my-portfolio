@@ -1,9 +1,9 @@
 import {ExternalLinkIcon, CalendarIcon} from "lucide-react";
-import {blogPosts} from "../Api/BlogApi";
+import {blogPosts} from "../../Api/BlogApi";
 
 const Blogs = () => {
   return (
-    <section className="mb-16">
+    <section className="mb-16 max-w-3xl mx-auto px-6">
       <h2 className="text-2xl font-bold mb-6">My Writting</h2>
       <div className="space-y-6">
         {blogPosts.map((post, index) => (

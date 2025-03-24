@@ -1,9 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
-import Skills from "../components/Skills";
+// import Skills from "../components/Skills";
 
 const About = () => {
   return (
-    <section className="max-w-3xl mx-auto px-6">
+    <section className="max-w-3xl mx-auto px-6 mb-5">
       <h1 className="text-2xl font-bold ">Hey 👋, I'm Arun kumar</h1>
 
       <p className="mt-5  ">
@@ -41,7 +40,7 @@ const About = () => {
           <Github size={20} />
         </a>
       </div> */}
-      <Skills />
+      {/* <Skills /> */}
     </section>
   );
 };

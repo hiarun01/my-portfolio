@@ -1,5 +1,5 @@
 import {ExternalLink, Github} from "lucide-react";
-import {projects} from "../Api/ProjectsApi";
+import {projects} from "../../Api/ProjectsApi";
 
 const ProjectsSection = () => {
   return (

@@ -1,15 +1,12 @@
 {
   "name": "my-portfolio",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
   "homepage": "./",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start" : "node index.html"
+    "preview": "vite preview"
+  
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
