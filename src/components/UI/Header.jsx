@@ -4,21 +4,18 @@ const Header = () => {
   return (
     <>
       <nav className="max-w-3xl mx-auto py-5 px-5 items-center text-lg">
-        <ul className="flex gap-5 font-semibold ">
+        <ul className="flex gap-5 font-semibold cursor-pointer ">
           <NavLink to="/">
-            <li>About</li>
+            <li className="hover:text-[#ffdb70]">About</li>
           </NavLink>
-          {/* <NavLink to="/resume">
-            <li>Resume</li>
-          </NavLink> */}
           <NavLink to="/projects">
-            <li>Projects</li>
+            <li className="hover:text-[#ffdb70]">Projects</li>
           </NavLink>
           <NavLink to="/contact">
-            <li>Contact</li>
+            <li className="hover:text-[#ffdb70]">Contact</li>
           </NavLink>
           <NavLink to="/blogs">
-            <li>blogs</li>
+            <li className="hover:text-[#ffdb70]">blogs</li>
           </NavLink>
         </ul>
       </nav>
