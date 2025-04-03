@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <nav className="max-w-3xl mx-auto py-5 px-6 items-center text-lg">
+      <nav className="max-w-3xl mx-auto py-5 px-5 items-center text-lg">
         <ul className="flex gap-5 font-semibold ">
           <NavLink to="/">
             <li>About</li>

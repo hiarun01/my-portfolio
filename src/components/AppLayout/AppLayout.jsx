@@ -1,10 +1,10 @@
 import {Outlet} from "react-router-dom";
-import Header from "../AppLayout/Header";
-import Footer from "../AppLayout/Footer";
+import Header from "../UI/Header";
+import Footer from "../UI/Footer";
 
 const AppLayout = () => {
   return (
-    <div className="max-w-3xl my-5 m-auto bg-[#111010] text-[#d4d4d4]">
+    <div className="max-w-4xl my-5 m-auto bg-[#111010] text-[#d4d4d4]">
       <Header />
       <Outlet />
       <Footer />

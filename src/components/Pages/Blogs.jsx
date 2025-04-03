@@ -1,8 +1,15 @@
-import {blogPosts} from "../../Api/BlogApi";
-
 const Blogs = () => {
+  const blogPosts = [
+    {
+      title: "Let's Understand CI/CD Pipeline?",
+      date: "Feb 27, 2025",
+      readTime: "5 min read",
+      link: "https://hiarun.hashnode.dev/lets-understand-ci-cd-pipeline",
+    },
+  ];
+
   return (
-    <section className="mb-16 max-w-3xl mx-auto px-6">
+    <section className="mb-10 px-5 max-w-3xl mx-auto">
       <h2 className="text-2xl font-bold mb-6">My Writting</h2>
       <div className="space-y-6">
         {blogPosts.map((post, index) => (
