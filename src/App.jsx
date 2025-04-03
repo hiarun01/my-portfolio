@@ -4,13 +4,14 @@ import "./App.css";
 import About from "./components/Pages/About";
 import Projects from "./components/Pages/Projects";
 import Blogs from "./components/Pages/Blogs";
-import AppLayout from "./components/AppLayout/AppLAyout";
+
 import Contact from "./components/Pages/Contact";
+import Layout from "./components/Layout/Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <AppLayout />,
+    element: <Layout />,
 
     children: [
       {
