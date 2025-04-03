@@ -39,4 +39,4 @@ const App = () => {
 
 export default App;
 
-<div className="min-h-screen text-[#d4d4d4] max-w-3xl mx-auto my-5"></div>;
+
