@@ -2,19 +2,19 @@ const Projects = () => {
   const projects = [
     {
       Id: "1",
-      title: "Hi-rescue -(dev stage)",
-      description:
-        "Hi-Rescue is a web platform that streamlines animal rescue. Users report incidents with photos, details, and locations, instantly alerting nearby volunteers. Real-time notifications ensure faster response, saving more animals.",
-      github: "https://github.com/hiarun01/hi-rescue",
-      live: "https://hi-rescue.vercel.app/",
-    },
-    {
-      Id: "2",
       title: "AI Image Enhancer",
       description:
         "AI Image Enhancer is a powerful, AI-driven web application that enhances and upscales your images with just one click.",
       github: "https://github.com/hiarun01/ai-image-enhancer",
       live: "https://hi-ai-image-enhancer.vercel.app/",
+    },
+    {
+      Id: "2",
+      title: "Hi-rescue -(dev stage)",
+      description:
+        "Hi-Rescue is a web platform that streamlines animal rescue. Users report incidents with photos, details, and locations, instantly alerting nearby volunteers. Real-time notifications ensure faster response, saving more animals.",
+      github: "https://github.com/hiarun01/hi-rescue",
+      live: "https://hi-rescue.vercel.app/",
     },
   ];
   return (
