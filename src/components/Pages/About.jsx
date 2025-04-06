@@ -86,7 +86,7 @@ const About = () => {
           <span className="border-b font-mono font-bold">A web dev,</span> from
           Amroha, Uttar Pradesh, India. I love building stuff that solves real
           world problems. which is why most of what I build is open source. I've
-          completed my (BCA) Bachelor of Computer Applications
+          completed my (BCA) Bachelor of Computer Applications.
         </p>
 
         <p className="mt-2">
@@ -98,7 +98,7 @@ const About = () => {
           under pressure. If you’re organizing a hackathon, looking for a job
           opportunities{" "}
           <span className="border-b font-mono font-bold">teammate,</span> or
-          just want to chat about tech and projects, feel free to reach out
+          just want to chat about tech and projects, feel free to reach out.
         </p>
         <p className="mt-2">
           My go-to development environment is{" "}
