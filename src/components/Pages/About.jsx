@@ -95,10 +95,9 @@ const About = () => {
             participating in hackathons
           </span>{" "}
           - there’s something exciting about building fast-paced prototypes
-          under pressure. If you’re organizing a hackathon, looking for a job
-          opportunities{" "}
-          <span className="border-b font-mono font-bold">teammate,</span> or
-          just want to chat about tech and projects, feel free to reach out.
+          under pressure. If you’re organizing a hackathon, looking for a{" "}
+          <span className="border-b font-mono font-bold">teammate.</span> feel
+          free to reach out.
         </p>
         <p className="mt-2">
           My go-to development environment is{" "}
