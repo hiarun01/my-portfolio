@@ -122,12 +122,6 @@ const About = () => {
           <span className="border-b font-mono font-bold">teammate.</span> feel
           free to reach out.
         </p>
-        <p className="mt-2">
-          My go-to development environment is{" "}
-          <span className="border-b font-mono font-bold">Windows</span> with{" "}
-          <span className="border-b font-mono font-bold">VSCode</span> as my IDE
-          of choice.
-        </p>
         <p className="mt-2 ">
           I'm always happy to connect! You can reach me at{" "}
           <span className="font-mono font-bold border-b">
