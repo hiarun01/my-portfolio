@@ -20,7 +20,7 @@ const Projects = () => {
   return (
     <div className="max-w-3xl mx-auto px-5">
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-[#fafafa] mb-6">
+        <h2 className="text-lg font-bold text-[#fafafa] mb-6">
           Personal Projects
         </h2>
         <div className="space-y-8">

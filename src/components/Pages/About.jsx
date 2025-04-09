@@ -81,6 +81,29 @@ const About = () => {
               <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
           </a>
+          <a
+            href=""
+            className="flex justify-center items-center gap-2 border-2 rounded-2xl px-2 border-[#ffdb70] hover:text-[#ffdb70] "
+          >
+            <svg
+              className="text-[#ffdb70]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-cloud-download-icon lucide-cloud-download"
+            >
+              <path d="M12 13v8l-4-4" />
+              <path d="m12 21 4-4" />
+              <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284" />
+            </svg>
+            Resume
+          </a>
         </div>
         <p className="mt-5  ">
           <span className="border-b font-mono font-bold">A web dev,</span> from
