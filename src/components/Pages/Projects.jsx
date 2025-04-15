@@ -1,5 +1,14 @@
 const Projects = () => {
-  const projects = [
+  const clientProjects = [
+    {
+      Id: "1",
+      title: "Home intrio",
+      description:
+        "Built a home interior portfolio website for an interior designer, using WordPress as the platform.",
+      live: "https://homeintrio.com/",
+    },
+  ];
+  const personalProjects = [
     {
       Id: "1",
       title: "AI Image Enhancer",
@@ -17,14 +26,49 @@ const Projects = () => {
       live: "https://hi-rescue.vercel.app/",
     },
   ];
+
   return (
     <div className="max-w-3xl mx-auto px-5">
+      {/* clients projects */}
+      <section className="mb-10">
+        <h2 className="text-lg font-bold text-[#fafafa] mb-6">
+          freelance Projects
+        </h2>
+        <div className="space-y-8">
+          {clientProjects.map((project, id) => {
+            return (
+              <div
+                className="border-l-2 rounded-4xl text-[#ffdb70] pl-4 "
+                key={id}
+              >
+                <h3 className="text-lg font-semibold text-[#fafafa]">
+                  {project.title}
+                </h3>
+                <div className="mt-1 text-[#d6d6d6]">
+                  <p className="mb-4">{project.description}</p>
+                </div>
+
+                <div className="flex gap-5">
+                  <a
+                    href={project.live}
+                    className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
+                  >
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* personal projects */}
       <section className="mb-10">
         <h2 className="text-lg font-bold text-[#fafafa] mb-6">
           Personal Projects
         </h2>
         <div className="space-y-8">
-          {projects.map((project, id) => {
+          {personalProjects.map((project, id) => {
             return (
               <div
                 className="border-l-2 rounded-4xl text-[#ffdb70] pl-4 "
@@ -40,7 +84,7 @@ const Projects = () => {
                 <div className="flex gap-5">
                   <a
                     href={project.github}
-                    className="text-[#ffdb70] hover:hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
+                    className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
                   >
                     <span>View Code</span>
                   </a>

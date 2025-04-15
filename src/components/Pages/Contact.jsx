@@ -13,7 +13,9 @@ const Contact = () => {
         <h2 className="text-lg font-bold mb-2">
           Want to chat? Schedule a 1:1 with me!
         </h2>
-        <p className=" underline">Schedule a meet</p>
+        <p className=" underline" href="">
+          <a href="https://cal.com/hiarun01/15min">Schedule a meet</a>
+        </p>
       </div>
     </div>
   );
