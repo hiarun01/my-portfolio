@@ -30,17 +30,14 @@ const Projects = () => {
   return (
     <div className="max-w-3xl mx-auto px-5">
       {/* clients projects */}
-      <section className="mb-10">
+      <section className="mb-5">
         <h2 className="text-lg font-bold text-[#fafafa] mb-6">
           freelance Projects
         </h2>
         <div className="space-y-8">
           {clientProjects.map((project, id) => {
             return (
-              <div
-                className="border-l-2 rounded-4xl text-[#ffdb70] pl-4 "
-                key={id}
-              >
+              <div className="" key={id}>
                 <h3 className="text-lg font-semibold text-[#fafafa]">
                   {project.title}
                 </h3>
@@ -70,10 +67,7 @@ const Projects = () => {
         <div className="space-y-8">
           {personalProjects.map((project, id) => {
             return (
-              <div
-                className="border-l-2 rounded-4xl text-[#ffdb70] pl-4 "
-                key={id}
-              >
+              <div className="" key={id}>
                 <h3 className="text-lg font-semibold text-[#fafafa]">
                   {project.title}
                 </h3>
