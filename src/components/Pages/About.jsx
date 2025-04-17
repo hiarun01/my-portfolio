@@ -4,7 +4,7 @@ const About = () => {
     <>
       <div className="max-w-3xl mx-auto px-5">
         <h1 className="text-2xl font-bold ">Hey 👋, I'm Arun kumar</h1>
-        <div className="flex gap-7 mt-6 w-fit py-1 text-lg">
+        <div className="flex gap-7 mt-6 w-fit py-1 sm:font-normal">
           <a
             href="mailto:hey.arunkumar05@gmail.com"
             className="text-[#ffdb70] hover:text-[#d2bb77] "
