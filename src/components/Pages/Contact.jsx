@@ -5,7 +5,7 @@ const Contact = () => {
         <h2 className="text-lg font-bold text-[#fafafa] ">Contact</h2>
       </div>
       <div className="flex gap-2 mb-5">
-        <p className="">
+        <p className="text-lg">
           Feel free to reach out to me via email : hiarun02@gmail.com
         </p>
       </div>
@@ -13,7 +13,7 @@ const Contact = () => {
         <h2 className="text-lg font-bold mb-2">
           Want to chat? Schedule a 1:1 with me!
         </h2>
-        <p className=" underline" href="">
+        <p className=" text-lg underline" href="">
           <a href="https://cal.com/hiarun01/15min">Schedule a meet</a>
         </p>
       </div>

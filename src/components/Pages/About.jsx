@@ -1,9 +1,10 @@
+import {NavLink} from "react-router-dom";
 const About = () => {
   return (
     <>
       <div className="max-w-3xl mx-auto px-5">
         <h1 className="text-2xl font-bold ">Hey 👋, I'm Arun kumar</h1>
-        <div className="flex gap-7 mt-6  w-fit py-1">
+        <div className="flex gap-7 mt-6 w-fit py-1 text-lg">
           <a
             href="mailto:hey.arunkumar05@gmail.com"
             className="text-[#ffdb70] hover:text-[#d2bb77] "
@@ -82,14 +83,15 @@ const About = () => {
             </svg>
           </a>
         </div>
-        <p className="mt-5  ">
+
+        <p className="mt-5 text-lg">
           <span className="border-b font-mono font-bold">A web dev,</span> from
           Amroha, Uttar Pradesh, India. I love building stuff that solves real
           world problems. which is why most of what I build is open source. I've
           completed my (BCA) Bachelor of Computer Applications.
         </p>
 
-        <p className="mt-2">
+        <p className="mt-5 text-lg">
           I also love{" "}
           <span className="border-b font-mono font-bold">
             participating in hackathons
@@ -99,52 +101,56 @@ const About = () => {
           <span className="border-b font-mono font-bold">teammate.</span> feel
           free to reach out.
         </p>
-        <p className="mt-2 ">
-          I'm always happy to connect! You can reach me at{" "}
-          <span className="font-mono font-bold border-b">
-            hiarun02@gmail.com
-          </span>{" "}
-          or on{" "}
-          <a
-            className="font-semibold text-[#ffdb70] underline font-mono"
-            href="https://x.com/hiarun01"
-          >
-            Twitter
-          </a>
-          . I'm currently open to both{" "}
-          <span className="border-b font-mono font-bold">
-            freelance projects
-          </span>{" "}
-          and full-time{" "}
-          <span className="border-b font-mono font-bold">
-            job opportunities
-          </span>{" "}
-          . I'm happy to discuss any ideas or opportunities with you and
-          potentially collaborate if it's a good fit.
+        <p className="mt-5 text-lg">
+          My journey into web development started with curiosity and quickly
+          turned into a full-blown passion. Since then, I’ve been building,
+          experimenting, and learning something new every day.
         </p>
 
-        <section className="mb-12 mt-5">
-          <h2 className="text-lg font-bold text-[#fafafa] mb-6">
-            My Tech Stack
+        <div>
+          <h2 className="text-lg font-bold text-[#fafafa] mb-2 mt-5">
+            Let’s Connect
+          </h2>
+          <p className="mt-2 text-lg">
+            I'm always happy to connect! You can reach me at{" "}
+            <span className="font-mono font-bold border-b">
+              hiarun02@gmail.com
+            </span>{" "}
+            or on{" "}
+            <a
+              className="font-semibold text-[#ffdb70] underline font-mono"
+              href="https://x.com/hiarun01"
+            >
+              Twitter
+            </a>
+            . I'm currently open to both{" "}
+            <span className="border-b font-mono font-bold">
+              freelance projects
+            </span>{" "}
+            and full-time{" "}
+            <span className="border-b font-mono font-bold">
+              job opportunities
+            </span>{" "}
+            . I'm happy to discuss any ideas or opportunities with you and
+            potentially collaborate if it's a good fit.
+          </p>
+        </div>
+
+        <section className="mb-12 mt-6">
+          <h2 className="text-lg font-bold text-[#fafafa] mb-2">
+            Writing & Sharing
           </h2>
 
-          <div className="grid grid-cols-1 gap-5">
-            <div className="border-2 border-[#ffdb70] rounded-lg p-4 bg-transparent cursor-pointer">
-              <h3 className="font-semibold text-[#d6d6d6] ">Frontend</h3>
-              <p className="text-[#d6d6d6]">
-                Javascript | Reactjs | Tailwindcss | Shadcn UI
-              </p>
-            </div>
-            <div className="border-2 border-[#ffdb70] rounded-lg p-4 bg-transparent cursor-pointer">
-              <h3 className="font-semibold text-[#d6d6d6]">Backend</h3>
-              <p className="text-[#d6d6d6]">Nodejs | Expressjs | MongoDB</p>
-            </div>
-            <div className="border-2 border-[#ffdb70] rounded-lg p-4 bg-transparent cursor-pointer">
-              <h3 className="font-semibold text-[#d6d6d6]">Dev Tools</h3>
-              <p className="text-[#d6d6d6]">
-                Git | Github | Figma | PostMan | Wordpress.
-              </p>
-            </div>
+          <div className="gap-5 text-lg">
+            I’ve started writing{" "}
+            <NavLink
+              to="/blogs"
+              className="underline inline-block font-mono font-bold"
+            >
+              Blogs
+            </NavLink>{" "}
+            to help others improve their engineering skills. Stay tuned for more
+            content!
           </div>
         </section>
       </div>

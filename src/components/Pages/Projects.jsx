@@ -19,11 +19,11 @@ const Projects = () => {
     },
     {
       Id: "2",
-      title: "Hi-rescue -(dev stage)",
+      title: "Jobify",
       description:
-        "Hi-Rescue is a web platform that streamlines animal rescue. Users report incidents with photos, details, and locations, instantly alerting nearby volunteers. Real-time notifications ensure faster response, saving more animals.",
-      github: "https://github.com/hiarun01/hi-rescue",
-      live: "https://hi-rescue.vercel.app/",
+        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
+      github: "https://github.com/hiarun01/Jobify",
+      live: "https://hi-jobify.vercel.app/",
     },
   ];
 
