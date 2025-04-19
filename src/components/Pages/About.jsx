@@ -108,7 +108,7 @@ const About = () => {
         </p>
 
         <div>
-          <h2 className="text-lg font-bold text-[#fafafa] mb-2 mt-5">
+          <h2 className="text-2xl font-bold text-[#fafafa] mb-3 mt-5">
             Let’s Connect
           </h2>
           <p className="mt-2 text-lg">
@@ -137,7 +137,7 @@ const About = () => {
         </div>
 
         <section className="mb-12 mt-6">
-          <h2 className="text-lg font-bold text-[#fafafa] mb-2">
+          <h2 className="font-bold text-[#fafafa] text-2xl mb-3 mt-5">
             Writing & Sharing
           </h2>
 

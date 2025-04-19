@@ -2,11 +2,13 @@ const Contact = () => {
   return (
     <div className="max-w-3xl mx-auto px-5 mb-10">
       <div className="mb-2">
-        <h2 className="text-lg font-bold text-[#fafafa] ">Contact</h2>
+        <h2 className="font-bold text-[#fafafa] text-2xl">Contact</h2>
       </div>
       <div className="flex gap-2 mb-5">
         <p className="text-lg">
-          Feel free to reach out to me via email : hiarun02@gmail.com
+          I’d love to hear from you! Feel free to drop me an email — whether
+          it’s about work, collaboration, or just sharing ideas, my inbox is
+          always open.
         </p>
       </div>
       <div className="">

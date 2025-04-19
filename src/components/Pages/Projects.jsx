@@ -31,7 +31,7 @@ const Projects = () => {
     <div className="max-w-3xl mx-auto px-5">
       {/* clients projects */}
       <section className="mb-5">
-        <h2 className="text-lg font-bold text-[#fafafa] mb-6">
+        <h2 className="text-2xl font-bold text-[#fafafa] mb-3">
           freelance Projects
         </h2>
         <div className="space-y-8">
@@ -61,7 +61,7 @@ const Projects = () => {
 
       {/* personal projects */}
       <section className="mb-10">
-        <h2 className="text-lg font-bold text-[#fafafa] mb-6">
+        <h2 className="text-2xl font-bold text-[#fafafa] mb-3">
           Personal Projects
         </h2>
         <div className="space-y-8">
