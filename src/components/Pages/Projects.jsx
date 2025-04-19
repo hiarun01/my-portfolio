@@ -4,13 +4,21 @@ const Projects = () => {
       Id: "1",
       title: "Home intrio",
       description:
-        "Built a home interior portfolio website for an interior designer, using WordPress as the platform.",
+        "Designed and developed a fully responsive home interior portfolio website for an interior designer, using WordPress as the core platform",
       live: "https://homeintrio.com/",
     },
   ];
   const personalProjects = [
     {
       Id: "1",
+      title: "Jobify",
+      description:
+        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
+      github: "https://github.com/hiarun01/Jobify",
+      live: "https://hi-jobify.vercel.app/",
+    },
+    {
+      Id: "2",
       title: "AI Image Enhancer",
       description:
         "AI Image Enhancer is a powerful, AI-driven web application that enhances and upscales your images with just one click.",
@@ -18,12 +26,20 @@ const Projects = () => {
       live: "https://hi-ai-image-enhancer.vercel.app/",
     },
     {
-      Id: "2",
-      title: "Jobify",
+      Id: "3",
+      title: "Country Explorer",
       description:
-        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
-      github: "https://github.com/hiarun01/Jobify",
-      live: "https://hi-jobify.vercel.app/",
+        "Country Explorer is a web application that lets users discover detailed information about countries from around the world including population, region, capital, flag, and more.",
+      github: "https://github.com/hiarun01/Country-Explorer",
+      live: "https://country-explorer-kappa.vercel.app/",
+    },
+    {
+      Id: "4",
+      title: "Hi-Todo",
+      description:
+        "It’s a clean and minimal task management app where you can effortlessly add new tasks, mark them as completed, and delete them once you're done. Designed with simplicity in mind",
+      github: "https://github.com/hiarun01/hi-todo",
+      live: "https://hi-todo.vercel.app/",
     },
   ];
 
@@ -31,17 +47,17 @@ const Projects = () => {
     <div className="max-w-3xl mx-auto px-5">
       {/* clients projects */}
       <section className="mb-5">
-        <h2 className="text-2xl font-bold text-[#fafafa] mb-3">
+        <h2 className="text-2xl font-bold text-[#fafafa] mb-5">
           freelance Projects
         </h2>
         <div className="space-y-8">
           {clientProjects.map((project, id) => {
             return (
               <div className="" key={id}>
-                <h3 className="text-lg font-semibold text-[#fafafa]">
+                <h3 className="text-lg font-semibold text-[#fafafa] border-l-2 pl-2 rounded-2xl w-fit pb-1 border-[#d2bb77]">
                   {project.title}
                 </h3>
-                <div className="mt-1 text-[#d6d6d6]">
+                <div className="mt-3 text-[#d6d6d6]">
                   <p className="mb-4">{project.description}</p>
                 </div>
 
@@ -61,14 +77,14 @@ const Projects = () => {
 
       {/* personal projects */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-[#fafafa] mb-3">
+        <h2 className="text-2xl font-bold text-[#fafafa] mb-5">
           Personal Projects
         </h2>
         <div className="space-y-8">
           {personalProjects.map((project, id) => {
             return (
               <div className="" key={id}>
-                <h3 className="text-lg font-semibold text-[#fafafa]">
+                <h3 className="text-lg font-semibold text-[#fafafa] border-l-2 pl-2 rounded-2xl w-fit pb-1 border-[#d2bb77]">
                   {project.title}
                 </h3>
                 <div className="mt-1 text-[#d6d6d6]">

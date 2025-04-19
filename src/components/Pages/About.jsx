@@ -112,13 +112,9 @@ const About = () => {
             Let’s Connect
           </h2>
           <p className="mt-2 text-lg">
-            I'm always happy to connect! You can reach me at{" "}
-            <span className="font-mono font-bold border-b">
-              hiarun02@gmail.com
-            </span>{" "}
-            or on{" "}
+            I'm always happy to connect! You can reach me via Email or on{" "}
             <a
-              className="font-semibold text-[#ffdb70] underline font-mono"
+              className="font-bold text-[#ffdb70] underline font-mono"
               href="https://x.com/hiarun01"
             >
               Twitter
