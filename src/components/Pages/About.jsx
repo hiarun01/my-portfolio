@@ -85,21 +85,21 @@ const About = () => {
         </div>
 
         <p className="mt-5 text-lg">
-          <span className="border-b font-mono font-bold">A web dev,</span> from
-          Amroha, Uttar Pradesh, India. I love building stuff that solves real
-          world problems. which is why most of what I build is open source. I've
+          <span className="border-b font-bold">A web dev,</span> from Amroha,
+          Uttar Pradesh, India. I love building stuff that solves real world
+          problems. which is why most of what I build is open source. I've
           completed my (BCA) Bachelor of Computer Applications.
         </p>
 
         <p className="mt-5 text-lg">
           I also love{" "}
-          <span className="border-b font-mono font-bold">
+          <span className="border-b font-bold">
             participating in hackathons
           </span>{" "}
           - there’s something exciting about building fast-paced prototypes
           under pressure. If you’re organizing a hackathon, looking for a{" "}
-          <span className="border-b font-mono font-bold">teammate.</span> feel
-          free to reach out.
+          <span className="border-b font-bold">teammate.</span> feel free to
+          reach out.
         </p>
         <p className="mt-5 text-lg">
           My journey into web development started with curiosity and quickly
@@ -112,23 +112,19 @@ const About = () => {
             Let’s Connect
           </h2>
           <p className="mt-2 text-lg">
-            I'm always happy to connect! You can reach me via Email or on{" "}
+            I'm always happy to connect! You can reach me via Email or on
             <a
-              className="font-bold text-[#ffdb70] underline font-mono"
+              className="font-bold text-[#ffdb70] underline"
               href="https://x.com/hiarun01"
             >
               Twitter
             </a>
             . I'm currently open to both{" "}
-            <span className="border-b font-mono font-bold">
-              freelance projects
-            </span>{" "}
-            and full-time{" "}
-            <span className="border-b font-mono font-bold">
-              job opportunities
-            </span>{" "}
-            . I'm happy to discuss any ideas or opportunities with you and
-            potentially collaborate if it's a good fit.
+            <span className="border-b font-bold">freelance projects</span> and
+            full-time{" "}
+            <span className="border-b font-bold">job opportunities</span> . I'm
+            happy to discuss any ideas or opportunities with you and potentially
+            collaborate if it's a good fit.
           </p>
         </div>
 
@@ -138,10 +134,10 @@ const About = () => {
           </h2>
 
           <div className="gap-5 text-lg">
-            I’ve started writing{" "}
+            I’ve started writing
             <NavLink
               to="/blogs"
-              className="underline inline-block font-mono font-bold"
+              className="underline inline-block text-[#ffdb70] font-bold"
             >
               Blogs
             </NavLink>{" "}
