@@ -85,20 +85,20 @@ const About = () => {
         </div>
 
         <p className="mt-5 text-lg">
-          <span className="border-b font-bold">A web dev,</span> from Amroha,
-          Uttar Pradesh, India. I love building stuff that solves real world
-          problems. which is why most of what I build is open source. I've
+          <span className="border-b font-semibold">A web dev,</span> from
+          Amroha, Uttar Pradesh, India. I love building stuff that solves real
+          world problems. which is why most of what I build is open source. I've
           completed my (BCA) Bachelor of Computer Applications.
         </p>
 
         <p className="mt-5 text-lg">
           I also love{" "}
-          <span className="border-b font-bold">
+          <span className="border-b font-semibold">
             participating in hackathons
           </span>{" "}
           - there’s something exciting about building fast-paced prototypes
           under pressure. If you’re organizing a hackathon, looking for a{" "}
-          <span className="border-b font-bold">teammate.</span> feel free to
+          <span className="border-b font-semibold">teammate.</span> feel free to
           reach out.
         </p>
         <p className="mt-5 text-lg">
@@ -108,36 +108,39 @@ const About = () => {
         </p>
 
         <div>
-          <h2 className="text-2xl font-bold text-[#fafafa] mb-3 mt-5">
+          <h2 className="text-2xl font-semibold text-[#fafafa] mb-3 mt-5">
             Let’s Connect
           </h2>
           <p className="mt-2 text-lg">
             I'm always happy to connect! You can reach me via Email or on
             <a
-              className="font-bold text-[#ffdb70] underline"
+              className="font-semibold text-[#ffdb70] underline"
               href="https://x.com/hiarun01"
             >
+              {" "}
               Twitter
             </a>
             . I'm currently open to both{" "}
-            <span className="border-b font-bold">freelance projects</span> and
-            full-time{" "}
-            <span className="border-b font-bold">job opportunities</span> . I'm
-            happy to discuss any ideas or opportunities with you and potentially
-            collaborate if it's a good fit.
+            <span className="border-b font-semibold">
+              freelance projects
+            </span>{" "}
+            and full-time{" "}
+            <span className="border-b font-semibold">job opportunities</span> .
+            I'm happy to discuss any ideas or opportunities with you and
+            potentially collaborate if it's a good fit.
           </p>
         </div>
 
         <section className="mb-12 mt-6">
-          <h2 className="font-bold text-[#fafafa] text-2xl mb-3 mt-5">
+          <h2 className="font-semibold text-[#fafafa] text-2xl mb-3 mt-5">
             Writing & Sharing
           </h2>
 
           <div className="gap-5 text-lg">
-            I’ve started writing
+            I’ve started writing{" "}
             <NavLink
               to="/blogs"
-              className="underline inline-block text-[#ffdb70] font-bold"
+              className="underline inline-block text-[#ffdb70] font-semibold"
             >
               Blogs
             </NavLink>{" "}
