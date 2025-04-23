@@ -14,7 +14,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="">
-        <h2 className="text-2xl font-bold mb-2 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
+        <h2 className="text-lg font-bold mb-2 ">
           Want to chat? Schedule a 1:1 with me!
         </h2>
         <p className=" text-lg underline" href="">
