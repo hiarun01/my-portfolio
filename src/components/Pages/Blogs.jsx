@@ -10,7 +10,9 @@ const Blogs = () => {
 
   return (
     <section className="mb-10 px-5 max-w-3xl mx-auto">
-      <h2 className="text-2xl font-bold mb-2">My Writting</h2>
+      <h2 className="text-2xl font-bold mb-2 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
+        My Writting
+      </h2>
       <div className="space-y-6">
         {blogPosts.map((post, index) => (
           <div key={index} className="">

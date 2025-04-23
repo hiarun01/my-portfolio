@@ -2,7 +2,9 @@ const Contact = () => {
   return (
     <div className="max-w-3xl mx-auto px-5 mb-10">
       <div className="mb-2">
-        <h2 className="font-bold text-[#fafafa] text-2xl">Contact</h2>
+        <h2 className="font-bold text-[#fafafa] text-2xl border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
+          Contact
+        </h2>
       </div>
       <div className="flex gap-2 mb-5">
         <p className="text-lg">
@@ -12,7 +14,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="">
-        <h2 className="text-lg font-bold mb-2">
+        <h2 className="text-2xl font-bold mb-2 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
           Want to chat? Schedule a 1:1 with me!
         </h2>
         <p className=" text-lg underline" href="">

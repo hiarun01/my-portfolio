@@ -47,14 +47,14 @@ const Projects = () => {
     <div className="max-w-3xl mx-auto px-5">
       {/* clients projects */}
       <section className="mb-5">
-        <h2 className="text-2xl font-bold text-[#fafafa] mb-5">
+        <h2 className="text-2xl font-bold text-[#fafafa] mb-5 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
           freelance Projects
         </h2>
         <div className="space-y-8">
           {clientProjects.map((project, id) => {
             return (
               <div className="" key={id}>
-                <h3 className="text-lg font-semibold text-[#fafafa] border-l-2 pl-2 rounded-2xl w-fit pb-1 border-[#d2bb77]">
+                <h3 className="text-lg font-semibold text-[#fafafa] border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
                   {project.title}
                 </h3>
                 <div className="mt-3 text-[#d6d6d6]">
@@ -77,14 +77,14 @@ const Projects = () => {
 
       {/* personal projects */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-[#fafafa] mb-5">
+        <h2 className="text-2xl font-bold text-[#fafafa] mb-5 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
           Personal Projects
         </h2>
         <div className="space-y-8">
           {personalProjects.map((project, id) => {
             return (
               <div className="" key={id}>
-                <h3 className="text-lg font-semibold text-[#fafafa] border-l-2 pl-2 rounded-2xl w-fit pb-1 border-[#d2bb77]">
+                <h3 className="text-lg font-semibold text-[#fafafa] border-l-2 pl-2 rounded-2xl w-fit border-[#d2bb77]">
                   {project.title}
                 </h3>
                 <div className="mt-1 text-[#d6d6d6]">
