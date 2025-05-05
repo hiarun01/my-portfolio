@@ -4,19 +4,11 @@ const Projects = () => {
       Id: "1",
       title: "Home intrio",
       description:
-        "Designed and developed a fully responsive home interior portfolio website for an interior designer, using WordPress as the core platform",
+        "Designed and developed a fully responsive home interior portfolio website for an interior designer.",
       live: "https://homeintrio.com/",
     },
   ];
   const personalProjects = [
-    {
-      Id: "1",
-      title: "Jobify",
-      description:
-        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
-      github: "https://github.com/hiarun01/Jobify",
-      live: "https://hi-jobify.vercel.app/",
-    },
     {
       Id: "2",
       title: "AI Image Enhancer",
@@ -26,20 +18,21 @@ const Projects = () => {
       live: "https://hi-ai-image-enhancer.vercel.app/",
     },
     {
+      Id: "1",
+      title: "Jobify",
+      description:
+        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
+      github: "https://github.com/hiarun01/Jobify",
+      live: "https://hi-jobify.vercel.app/",
+    },
+
+    {
       Id: "3",
       title: "Country Explorer",
       description:
         "Country Explorer is a web application that lets users discover detailed information about countries from around the world including population, region, capital, flag, and more.",
       github: "https://github.com/hiarun01/Country-Explorer",
       live: "https://country-explorer-kappa.vercel.app/",
-    },
-    {
-      Id: "4",
-      title: "Hi-Todo",
-      description:
-        "It’s a clean and minimal task management app where you can effortlessly add new tasks, mark them as completed, and delete them once you're done. Designed with simplicity in mind",
-      github: "https://github.com/hiarun01/hi-todo",
-      live: "https://hi-todo.vercel.app/",
     },
   ];
 
