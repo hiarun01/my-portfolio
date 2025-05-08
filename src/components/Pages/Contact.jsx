@@ -8,7 +8,7 @@ const Contact = () => {
       </div>
       <div className="flex gap-2 mb-5">
         <p className="text-lg">
-          I’d love to hear from you! Feel free to drop me an email whether
+          I’d love to hear from you!, Feel free to drop me an email whether
           it’s about work, collaboration, or just sharing ideas, my inbox is
           always open.
         </p>
