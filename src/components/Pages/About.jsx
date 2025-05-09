@@ -92,17 +92,6 @@ const About = () => {
           real world problems. which is why most of what I build is open source.
           I've completed my (BCA) Bachelor of Computer Applications.
         </p>
-        {/* 
-        <p className="mt-5 text-lg">
-          I also love{" "}
-          <span className="border-b font-semibold">
-            participating in hackathons
-          </span>{" "}
-          - there’s something exciting about building fast-paced prototypes
-          under pressure. If you’re organizing a hackathon, looking for a{" "}
-          <span className="border-b font-semibold">teammate.</span> feel free to
-          reach out.
-        </p> */}
         <p className="mt-5 text-lg">
           My journey into web development started with curiosity and quickly
           turned into a full-blown passion. Since then, I’ve been{" "}
