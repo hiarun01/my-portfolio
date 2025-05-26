@@ -1,11 +1,17 @@
 const Blogs = () => {
   const blogPosts = [
     {
+      title: "Top 5 VS Code Extensions for Frontend Developers",
+      date: "May 26, 2025",
+      readTime: "5 min read",
+      link: "https://hiarun.hashnode.dev/top-5-vs-code-extensions-for-frontend-developers-explained-super-simply",
+    },
+    {
       title: "Let's Understand CI/CD Pipeline?",
       date: "Feb 27, 2025",
       readTime: "5 min read",
       link: "https://hiarun.hashnode.dev/lets-understand-ci-cd-pipeline",
-    },
+    }
   ];
 
   return (
