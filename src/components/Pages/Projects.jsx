@@ -2,11 +2,11 @@ const Projects = () => {
   const personalProjects = [
     {
       Id: "1",
-      title: "AI Image Enhancer",
+      title: "Clarify",
       description:
-        "AI Image Enhancer is a powerful, AI-driven web application that enhances and upscales your images with just one click.",
-      github: "https://github.com/hiarun01/ai-image-enhancer",
-      live: "https://hi-ai-image-enhancer.vercel.app/",
+        "Clarify is a Image Enhancer web application powered by AI Api that enhances and upscales your images with just one click.",
+      github: "https://github.com/hiarun01/clarify",
+      live: "https://hi-clarify.vercel.app/",
     },
     {
       Id: "2",
