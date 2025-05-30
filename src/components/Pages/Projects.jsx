@@ -2,6 +2,14 @@ const Projects = () => {
   const personalProjects = [
     {
       Id: "1",
+      title: "Codalyzer",
+      description:
+        "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
+      github: "https://github.com/hiarun01/codalyzer",
+      live: "https://codalyzer.vercel.app/",
+    },
+    {
+      Id: "2",
       title: "Clarify",
       description:
         "Clarify is a Image Enhancer web application powered by AI Api that enhances and upscales your images with just one click.",
