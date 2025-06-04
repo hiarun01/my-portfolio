@@ -110,7 +110,7 @@ const Contact = () => {
           href="https://cal.com/hiarun01/15min"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#ffdb70] text-[#222] font-semibold px-6 py-2 rounded-2xl shadow hover:bg-[#d2bb77] transition-colors duration-200"
+          className="text-[#ffdb70] w-fit hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
         >
           Schedule a meet
         </a>

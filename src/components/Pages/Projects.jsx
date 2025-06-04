@@ -4,6 +4,13 @@ const Projects = () => {
   const personalProjects = [
     {
       Id: "1",
+      title: "Chattx",
+      description: "building : Chattx, a real-time chat app.",
+      github: "https://github.com/hiarun01/chattx",
+      live: "https://chattx.vercel.app/auth",
+    },
+    {
+      Id: "2",
       title: "Codalyzer",
       description:
         "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
@@ -11,7 +18,7 @@ const Projects = () => {
       live: "https://codalyzer.vercel.app/",
     },
     {
-      Id: "2",
+      Id: "3",
       title: "Clarify",
       description:
         "Clarify is an Image Enhancer web application powered by AI API that enhances and upscales your images with just one click.",
@@ -19,7 +26,7 @@ const Projects = () => {
       live: "https://hi-clarify.vercel.app/",
     },
     {
-      Id: "3",
+      Id: "4",
       title: "Jobify",
       description:
         "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
@@ -62,24 +69,20 @@ const Projects = () => {
                   <p className="text-[#d6d6d6] text-base mb-2">
                     {project.description}
                   </p>
-                </div>
-                <div className="flex gap-4 mt-2 sm:mt-0">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[#ffdb70] hover:text-[#d2bb77] font-medium underline underline-offset-4"
-                  >
-                    Code
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[#232323] bg-[#ffdb70] hover:bg-[#d2bb77] font-medium rounded-xl px-4 py-1 transition-colors"
-                  >
-                    Live
-                  </a>
+                  <div className="flex gap-5 mt-5">
+                    <a
+                      href={project.github}
+                      className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
+                    >
+                      <span>Code</span>
+                    </a>
+                    <a
+                      href={project.live}
+                      className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
+                    >
+                      <span>Live</span>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="absolute left-0 top-full w-full h-px bg-gradient-to-r from-[#ffdb70]/60 via-[#d2bb77]/30 to-transparent mt-6"></div>

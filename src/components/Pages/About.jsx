@@ -114,11 +114,10 @@ const About = () => {
           animate={{opacity: 1, x: 0}}
           transition={{delay: 0.5, duration: 0.5}}
         >
-          <span className="underline font-semibold">A web dev,</span> from
-          Amroha, Uttar Pradesh, India. I love building{" "}
-          <span className="underline font-semibold">things</span> that solves
-          real world problems. which is why most of what I build is open source.
-          I've completed my (BCA) Bachelor of Computer Applications.
+          <span className="underline font-semibold">A web dev,</span> I love
+          building <span className="underline font-semibold">things</span> that
+          solves real world problems. which is why most of what I build is open
+          source.
         </motion.p>
         <motion.p
           className="mt-5 text-lg"
@@ -146,10 +145,8 @@ const About = () => {
             Let’s Connect
           </h2>
           <p className="mt-2 text-lg">
-            I'm always happy to connect! You can reach me via{" "}
-            <span className="inline-block underline">Email</span> or on{" "}
-            <span className="inline-block underline"> Twitter</span>. I'm
-            currently open to both{" "}
+            I'm always happy to connect! You can reach me via Email or on{" "}
+            Twitter. I'm currently open to both{" "}
             <span className="underline font-semibold">freelance projects</span>{" "}
             and full-time{" "}
             <span className="underline font-semibold">job opportunities</span> .
