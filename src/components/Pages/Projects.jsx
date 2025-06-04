@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Chattx",
       description: "building : Chattx, a real-time chat app.",
       github: "https://github.com/hiarun01/chattx",
-      live: "https://chattx.vercel.app/auth",
+      live: "https://chattx.vercel.app",
     },
     {
       Id: "2",
