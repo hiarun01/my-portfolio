@@ -11,11 +11,11 @@ const Projects = () => {
     },
     {
       Id: "2",
-      title: "Codalyzer",
+      title: "CodeSnippet",
       description:
-        "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
-      github: "https://github.com/hiarun01/codalyzer",
-      live: "https://codalyzer.vercel.app/",
+        "CodeSnippet – CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
+      github: "https://github.com/hiarun01/CodeSnippet",
+      live: "https://hi-code-snippet.vercel.app/",
     },
     {
       Id: "3",
