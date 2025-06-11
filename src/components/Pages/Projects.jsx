@@ -4,13 +4,6 @@ const Projects = () => {
   const personalProjects = [
     {
       Id: "1",
-      title: "Chattx",
-      description: "building : Chattx, a real-time chat app.",
-      github: "https://github.com/hiarun01/chattx",
-      live: "https://chattx.vercel.app",
-    },
-    {
-      Id: "2",
       title: "CodeSnippet",
       description:
         "CodeSnippet – CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
@@ -18,7 +11,22 @@ const Projects = () => {
       live: "https://hi-code-snippet.vercel.app/",
     },
     {
+      Id: "2",
+      title: "Chattx",
+      description: "building : Chattx, a real-time chat app.",
+      github: "https://github.com/hiarun01/chattx",
+      live: "https://chattx.vercel.app",
+    },
+    {
       Id: "3",
+      title: "Codalyzer",
+      description:
+        "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
+      github: "https://github.com/hiarun01/codalyzer",
+      live: "https://codalyzer.vercel.app/",
+    },
+    {
+      Id: "4",
       title: "Clarify",
       description:
         "Clarify is an Image Enhancer web application powered by AI API that enhances and upscales your images with just one click.",
@@ -26,7 +34,7 @@ const Projects = () => {
       live: "https://hi-clarify.vercel.app/",
     },
     {
-      Id: "4",
+      Id: "5",
       title: "Jobify",
       description:
         "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
