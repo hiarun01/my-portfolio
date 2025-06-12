@@ -1,6 +1,7 @@
 import {NavLink} from "react-router-dom";
 import GitHubCalendar from "react-github-calendar";
 import {motion} from "framer-motion";
+
 const About = () => {
   return (
     <>
