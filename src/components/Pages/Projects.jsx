@@ -4,15 +4,24 @@ const Projects = () => {
   const personalProjects = [
     {
       Id: "1",
+      title: "TwiFake",
+      description:
+        "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
+      techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
+      github: "https://github.com/hiarun01/TwiFake",
+      live: "https://twifake.vercel.app/",
+    },
+    {
+      Id: "2",
       title: "CodeSnippet",
       description:
-        "CodeSnippet – CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
+        "CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
       techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
       github: "https://github.com/hiarun01/CodeSnippet",
       live: "https://hi-code-snippet.vercel.app/",
     },
     {
-      Id: "2",
+      Id: "3",
       title: "Chattx",
       description:
         "Chattx is a real-time chat app. I've built a basic version for now, and I’ll definitely be adding lots of features in the future.",
@@ -29,7 +38,7 @@ const Projects = () => {
       live: "https://chattx.vercel.app",
     },
     {
-      Id: "3",
+      Id: "4",
       title: "Codalyzer",
       description:
         "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
