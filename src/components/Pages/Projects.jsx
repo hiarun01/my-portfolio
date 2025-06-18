@@ -7,7 +7,13 @@ const Projects = () => {
       title: "TwiFake",
       description:
         "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
-      techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
+      techStack: [
+        "React",
+        "tailwindcss",
+        "framer-motion",
+        "Shadcn-ui",
+        "html2canvas",
+      ],
       github: "https://github.com/hiarun01/TwiFake",
       live: "https://twifake.vercel.app/",
     },
