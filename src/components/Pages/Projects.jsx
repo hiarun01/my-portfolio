@@ -3,7 +3,21 @@ import {motion} from "framer-motion";
 const Projects = () => {
   const personalProjects = [
     {
-      Id: "1",
+      title: "impactList",
+      description:
+        "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
+      techStack: [
+        "React",
+        "tailwindcss",
+        "MagicUI",
+        "Shadcn-ui",
+        "MongoDB",
+        "Express",
+      ],
+      github: "https://github.com/hiarun01/impactList",
+      live: "https://impact-list.vercel.app/",
+    },
+    {
       title: "TwiFake",
       description:
         "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
@@ -18,7 +32,6 @@ const Projects = () => {
       live: "https://twifake.vercel.app/",
     },
     {
-      Id: "2",
       title: "CodeSnippet",
       description:
         "CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
@@ -27,7 +40,6 @@ const Projects = () => {
       live: "https://hi-code-snippet.vercel.app/",
     },
     {
-      Id: "3",
       title: "Chattx",
       description:
         "Chattx is a real-time chat app. I've built a basic version for now, and I’ll definitely be adding lots of features in the future.",
@@ -44,7 +56,6 @@ const Projects = () => {
       live: "https://chattx.vercel.app",
     },
     {
-      Id: "4",
       title: "Codalyzer",
       description:
         "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
@@ -53,7 +64,6 @@ const Projects = () => {
       live: "https://codalyzer.vercel.app/",
     },
     {
-      Id: "5",
       title: "Jobify",
       description:
         "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
@@ -87,13 +97,13 @@ const Projects = () => {
           Personal Projects
         </h2>
         <div className="flex flex-col gap-10">
-          {personalProjects.map((project, id) => (
+          {personalProjects.map((project, i) => (
             <motion.div
-              key={id}
+              key={i}
               className="relative group"
               initial={{opacity: 0, y: 30}}
               animate={{opacity: 1, y: 0}}
-              transition={{delay: 0.3 + id * 0.1, duration: 0.5}}
+              transition={{delay: 0.3 + i * 0.1, duration: 0.5}}
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
