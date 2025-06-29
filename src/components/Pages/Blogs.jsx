@@ -1,39 +1,21 @@
 import {motion} from "framer-motion";
+import {blogPosts} from "../../data/BlogData";
 
 const Blogs = () => {
-  const blogPosts = [
-    {
-      title: "Redux vs Zustand: Which State Management Tool is the GOAT ?",
-      date: "Jun 5, 2025",
-      readTime: "3 min read",
-      link: "https://hiarun.hashnode.dev/redux-vs-zustand-which-state-management-tool-is-the-goat",
-    },
-  ];
-
   return (
     <motion.section
-      className="mx-auto"
       initial={{opacity: 0, y: 40}}
       animate={{opacity: 1, y: 0}}
       transition={{duration: 0.7, ease: "easeOut"}}
     >
       <motion.h2
-        className="text-lg font-bold mb-4 border-l-2 pl-2 rounded-3xl border-[#d2bb77]"
+        className="text-lg font-bold "
         initial={{opacity: 0, x: -30}}
         animate={{opacity: 1, x: 0}}
         transition={{delay: 0.2, duration: 0.6}}
       >
         Blogs
       </motion.h2>
-      <motion.p
-        className="mb-8 text-lg text-[#d6d6d6]"
-        initial={{opacity: 0, x: 30}}
-        animate={{opacity: 1, x: 0}}
-        transition={{delay: 0.3, duration: 0.5}}
-      >
-        I enjoy sharing what I learn about devs, tools, and productivity. Here
-        are some of my latest blog posts:
-      </motion.p>
       <div className="flex flex-col gap-5">
         {blogPosts.map((post, index) => (
           <motion.a

@@ -47,7 +47,7 @@ const Contact = () => {
             href="mailto:hey.arunkumar05@gmail.com"
             className="text-[#ffdb70] hover:text-[#d2bb77] underline"
           >
-            hey.arunkumar05@gmail.com
+            hiarun.works@gmail.com
           </a>
         </div>
         <div className="flex items-center gap-3">

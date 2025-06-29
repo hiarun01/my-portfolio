@@ -1,87 +1,9 @@
 import {motion} from "framer-motion";
 import {useState} from "react";
+import {personalProjects} from "../../data/ProjectsData";
 
 const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(2);
-
-  const personalProjects = [
-    {
-      title: "impactList",
-      description:
-        "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
-      techStack: [
-        "React",
-        "tailwindcss",
-        "MagicUI",
-        "Shadcn-ui",
-        "MongoDB",
-        "Express",
-      ],
-      github: "https://github.com/hiarun01/impactList",
-      live: "https://impact-list.vercel.app/",
-    },
-    {
-      title: "TwiFake",
-      description:
-        "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
-      techStack: [
-        "React",
-        "tailwindcss",
-        "framer-motion",
-        "Shadcn-ui",
-        "html2canvas",
-      ],
-      github: "https://github.com/hiarun01/TwiFake",
-      live: "https://twifake.vercel.app/",
-    },
-    {
-      title: "CodeSnippet",
-      description:
-        "CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
-      techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
-      github: "https://github.com/hiarun01/CodeSnippet",
-      live: "https://hi-code-snippet.vercel.app/",
-    },
-    {
-      title: "Chattx",
-      description:
-        "Chattx is a real-time chat app. I've built a basic version for now, and I'll definitely be adding lots of features in the future.",
-      techStack: [
-        "React",
-        "tailwindcss",
-        "Shadcn-ui",
-        "Zustand",
-        "Socket.io",
-        "MongoDB",
-        "Express",
-      ],
-      github: "https://github.com/hiarun01/chattx",
-      live: "https://chattx.vercel.app",
-    },
-    {
-      title: "Codalyzer",
-      description:
-        "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
-      techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
-      github: "https://github.com/hiarun01/codalyzer",
-      live: "https://codalyzer.vercel.app/",
-    },
-    {
-      title: "Jobify",
-      description:
-        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
-      techStack: [
-        "React",
-        "tailwindcss",
-        "Shadcn-ui",
-        "redux",
-        "MongoDB",
-        "Express",
-      ],
-      github: "https://github.com/hiarun01/Jobify",
-      live: "https://hi-jobify.vercel.app/",
-    },
-  ];
 
   const loadMore = () => {
     setVisibleProjects((prev) => Math.min(prev + 3, personalProjects.length));
@@ -89,7 +11,6 @@ const Projects = () => {
 
   return (
     <motion.div
-      className="mx-auto"
       initial={{opacity: 0, y: 40}}
       animate={{opacity: 1, y: 0}}
       transition={{duration: 0.7, ease: "easeOut"}}
@@ -100,9 +21,7 @@ const Projects = () => {
         animate={{opacity: 1, x: 0}}
         transition={{delay: 0.2, duration: 0.6}}
       >
-        <h2 className="text-lg font-bold mb-3 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
-          Proof of Work
-        </h2>
+        <h2 className="text-lg font-bold mb-3 ">Proof-of-Work</h2>
 
         <div className="flex flex-col gap-10">
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
@@ -115,10 +34,10 @@ const Projects = () => {
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold  mb-1 flex items-center gap-2">
-                    {/* <span className="inline-block w-2 h-2 bg-[#ffdb70] rounded-full"></span> */}
+                  <h2 className="text-xl font-medium mb-1 flex items-center gap-2">
+                    <span className="inline-block w-2 h-2 bg-[#ffdb70] rounded-full"></span>
                     {project.title}
-                  </h3>
+                  </h2>
                   <p className="text-[#d6d6d6] text-base mb-2">
                     {project.description}
                   </p>
@@ -128,7 +47,7 @@ const Projects = () => {
                       {project.techStack.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="bg-[#232323] border border-[#ffdb70] text-[#ffdb70] px-1 rounded-full text-xs font-mono"
+                          className="border border-[#ffdb70] text-[#ffdb70] px-1 rounded-full text-xs font-mono"
                         >
                           {tech}
                         </span>
@@ -137,16 +56,16 @@ const Projects = () => {
                   )}
                   <div className="flex gap-5 mt-3">
                     <a
-                      href={project.github}
-                      className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
-                    >
-                      <span>Code</span>
-                    </a>
-                    <a
                       href={project.live}
                       className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
                     >
                       <span>Live</span>
+                    </a>
+                    <a
+                      href={project.github}
+                      className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
+                    >
+                      <span>Code</span>
                     </a>
                   </div>
                 </div>

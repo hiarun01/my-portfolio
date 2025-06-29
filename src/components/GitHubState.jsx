@@ -9,9 +9,7 @@ const GitHubState = () => {
       transition={{delay: 0.8, duration: 0.5}}
     >
       <div className="my-8">
-        <h2 className="text-lg font-bold mb-5 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
-          GitHub Contributions
-        </h2>
+        <h2 className="text-lg font-bold mb-5 ">GitHub Contributions</h2>
         <GitHubCalendar
           username="hiarun01"
           blockSize={10}

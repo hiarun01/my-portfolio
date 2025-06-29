@@ -8,7 +8,7 @@ import Blog from "./Blogs";
 
 const Portfolio = () => {
   return (
-    <div className="bg-[#111010] text-white pt-10">
+    <div className="bg-[#111010] text-white pt-10 ">
       <motion.div
         className="max-w-3xl mx-auto px-5"
         initial={{opacity: 0, y: 40}}
@@ -53,7 +53,7 @@ const Portfolio = () => {
           </a>
         </motion.div>
         <motion.p
-          className="mt-5 text-lg text-[#d6d6d6]"
+          className="mt-5 text-1xl text-[#d6d6d6]"
           initial={{opacity: 0, x: 30}}
           animate={{opacity: 1, x: 0}}
           transition={{delay: 0.5, duration: 0.5}}
@@ -66,7 +66,7 @@ const Portfolio = () => {
           animate={{opacity: 1, y: 0}}
           transition={{delay: 0.7, duration: 0.5}}
         >
-          <p className="mt-2 text-lg text-[#d6d6d6]">
+          <p className="mt-2 text-1xl text-[#d6d6d6]">
             I'm always happy to connect! You can reach me via Email or on{" "}
             Twitter. I'm currently open to both{" "}
             <span className="font-semibold">freelance projects</span> and
@@ -76,9 +76,11 @@ const Portfolio = () => {
           </p>
         </motion.div>
         {/* skills section */}
-        <Skills />
+        <div className="">
+          <Skills />
+        </div>
         {/* Projects */}
-        <div className="mt-5">
+        <div className="">
           <Projects />
         </div>
 
