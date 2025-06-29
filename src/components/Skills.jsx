@@ -1,12 +1,12 @@
 import {motion} from "framer-motion";
 const Skills = () => {
   const technologies = [
-    {name: "Javascript", image: "/public/icons/js.svg"},
-    {name: "Typescript", image: "/public/icons/ts.svg"},
-    {name: "React", image: "/public/icons/react.png"},
-    {name: "MongoDB", image: "/public/icons/mongodb.png"},
-    {name: "Express", image: "/public/icons/expressjs.png"},
-    {name: "Nodejs", image: "/public/icons/nodejs.png"},
+    {name: "Javascript", image: "/icons/js.svg"},
+    {name: "Typescript", image: "/icons/ts.svg"},
+    {name: "React", image: "/icons/react.png"},
+    {name: "MongoDB", image: "/icons/mongodb.png"},
+    {name: "Express", image: "/icons/expressjs.png"},
+    {name: "Nodejs", image: "/icons/nodejs.png"},
   ];
 
   return (
