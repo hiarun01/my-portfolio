@@ -1,6 +1,9 @@
 import {motion} from "framer-motion";
+import {useState} from "react";
 
 const Projects = () => {
+  const [visibleProjects, setVisibleProjects] = useState(2);
+
   const personalProjects = [
     {
       title: "impactList",
@@ -42,7 +45,7 @@ const Projects = () => {
     {
       title: "Chattx",
       description:
-        "Chattx is a real-time chat app. I've built a basic version for now, and I’ll definitely be adding lots of features in the future.",
+        "Chattx is a real-time chat app. I've built a basic version for now, and I'll definitely be adding lots of features in the future.",
       techStack: [
         "React",
         "tailwindcss",
@@ -66,7 +69,7 @@ const Projects = () => {
     {
       title: "Jobify",
       description:
-        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It’s built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
+        "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
       techStack: [
         "React",
         "tailwindcss",
@@ -80,9 +83,13 @@ const Projects = () => {
     },
   ];
 
+  const loadMore = () => {
+    setVisibleProjects((prev) => Math.min(prev + 3, personalProjects.length));
+  };
+
   return (
     <motion.div
-      className="max-w-3xl mx-auto px-5"
+      className="mx-auto"
       initial={{opacity: 0, y: 40}}
       animate={{opacity: 1, y: 0}}
       transition={{duration: 0.7, ease: "easeOut"}}
@@ -93,11 +100,12 @@ const Projects = () => {
         animate={{opacity: 1, x: 0}}
         transition={{delay: 0.2, duration: 0.6}}
       >
-        <h2 className="text-2xl font-bold text-[#fafafa] mb-8 border-l-2 pl-2 rounded-2xl border-[#d2bb77]">
-          Personal Projects
+        <h2 className="text-lg font-bold mb-3 border-l-2 pl-2 rounded-3xl border-[#d2bb77]">
+          Proof of Work
         </h2>
+
         <div className="flex flex-col gap-10">
-          {personalProjects.map((project, i) => (
+          {personalProjects.slice(0, visibleProjects).map((project, i) => (
             <motion.div
               key={i}
               className="relative group"
@@ -107,8 +115,8 @@ const Projects = () => {
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-[#ffdb70] mb-1 flex items-center gap-2">
-                    <span className="inline-block w-2 h-2 bg-[#ffdb70] rounded-full"></span>
+                  <h3 className="text-xl font-bold  mb-1 flex items-center gap-2">
+                    {/* <span className="inline-block w-2 h-2 bg-[#ffdb70] rounded-full"></span> */}
                     {project.title}
                   </h3>
                   <p className="text-[#d6d6d6] text-base mb-2">
@@ -147,6 +155,17 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        {visibleProjects < personalProjects.length && (
+          <div className="flex justify-center mt-10">
+            <button
+              onClick={loadMore}
+              className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
+            >
+              <span>Load More</span>
+            </button>
+          </div>
+        )}
       </motion.section>
     </motion.div>
   );
