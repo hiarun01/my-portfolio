@@ -8,7 +8,7 @@ import Blog from "./Blogs";
 
 const Portfolio = () => {
   return (
-    <div className="bg-[#111010] text-white pt-20">
+    <div className="bg-[#111010] text-white pt-10">
       <motion.div
         className="max-w-3xl mx-auto px-5"
         initial={{opacity: 0, y: 40}}
