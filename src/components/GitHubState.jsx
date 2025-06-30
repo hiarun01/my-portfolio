@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 const GitHubState = () => {
   return (
     <motion.section
-      className="mb-12 mt-6"
+      className="mb-12 mt-5"
       initial={{opacity: 0, y: 20}}
       animate={{opacity: 1, y: 0}}
       transition={{delay: 0.8, duration: 0.5}}

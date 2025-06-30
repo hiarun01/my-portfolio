@@ -24,7 +24,7 @@ const Portfolio = () => {
           Hey 👋, I'm Arun kumar
         </motion.h1>
         <motion.div
-          className="flex gap-7 mt-6 w-fit py-1 sm:font-normal"
+          className="flex gap-7 mt-6 w-fit sm:font-normal"
           initial={{opacity: 0, y: 20}}
           animate={{opacity: 1, y: 0}}
           transition={{delay: 0.4, duration: 0.5}}
@@ -32,22 +32,25 @@ const Portfolio = () => {
           {/* ...social links... */}
           <a
             href="mailto:hiarun.works@gmail.com"
-            className="text-[#ffdb70] hover:text-[#d2bb77] "
+            className="text-[#ffdb70] hover:text-[#d2bb77] hover:pt-1"
           >
-            <Mail />
+            <Mail className="" />
           </a>
-          <a href="https://x.com/hiarun01" className="text-[#ffdb70]">
+          <a
+            href="https://x.com/hiarun01"
+            className="text-[#ffdb70] hover:text-[#d2bb77] hover:pt-1"
+          >
             <X />
           </a>
           <a
             href="https://www.linkedin.com/in/hiarun01/"
-            className="text-[#ffdb70] hover:text-[#d2bb77]"
+            className="text-[#ffdb70] hover:text-[#d2bb77] hover:pt-1"
           >
             <Linkedin />
           </a>
           <a
             href="https://github.com/hiarun01"
-            className="text-[#ffdb70] hover:text-[#d2bb77]"
+            className="text-[#ffdb70] hover:text-[#d2bb77] hover:pt-1"
           >
             <GithubIcon />
           </a>
@@ -86,7 +89,7 @@ const Portfolio = () => {
               href="https://cal.com/hiarun01/15min"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
+              className=" underline hover:text-[#d2bb77]"
             >
               Schedule a meet
             </a>
