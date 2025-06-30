@@ -32,19 +32,19 @@ const Portfolio = () => {
           {/* ...social links... */}
           <a
             href="mailto:hiarun.works@gmail.com"
-            className="text-[#ffdb70] hover:text-[#d2bb77] hover:pt-1"
+            className="text-[#ffdb70] hover:text-[#d2bb77]"
           >
             <Mail className="" />
           </a>
           <a
             href="https://x.com/hiarun01"
-            className="text-[#ffdb70] hover:text-[#d2bb77] hover:pt-1"
+            className="text-[#ffdb70] hover:text-[#d2bb77]"
           >
             <X />
           </a>
           <a
             href="https://www.linkedin.com/in/hiarun01/"
-            className="text-[#ffdb70] hover:text-[#d2bb77] hover:pt-1"
+            className="text-[#ffdb70] hover:text-[#d2bb77]"
           >
             <Linkedin />
           </a>
