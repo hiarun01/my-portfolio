@@ -74,6 +74,23 @@ const Portfolio = () => {
             I'm happy to discuss any ideas or opportunities with you and
             potentially collaborate if it's a good fit.
           </p>
+          <motion.div
+            initial={{opacity: 0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{delay: 0.6, duration: 0.5}}
+          >
+            <h3 className="text-[#fafafa] font-medium mt-5 mb-2">
+              Want to chat? Schedule a 1:1 with me!
+            </h3>
+            <a
+              href="https://cal.com/hiarun01/15min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              Schedule a meet
+            </a>
+          </motion.div>
         </motion.div>
         {/* skills section */}
         <div className="">
