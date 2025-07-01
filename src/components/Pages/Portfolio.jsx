@@ -70,12 +70,9 @@ const Portfolio = () => {
           transition={{delay: 0.7, duration: 0.5}}
         >
           <p className="mt-2 text-1xl text-[#d6d6d6]">
-            I'm always happy to connect! You can reach me via Email or on{" "}
-            Twitter. I'm currently open to both{" "}
-            <span className="font-semibold">freelance projects</span> and
-            full-time <span className="font-semibold">job opportunities</span>.
-            I'm happy to discuss any ideas or opportunities with you and
-            potentially collaborate if it's a good fit.
+            Always happy to connect! Reach out via email or Twitter. I'm open to
+            freelance gigs or full-time roles. let’s chat if you’ve got
+            something in mind!
           </p>
           <motion.div
             initial={{opacity: 0, y: 20}}
