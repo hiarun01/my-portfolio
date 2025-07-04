@@ -35,8 +35,13 @@ const About = () => {
         </a>
       </div>
       <p className="mt-5 text-1xl ">
-        A web dev, i break things, learn fast, and make shit happen. deep into
-        code, I love building things that solves real world problems
+        A web dev, I love building things that solves real world problems. which
+        is why most of what I build is open source.
+      </p>
+      <p className="mt-5 text-1xl">
+        My journey into web development started with curiosity and quickly
+        turned into a full-blown passion. Since then, I’ve been building,
+        experimenting, and learning something new every day.
       </p>
     </div>
   );

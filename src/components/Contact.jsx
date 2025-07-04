@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="mb-4">
-      {/* <h2 className="text-lg font-bold mb-2">Contact</h2> */}
+      <h2 className="text-lg font-bold mb-2">Let’s Connect</h2>
 
       <p className="mt-2 text-1xl ">
         Always happy to connect! Reach out via email or Twitter. I'm open to
