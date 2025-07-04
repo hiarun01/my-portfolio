@@ -1,4 +1,3 @@
-import {motion} from "framer-motion";
 const Skills = () => {
   const technologies = [
     {name: "Javascript", image: "/icons/js.svg"},
@@ -10,12 +9,7 @@ const Skills = () => {
   ];
 
   return (
-    <motion.section
-      className="mb-5 mt-6"
-      initial={{opacity: 0, y: 20}}
-      animate={{opacity: 1, y: 0}}
-      transition={{delay: 0.8, duration: 0.5}}
-    >
+    <section className="mb-5 mt-6">
       <div>
         <div className="flex flex-col gap-2 ">
           <h2 className="text-lg font-bold mb-2"> Usually with :</h2>
@@ -44,7 +38,7 @@ const Skills = () => {
           }
         `}</style>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
