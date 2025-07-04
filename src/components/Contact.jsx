@@ -8,12 +8,12 @@ const Contact = () => {
         freelance gigs or full-time roles. let’s chat if you’ve got something in
         mind!
       </p>
-      <div className="mt-5">
+      <div className="mt-5 mb-5">
         <a
           href="https://cal.com/hiarun01/15min"
           target="_blank"
           rel="noopener noreferrer"
-          className=" underline hover:text-[#d2bb77] border px-2 py-2"
+          className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4 py-1 w-fit"
         >
           Schedule a meet
         </a>

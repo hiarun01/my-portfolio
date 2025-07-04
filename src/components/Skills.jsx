@@ -26,7 +26,7 @@ const Skills = () => {
                   alt={tech.name}
                   className="custom-skill-icon"
                 />
-                {/* <span>{tech.name}</span> */}
+                <span>{tech.name}</span>
               </div>
             ))}
           </div>
