@@ -1,12 +1,12 @@
 import {useState, useEffect} from "react";
 import {motion, AnimatePresence} from "framer-motion";
-import Skills from "../Skills";
-import GitHubState from "../GitHubState";
-import Projects from "../Projects";
-import Footer from "../Footer";
-import Blog from "../Blogs";
-import About from "../About";
-import Contact from "../Contact";
+import Skills from "./components/Skills";
+import GitHubState from "./components/GitHubState";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Blog from "./components/Blogs";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 const blurVariants = {
   visible: {opacity: 1, backdropFilter: "blur(8px)"},
@@ -23,7 +23,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#111010] text-white pt-10 overflow-x-hidden">
+    <div className="relative min-h-screen max-w-2xl mx-auto bg-[#111010] text-white pt-15 overflow-x-hidden">
       {/* Blur Overlay */}
       <AnimatePresence>
         {isBlur && (
@@ -38,7 +38,7 @@ const Portfolio = () => {
         )}
       </AnimatePresence>
       <div
-        className={`max-w-3xl mx-auto px-5 relative ${
+        className={`px-5 relative ${
           isBlur ? "pointer-events-none select-none blur-sm" : ""
         }`}
       >
