@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <footer className="max-w-3xl mx-auto py-5 border-t-2 border-[#ffdb70]">
+      <footer className="py-5 border-t-2 border-[#ffdb70]">
         <p className="text-center text-sm ">
           Designed and Developed by :{" "}
           <a

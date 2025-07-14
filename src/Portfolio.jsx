@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import {motion, AnimatePresence} from "framer-motion";
-import Skills from "./components/Skills";
 import GitHubState from "./components/GitHubState";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -44,8 +43,6 @@ const Portfolio = () => {
       >
         {/* About Section */}
         <About />
-        {/* Skills Section */}
-        <Skills />
         {/* Projects */}
         <Projects />
         {/* Blogs */}

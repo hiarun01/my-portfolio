@@ -9,8 +9,8 @@ const Projects = () => {
   };
 
   return (
-    <div>
-      <section className="mb-10">
+    <div className="">
+      <section className="mb-5">
         <h2 className="text-lg font-bold mb-3 ">Proof-of-Work</h2>
 
         <div className="flex flex-col gap-10">
