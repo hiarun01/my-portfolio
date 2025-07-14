@@ -2,17 +2,6 @@ import {GithubIcon, Linkedin, Mail, X} from "lucide-react";
 import Skills from "./Skills";
 
 const About = () => {
-  const technologies = [
-    {name: "Javascript", image: "/icons/js.svg"},
-    {name: "Typescript", image: "/icons/ts.svg"},
-    {name: "React", image: "/icons/react.png"},
-    {name: "Tailwindcss", image: "/icons/tailwindcss.png"},
-    {name: "MongoDB", image: "/icons/mongodb.png"},
-    {name: "Express", image: "/icons/expressjs.png"},
-    {name: "Nodejs", image: "/icons/nodejs.png"},
-    {name: "Git", image: "/icons/git.png"},
-  ];
-
   return (
     <div className="">
       <h1 className="text-2xl font-bold ">Hey👋, I'm Arun kumar</h1>
