@@ -22,7 +22,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen max-w-2xl mx-auto bg-[#111010] text-white pt-15 overflow-x-hidden">
+    <div className="relative min-h-screen max-w-2xl mx-auto bg-[#111010] text-white pt-10 pb-10 overflow-x-hidden">
       {/* Blur Overlay */}
       <AnimatePresence>
         {isBlur && (
