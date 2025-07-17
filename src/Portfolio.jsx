@@ -27,27 +27,8 @@ const Portfolio = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(
-        new Date().toLocaleTimeString([], {
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-        })
-      );
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="relative min-h-screen max-w-2xl mx-auto bg-[#111010] text-white pt-10 overflow-x-hidden">
-      {/* Time Header */}
-      <div className="flex justify-end items-center px-5">
-        <span className="text-[#ffdb70] font-mono font-bold text-sm bg-[#232323] px-4 py-1 rounded-full shadow">
-          {time}
-        </span>
-      </div>
+    <div className="relative min-h-screen max-w-2xl font-sans mx-auto bg-[#111010] text-white pt-15 pb-10 overflow-x-hidden">
       {/* Blur Overlay */}
       <AnimatePresence>
         {isBlur && (

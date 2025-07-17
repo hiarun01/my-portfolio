@@ -1,5 +1,22 @@
 export const personalProjects = [
   {
+    title: "Jobify",
+    description:
+      "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
+    techStack: [
+      "Javascript",
+      "React",
+      "tailwindcss",
+      "Shadcn-ui",
+      "redux",
+      "MongoDB",
+      "Express",
+      "Jwt Auth",
+    ],
+    github: "https://github.com/hiarun01/Jobify",
+    live: "https://hi-jobify.vercel.app/",
+  },
+  {
     title: "impactList",
     description:
       "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
@@ -59,20 +76,5 @@ export const personalProjects = [
     techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
     github: "https://github.com/hiarun01/codalyzer",
     live: "https://codalyzer.vercel.app/",
-  },
-  {
-    title: "Jobify",
-    description:
-      "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
-    techStack: [
-      "React",
-      "tailwindcss",
-      "Shadcn-ui",
-      "redux",
-      "MongoDB",
-      "Express",
-    ],
-    github: "https://github.com/hiarun01/Jobify",
-    live: "https://hi-jobify.vercel.app/",
   },
 ];
