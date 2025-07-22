@@ -1,42 +1,42 @@
-import {GithubIcon, Linkedin, Mail, X} from "lucide-react";
 import Skills from "./Skills";
 
-const socials = [
+type Social = {
+  href: string;
+  label: string;
+};
+
+const socials: Social[] = [
   {
     href: "mailto:hiarun.works@gmail.com",
     label: "Email",
-    icon: <Mail size={25} />,
   },
   {
     href: "https://x.com/hiarun01",
-    label: "Twitter/X",
-    icon: <X size={25} />,
+    label: "X",
   },
   {
     href: "https://www.linkedin.com/in/hiarun01/",
     label: "LinkedIn",
-    icon: <Linkedin size={25} />,
   },
   {
     href: "https://github.com/hiarun01",
     label: "GitHub",
-    icon: <GithubIcon size={25} />,
   },
 ];
 
-const About = () => {
+export default function About() {
   return (
     <div className="">
       <h1 className="text-2xl font-bold ">Hey👋, I'm Arun kumar</h1>
-      <div className="flex gap-5 mt-3 w-fit sm:font-normal">
+      <div className="flex gap-4 mt-3 w-fit sm:font-normal">
         {socials.map((s) => (
           <a
             key={s.label}
             href={s.href}
-            className="text-[#ffdb70] hover:text-[#d2bb77] "
+            className="text-[#ffdb70] text-sm hover:text-[#d2bb77] border px-2 rounded-2xl "
             aria-label={s.label}
           >
-            {s.icon}
+            {s.label}
           </a>
         ))}
       </div>
@@ -53,6 +53,4 @@ const About = () => {
       <Skills />
     </div>
   );
-};
-
-export default About;
+}

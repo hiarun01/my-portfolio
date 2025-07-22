@@ -1,15 +1,22 @@
-const Skills = () => {
-  const technologies = [
-    {name: "Javascript", image: "/icons/js.svg"},
-    {name: "Typescript", image: "/icons/ts.svg"},
-    {name: "React", image: "/icons/react.png"},
-    {name: "Tailwindcss", image: "/icons/tailwindcss.png"},
-    {name: "MongoDB", image: "/icons/mongodb.png"},
-    {name: "Express", image: "/icons/expressjs.png"},
-    {name: "Nodejs", image: "/icons/nodejs.png"},
-    {name: "Git", image: "/icons/git.png"},
-  ];
+import Image from "next/image";
 
+type Technology = {
+  name: string;
+  image: string;
+};
+
+const technologies: Technology[] = [
+  {name: "Javascript", image: "/icons/js.svg"},
+  {name: "Typescript", image: "/icons/ts.svg"},
+  {name: "React", image: "/icons/react.png"},
+  {name: "Tailwindcss", image: "/icons/tailwindcss.png"},
+  {name: "MongoDB", image: "/icons/mongodb.png"},
+  {name: "Express", image: "/icons/expressjs.png"},
+  {name: "Nodejs", image: "/icons/nodejs.png"},
+  {name: "Git", image: "/icons/git.png"},
+];
+
+const Skills = () => {
   return (
     <section className="mb-5 mt-6">
       <div>
@@ -21,8 +28,10 @@ const Skills = () => {
                 key={index}
                 className="rounded-lg text-center px-2 py-2 border border-[#d2bb77] text-sm font-mono cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-2xs flex items-center gap-2"
               >
-                <img
+                <Image
                   src={tech.image}
+                  width={20}
+                  height={20}
                   alt={tech.name}
                   className="custom-skill-icon"
                 />
