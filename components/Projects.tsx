@@ -106,10 +106,10 @@ export default function Projects() {
             <div key={i} className="relative group">
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
-                  <h2 className="text-xl font-medium mb-1 flex items-center gap-2">
+                  <h3 className="text-xl font-medium mb-1 flex items-center gap-2">
                     <span className="inline-block w-2 h-2 bg-[#ffdb70] rounded-full"></span>
                     {project.title}
-                  </h2>
+                  </h3>
                   <p className=" text-base mb-2">{project.description}</p>
                   {/* Tech Stack */}
                   {project.techStack && (

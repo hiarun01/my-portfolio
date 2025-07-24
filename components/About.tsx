@@ -29,12 +29,12 @@ export default function About() {
   return (
     <div className="">
       <h1 className="text-2xl font-bold ">Hey👋, I'm Arun kumar</h1>
-      <div className="flex gap-2 mt-3 w-fit sm:font-normal">
+      <div className="flex gap-2 mt-2 w-fit sm:font-normal">
         {socials.map((s) => (
           <a
             key={s.label}
             href={s.href}
-            className="text-[#ffdb70] text-sm hover:text-[#d2bb77] border px-1 rounded-lg "
+            className="text-[#ffdb70] text-sm hover:text-[#d2bb77] underline"
             aria-label={s.label}
           >
             {s.label}
