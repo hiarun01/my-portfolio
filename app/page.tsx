@@ -1,4 +1,5 @@
 "use client";
+
 import About from "@/components/About";
 import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";

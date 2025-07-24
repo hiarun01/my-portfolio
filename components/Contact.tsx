@@ -1,4 +1,5 @@
-const Contact = () => {
+/* eslint-disable react/no-unescaped-entities */
+export default function Contact() {
   return (
     <div className="mb-4">
       <h2 className="text-lg font-bold mb-2">Let’s Connect</h2>
@@ -20,6 +21,4 @@ const Contact = () => {
       </div>
     </div>
   );
-};
-
-export default Contact;
+}
