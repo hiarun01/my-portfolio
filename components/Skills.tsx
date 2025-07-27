@@ -9,6 +9,7 @@ const technologies: Technology[] = [
   {name: "Javascript", image: "/icons/js.svg"},
   {name: "Typescript", image: "/icons/ts.svg"},
   {name: "React", image: "/icons/react.png"},
+  {name: "Nextjs", image: "/icons/nextjs.png"},
   {name: "Tailwindcss", image: "/icons/tailwindcss.png"},
   {name: "MongoDB", image: "/icons/mongodb.png"},
   {name: "Express", image: "/icons/expressjs.png"},
@@ -33,7 +34,7 @@ const Skills = () => {
                   width={20}
                   height={20}
                   alt={tech.name}
-                  className="custom-skill-icon"
+                  className="custom-skill-icon "
                 />
                 <span className="text-xs font-bold">{tech.name}</span>
               </div>

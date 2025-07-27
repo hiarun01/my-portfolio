@@ -13,22 +13,22 @@ const socials: Social[] = [
   {
     href: "mailto:hiarun.works@gmail.com",
     label: "Email",
-    icon: <Mail size={25} />,
+    icon: <Mail size={20} />,
   },
   {
     href: "https://x.com/hiarun01",
     label: "X",
-    icon: <X size={25} />,
+    icon: <X size={20} />,
   },
   {
     href: "https://www.linkedin.com/in/hiarun01/",
     label: "LinkedIn",
-    icon: <Linkedin size={25} />,
+    icon: <Linkedin size={20} />,
   },
   {
     href: "https://github.com/hiarun01",
     label: "GitHub",
-    icon: <Github size={25} />,
+    icon: <Github size={20} />,
   },
 ];
 
