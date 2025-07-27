@@ -1,27 +1,34 @@
 /* eslint-disable react/no-unescaped-entities */
+import {JSX} from "react";
 import Skills from "./Skills";
+import {Github, Linkedin, Mail, X} from "lucide-react";
 
 type Social = {
   href: string;
   label: string;
+  icon: JSX.Element;
 };
 
 const socials: Social[] = [
   {
     href: "mailto:hiarun.works@gmail.com",
     label: "Email",
+    icon: <Mail size={25} />,
   },
   {
     href: "https://x.com/hiarun01",
     label: "X",
+    icon: <X size={25} />,
   },
   {
     href: "https://www.linkedin.com/in/hiarun01/",
     label: "LinkedIn",
+    icon: <Linkedin size={25} />,
   },
   {
     href: "https://github.com/hiarun01",
     label: "GitHub",
+    icon: <Github size={25} />,
   },
 ];
 
@@ -29,15 +36,15 @@ export default function About() {
   return (
     <div className="">
       <h1 className="text-2xl font-bold ">Hey👋, I'm Arun kumar</h1>
-      <div className="flex gap-2 mt-2 w-fit sm:font-normal">
+      <div className="flex gap-4 mt-4 w-fit sm:font-normal">
         {socials.map((s) => (
           <a
             key={s.label}
             href={s.href}
-            className="text-[#ffdb70] text-sm hover:text-[#d2bb77] underline"
+            className="text-[#ffdb70] hover:text-[#d2bb77] border-1 px-2 py-2 rounded-lg shadow-2xl "
             aria-label={s.label}
           >
-            {s.label}
+            {s.icon}
           </a>
         ))}
       </div>
