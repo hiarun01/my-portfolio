@@ -24,7 +24,7 @@ export const personalProjects: Project[] = [
       "Jwt Auth",
     ],
     github: "https://github.com/hiarun01/Jobify",
-    live: "https://hi-jobify.vercel.app/",
+    live: "https://jobify.hiarun.me/",
   },
   {
     title: "impactList",
@@ -39,7 +39,7 @@ export const personalProjects: Project[] = [
       "Express",
     ],
     github: "https://github.com/hiarun01/impactList",
-    live: "https://impact-list.vercel.app/",
+    live: "https://impactlist.hiarun.me/",
   },
   {
     title: "TwiFake",
@@ -53,7 +53,7 @@ export const personalProjects: Project[] = [
       "html2canvas",
     ],
     github: "https://github.com/hiarun01/TwiFake",
-    live: "https://twifake.vercel.app/",
+    live: "https://twifake.hiarun.me/",
   },
   {
     title: "CodeSnippet",
@@ -61,7 +61,7 @@ export const personalProjects: Project[] = [
       "CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
     techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
     github: "https://github.com/hiarun01/CodeSnippet",
-    live: "https://hi-code-snippet.vercel.app/",
+    live: "https://codesnippet.hiarun.me/",
   },
   {
     title: "Chattx",
@@ -77,7 +77,7 @@ export const personalProjects: Project[] = [
       "Express",
     ],
     github: "https://github.com/hiarun01/chattx",
-    live: "https://chattx.vercel.app",
+    live: "https://chattx.hiarun.me/",
   },
   {
     title: "Codalyzer",
@@ -85,7 +85,7 @@ export const personalProjects: Project[] = [
       "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
     techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
     github: "https://github.com/hiarun01/codalyzer",
-    live: "https://codalyzer.vercel.app/",
+    live: "https://codalyzer.hiarun.me/",
   },
 ];
 
