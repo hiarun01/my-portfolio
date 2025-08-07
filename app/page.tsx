@@ -9,7 +9,7 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen max-w-2xl font-sans mx-auto px-5 bg-[#111010] pt-15 pb-10 overflow-x-hidden">
+    <div className="relative min-h-screen max-w-2xl font-sans mx-auto px-5 pt-15 pb-10 overflow-x-hidden ">
       {/* About Section */}
       <About />
       {/* Projects */}
