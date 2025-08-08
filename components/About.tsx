@@ -48,15 +48,27 @@ export default function About() {
           </a>
         ))}
       </div>
-      <p className="mt-5 text-1xl ">
-        A web dev, I love building things that solves real world problems. which
-        is why most of what I build is open source.
-      </p>
-      <p className="mt-5 text-1xl">
-        My journey into web development started with curiosity and quickly
-        turned into a full-blown passion. Since then, I’ve been building,
-        experimenting, and learning something new every day.
-      </p>
+      <div className="mt-5">
+        <h2 className="text-lg font-bold">About Me</h2>
+        <p className="mt-1 text-1xl ">
+          A web dev, I love building things that solves real world problems.
+          which is why most of what I build is open source.
+        </p>
+        <p className="mt-2 text-1xl">
+          My journey into web development started with curiosity and quickly
+          turned into a full-blown passion. Since then, I’ve been building,
+          experimenting, and learning something new every day.
+        </p>
+        <h2 className="text-lg font-bold mt-2 ">Hire Me</h2>
+        <p className="mt-1">
+          I’m currently available for internships, full-time opportunities, and
+          freelance projects. If you’re looking for someone passionate, skilled,
+          and ready to contribute, I’m here to help bring your ideas to life!
+        </p>
+        <button className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-b-1 rounded-2xl px-5 mt-4">
+          <span>Hire Me</span>
+        </button>
+      </div>
 
       <Skills />
     </div>
