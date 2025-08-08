@@ -65,9 +65,6 @@ export default function About() {
           freelance projects. If you’re looking for someone passionate, skilled,
           and ready to contribute, I’m here to help bring your ideas to life!
         </p>
-        <button className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-b-1 rounded-2xl px-5 mt-4">
-          <span>Hire Me</span>
-        </button>
       </div>
 
       <Skills />
