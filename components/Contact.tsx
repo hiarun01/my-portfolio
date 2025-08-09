@@ -1,7 +1,10 @@
+import {FaRegHeart} from "react-icons/fa";
+import {SiBuymeacoffee} from "react-icons/si";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Contact() {
   return (
-    <div className="mb-4">
+    <section className="mb-4">
       <h2 className="text-lg font-bold mb-2">Let’s Connect</h2>
 
       <p className="mt-2 ">
@@ -14,19 +17,11 @@ export default function Contact() {
           href="https://cal.com/hiarun01/15min"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#ffdb70] hover:text-[#d2bb77]  border-b-1 mt-2"
+          className="cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md"
         >
           <span> Schedule a meet</span>
         </a>
       </div>
-      <div className="mb-5">
-        <h2 className="text-lg font-bold mb-2">Support Me</h2>
-        <p>
-          If you love what I do, whether it’s my work, the content I share, or
-          anything else, please consider supporting me. Your support helps me
-          continue creating, improving, and sharing my work.
-        </p>
-      </div>
-    </div>
+    </section>
   );
 }

@@ -2,6 +2,7 @@
 import {JSX} from "react";
 import Skills from "./Skills";
 import {Github, Linkedin, Mail, X} from "lucide-react";
+import {SupportMe} from "./SupportMe";
 
 type Social = {
   href: string;
@@ -59,12 +60,24 @@ export default function About() {
           turned into a full-blown passion. Since then, I’ve been building,
           experimenting, and learning something new every day.
         </p>
-        <h2 className="text-lg font-bold mt-2 ">Hire Me</h2>
-        <p className="mt-1">
-          I’m currently available for internships, full-time opportunities, and
-          freelance projects. If you’re looking for someone passionate, skilled,
-          and ready to contribute, I’m here to help bring your ideas to life!
-        </p>
+        <div>
+          <h2 className="text-lg font-bold mt-2 ">Hire Me</h2>
+          <p className="mt-1">
+            I’m currently available for internships, full-time opportunities,
+            and freelance projects. If you’re looking for someone passionate,
+            skilled, and ready to contribute, I’m here to help bring your ideas
+            to life!
+          </p>
+          <a
+            href="mailto:hiarun.works@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md"
+          >
+            <span>Hire Me</span>
+          </a>
+        </div>
+        <SupportMe />
       </div>
 
       <Skills />

@@ -14,7 +14,7 @@ import {skills} from "./Data/data";
 
 const Skills = () => {
   return (
-    <section className="mb-5 mt-6">
+    <section className="mb-5 mt-3">
       <div>
         <div className="flex flex-col gap-2 ">
           <h2 className="text-lg font-bold mb-2"> Skills & Tools :</h2>
