@@ -10,7 +10,8 @@ export const SupportMe = () => {
         anything else, please consider supporting me. Your support helps me
         continue creating, improving, and sharing my work.
       </p>
-      <div className="flex flex-wrap items-center gap-2 mt-3 ">
+      {/* make this mobile responsive */}
+      <div className="flex flex-wrap items-center gap-2 mt-3 justify-start sm:w-full ">
         <a
           className="cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md"
           target="_blank"
