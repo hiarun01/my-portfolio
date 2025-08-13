@@ -1,8 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import {JSX} from "react";
 import Skills from "./Skills";
-import {Github, Linkedin, Mail, X} from "lucide-react";
 import {SupportMe} from "./SupportMe";
+import {MdOutgoingMail} from "react-icons/md";
+import {FaXTwitter} from "react-icons/fa6";
+import {FaLinkedin} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
 
 type Social = {
   href: string;
@@ -14,22 +17,22 @@ const socials: Social[] = [
   {
     href: "mailto:hiarun.works@gmail.com",
     label: "Email",
-    icon: <Mail size={20} />,
+    icon: <MdOutgoingMail size={25} />,
   },
   {
     href: "https://x.com/hiarun01",
     label: "X",
-    icon: <X size={20} />,
+    icon: <FaXTwitter size={25} />,
   },
   {
     href: "https://www.linkedin.com/in/hiarun01/",
     label: "LinkedIn",
-    icon: <Linkedin size={20} />,
+    icon: <FaLinkedin size={25} />,
   },
   {
     href: "https://github.com/hiarun01",
     label: "GitHub",
-    icon: <Github size={20} />,
+    icon: <FaGithub size={25} />,
   },
 ];
 
@@ -42,7 +45,7 @@ export default function About() {
           <a
             key={s.label}
             href={s.href}
-            className="text-[#ffdb70] hover:text-[#d2bb77] border-1 px-2 py-2 rounded-lg shadow-2xl "
+            className="social-card"
             aria-label={s.label}
           >
             {s.icon}

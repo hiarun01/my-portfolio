@@ -106,7 +106,7 @@ export default function Projects() {
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
             <div
               key={i}
-              className="relative group rounded-md p-3 bg-zinc-900 border border-zinc-700 hover:bg-zinc-800"
+              className="relative group rounded-md p-3 bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 transition-colors duration-100 flex"
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
