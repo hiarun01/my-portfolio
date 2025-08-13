@@ -10,22 +10,22 @@ export const SupportMe = () => {
         anything else, please consider supporting me. Your support helps me
         continue creating, improving, and sharing my work.
       </p>
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-col sm:flex-row gap-3 mt-3 w-full">
         <a
-          className="support-btn"
+          className="support-btn flex-1 justify-center"
           target="_blank"
           href="https://github.com/sponsors/hiarun01"
         >
           <FaRegHeart className="text-pink-400" />
-          GitHub Sponsors
+          <span className="whitespace-nowrap">GitHub Sponsors</span>
         </a>
         <a
-          className="support-btn"
+          className="support-btn flex-1 justify-center"
           target="_blank"
           href="https://buymeacoffee.com/hiarun01"
         >
           <SiBuymeacoffee className="text-yellow-400" />
-          Buy Me a Coffee
+          <span className="whitespace-nowrap">Buy Me a Coffee</span>
         </a>
       </div>
     </section>
