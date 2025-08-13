@@ -72,7 +72,7 @@ export default function About() {
             href="mailto:hiarun.works@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2 py-1 rounded-md"
+            className="btn"
           >
             <span>Hire Me</span>
           </a>

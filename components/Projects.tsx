@@ -1,3 +1,4 @@
+import {ArrowDownSquare} from "lucide-react";
 import {useState} from "react";
 
 type Project = {
@@ -101,9 +102,12 @@ export default function Projects() {
       <section className="mb-5">
         <h2 className="text-lg font-bold mb-3 ">Proof-of-Work</h2>
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-5">
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
-            <div key={i} className="relative group">
+            <div
+              key={i}
+              className="relative group rounded-md p-3 bg-zinc-900 border border-zinc-700 hover:bg-zinc-800"
+            >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
                   <h3 className="text-xl font-medium mb-1 flex items-center gap-2">
@@ -144,18 +148,16 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="absolute left-0 top-full w-full h-px bg-gradient-to-r from-[#ffdb70]/60 via-[#d2bb77]/30 to-transparent mt-6"></div>
+              {/* <div className="absolute left-0 top-full w-full h-px bg-gradient-to-r from-[#ffdb70]/60 via-[#d2bb77]/30 to-transparent mt-6"></div> */}
             </div>
           ))}
         </div>
 
         {visibleProjects < personalProjects.length && (
           <div className="flex justify-center mt-10">
-            <button
-              onClick={loadMore}
-              className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border-1 rounded-2xl px-4"
-            >
-              <span>Load More</span>
+            <button onClick={loadMore} className="load-more">
+              {" "}
+              <span>Show all</span>
             </button>
           </div>
         )}

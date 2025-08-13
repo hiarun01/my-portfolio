@@ -11,3 +11,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn {
+  @apply  mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md;
+}
+
+.support-btn {
+  @apply cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md;
+}
+
+.load-more {
+  @apply cursor-pointer w-full text-center justify-center select-none transition-colors duration-100 flex flex-row items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-4  py-1 rounded-md;
+}
+
+
+
