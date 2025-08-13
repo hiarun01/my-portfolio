@@ -41,25 +41,25 @@ export default function Projects() {
                   )}
                   <div className="flex gap-5 mt-3">
                     <a
-                      href={project.live}
-                      className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border rounded-2xl px-4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>Live</span>
-                    </a>
-                    <a
                       href={project.github}
-                      className="text-[#ffdb70] hover:text-[#d2bb77] flex items-center border rounded-2xl px-4"
+                      className="btn"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <span>Code</span>
                     </a>
+
+                    <a
+                      href={project.live}
+                      className="btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>Live</span>
+                    </a>
                   </div>
                 </div>
               </div>
-              {/* <div className="absolute left-0 top-full w-full h-px bg-gradient-to-r from-[#ffdb70]/60 via-[#d2bb77]/30 to-transparent mt-6"></div> */}
             </div>
           ))}
         </div>
