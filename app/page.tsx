@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
+import {SupportMe} from "@/components/SupportMe";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <GitHubState />
       {/* Contact Section */}
       <Contact />
+      {/* SupprtME */}
+      <SupportMe />
       {/* Footer */}
       <Footer />
     </div>

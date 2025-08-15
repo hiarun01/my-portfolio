@@ -3,29 +3,32 @@ import {SiBuymeacoffee} from "react-icons/si";
 
 export const SupportMe = () => {
   return (
-    <section className="">
-      <h2 className="text-lg font-bold mb-1 mt-1">Support Me</h2>
-      <p>
-        If you love what I do, whether it’s my work, the content I share, or
-        anything else, please consider supporting me. Your support helps me
-        continue creating, improving, and sharing my work.
+    <section className="mb-5">
+      <h2 className="text-lg font-bold mb-3">Support Me</h2>
+      <p className="text-zinc-400 mb-4">
+        If you find my work helpful, consider supporting me. Your support helps
+        me continue creating and sharing projects.
       </p>
-      <div className="flex flex-col sm:flex-row gap-3 mt-3 w-full">
+
+      <div className="flex flex-col sm:flex-row gap-3">
         <a
-          className="support-btn flex-1 justify-center"
-          target="_blank"
           href="https://github.com/sponsors/hiarun01"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="support-btn flex-1 justify-center"
         >
           <FaRegHeart className="text-pink-400" />
-          <span className="whitespace-nowrap">GitHub Sponsors</span>
+          <span>GitHub Sponsors</span>
         </a>
+
         <a
-          className="support-btn flex-1 justify-center"
-          target="_blank"
           href="https://buymeacoffee.com/hiarun01"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="support-btn flex-1 justify-center"
         >
           <SiBuymeacoffee className="text-yellow-400" />
-          <span className="whitespace-nowrap">Buy Me a Coffee</span>
+          <span>Buy Me a Coffee</span>
         </a>
       </div>
     </section>

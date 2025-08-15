@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import {JSX} from "react";
 import Skills from "./Skills";
-import {SupportMe} from "./SupportMe";
+
 import {MdOutgoingMail} from "react-icons/md";
 import {FaXTwitter} from "react-icons/fa6";
 import {FaLinkedin} from "react-icons/fa";
@@ -80,7 +80,6 @@ export default function About() {
             <span>Hire Me</span>
           </a>
         </div>
-        <SupportMe />
       </div>
 
       <Skills />

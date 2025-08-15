@@ -1,5 +1,5 @@
 import GitHubCalendar from "react-github-calendar";
-import {ExternalLink, GitFork, Star} from "lucide-react";
+// import {ExternalLink, GitFork, Star} from "lucide-react";
 
 // Add your contributed repositories here
 // const contributedRepos = [
