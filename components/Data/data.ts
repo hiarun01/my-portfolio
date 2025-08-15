@@ -23,6 +23,8 @@ type Project = {
   techStack: string[];
   github: string;
   live: string;
+  image: string;
+  category: string;
 };
 
 const skills = [
@@ -62,6 +64,8 @@ export const personalProjects: Project[] = [
     ],
     github: "https://github.com/hiarun01/Jobify",
     live: "https://jobify.hiarun.me/",
+    image: "/Projects-image/jobify.png",
+    category: "fullstack",
   },
   {
     title: "impactList",
@@ -77,6 +81,8 @@ export const personalProjects: Project[] = [
     ],
     github: "https://github.com/hiarun01/impactList",
     live: "https://impactlist.hiarun.me/",
+    image: "/Projects-image/impactList.png",
+    category: "fullstack",
   },
   {
     title: "TwiFake",
@@ -91,6 +97,8 @@ export const personalProjects: Project[] = [
     ],
     github: "https://github.com/hiarun01/TwiFake",
     live: "https://twifake.hiarun.me/",
+    image: "/Projects-image/twifale.png",
+    category: "frontend",
   },
   {
     title: "CodeSnippet",
@@ -99,6 +107,8 @@ export const personalProjects: Project[] = [
     techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
     github: "https://github.com/hiarun01/CodeSnippet",
     live: "https://codesnippet.hiarun.me/",
+    image: "/Projects-image/codeSnippet.png",
+    category: "frontend",
   },
   {
     title: "Chattx",
@@ -115,6 +125,8 @@ export const personalProjects: Project[] = [
     ],
     github: "https://github.com/hiarun01/chattx",
     live: "https://chattx.hiarun.me/",
+    image: "/Projects-image/chattx.png",
+    category: "fullstack",
   },
   {
     title: "Codalyzer",
@@ -123,6 +135,8 @@ export const personalProjects: Project[] = [
     techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
     github: "https://github.com/hiarun01/codalyzer",
     live: "https://codalyzer.hiarun.me/",
+    image: "/Projects-image/codalyzer.png",
+    category: "ai",
   },
 ];
 

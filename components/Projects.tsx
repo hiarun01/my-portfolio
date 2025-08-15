@@ -1,12 +1,9 @@
-import {useState} from "react";
 import {personalProjects} from "./Data/data";
+import Link from "next/link";
 
 export default function Projects() {
-  const [visibleProjects, setVisibleProjects] = useState<number>(2);
-
-  const loadMore = () => {
-    setVisibleProjects((prev) => Math.min(prev + 3, personalProjects.length));
-  };
+  // Show only first 3 projects on home page
+  const featuredProjects = personalProjects.slice(0, 2);
 
   return (
     <div className="">
@@ -14,17 +11,19 @@ export default function Projects() {
         <h2 className="text-lg font-bold mb-3 ">Proof-of-Work</h2>
 
         <div className="flex flex-col gap-5">
-          {personalProjects.slice(0, visibleProjects).map((project, i) => (
+          {featuredProjects.map((project, i) => (
             <div
               key={i}
               className="relative group rounded-md p-3 bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 transition-colors duration-100 flex"
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1">
-                  <h3 className="text-xl font-medium mb-1 flex items-center gap-2">
-                    <span className="inline-block w-2 h-2 bg-[#ffdb70] rounded-full"></span>
-                    {project.title}
-                  </h3>
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="text-xl font-medium flex items-center gap-2">
+                      <span className="inline-block w-2 h-2 bg-[#ffdb70] rounded-full"></span>
+                      {project.title}
+                    </h3>
+                  </div>
                   <p className=" text-base mb-2">{project.description}</p>
                   {/* Tech Stack */}
                   {project.techStack && (
@@ -64,14 +63,12 @@ export default function Projects() {
           ))}
         </div>
 
-        {visibleProjects < personalProjects.length && (
-          <div className="flex justify-center mt-10">
-            <button onClick={loadMore} className="load-more">
-              {" "}
-              <span>Show all</span>
-            </button>
-          </div>
-        )}
+        {/* View All Projects Button */}
+        <div className="flex justify-center mt-8">
+          <Link href="/projects" className="load-more group">
+            <span>View All </span>
+          </Link>
+        </div>
       </section>
     </div>
   );
