@@ -17,7 +17,7 @@ const Skills = () => {
     <section className="mb-5 mt-3">
       <div>
         <div className="flex flex-col gap-2 ">
-          <h2 className="text-lg font-bold mb-2"> Skills & Tools :</h2>
+          <h2 className="text-lg font-bold mb-2"> Skills & Tools</h2>
           <div className="flex flex-wrap gap-1.5 ">
             {skills.map((skill) => (
               <a

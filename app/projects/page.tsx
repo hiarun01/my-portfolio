@@ -54,7 +54,7 @@ const ProjectsPage = () => {
           ← Back to Home
         </Link>
         <h1 className="text-4xl font-bold mb-4">Proof-of-Work</h1>
-        <p className="text-xl text-[#ffdb70] mb-2">
+        <p className="text-lg text-[#ffdb70] mb-2">
           &quot;Code is like humor. When you have to explain it, it&apos;s
           bad.&quot;
         </p>
@@ -65,8 +65,8 @@ const ProjectsPage = () => {
       </div>
 
       {/* Category Filters */}
-      <div className="mb-8">
-        <div className="flex flex-wrap justify-center gap-2">
+      <div className="mb-8 ">
+        <div className="flex flex-wrap gap-2 justify-center">
           {categories.map((category) => (
             <button
               key={category.id}

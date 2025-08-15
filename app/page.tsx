@@ -1,12 +1,12 @@
 "use client";
 
 import About from "@/components/About";
-import Blogs from "@/components/Blogs";
+// import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import GitHubState from "@/components/GitHubState";
+// import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
-import {SupportMe} from "@/components/SupportMe";
+// import {SupportMe} from "@/components/SupportMe";
 
 export default function Home() {
   return (
@@ -16,13 +16,13 @@ export default function Home() {
       {/* Projects */}
       <Projects />
       {/* Blogs */}
-      <Blogs />
+      {/* <Blogs /> */}
       {/* Github States */}
-      <GitHubState />
+      {/* <GitHubState /> */}
       {/* Contact Section */}
       <Contact />
       {/* SupprtME */}
-      <SupportMe />
+      {/* <SupportMe /> */}
       {/* Footer */}
       <Footer />
     </div>

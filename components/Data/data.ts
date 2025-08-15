@@ -16,6 +16,7 @@ import {
   SiShadcnui,
 } from "react-icons/si";
 import {TbBrandFramerMotion, TbBrandTypescript} from "react-icons/tb";
+import {SiRedux} from "react-icons/si";
 
 type Project = {
   title: string;
@@ -34,17 +35,18 @@ const skills = [
   {id: 4, icon: TbBrandTypescript, text: "TypeScript"},
   {id: 5, icon: RiTailwindCssFill, text: "Tailwind"},
   {id: 6, icon: RiBearSmileLine, text: "Zustand"},
-  {id: 7, icon: SiReactquery, text: "Tanstack Query"},
-  {id: 8, icon: SiShadcnui, text: "shadcn"},
-  {id: 9, icon: TbBrandFramerMotion, text: "Motion"},
-  {id: 10, icon: IoLogoNodejs, text: "NodeJS"},
-  {id: 11, icon: SiExpress, text: "ExpressJS"},
-  {id: 12, icon: SiMongodb, text: "MongoDB"},
-  {id: 13, icon: SiPostman, text: "Postman"},
-  {id: 14, icon: FaGitAlt, text: "Git"},
-  {id: 15, icon: FaGithub, text: "GitHub"},
-  {id: 16, icon: FaDocker, text: "Docker"},
-  {id: 17, icon: PiFigmaLogoBold, text: "Figma"},
+  {id: 8, icon: SiRedux, text: "Redux"},
+  {id: 9, icon: SiReactquery, text: "Tanstack Query"},
+  {id: 10, icon: SiShadcnui, text: "shadcn"},
+  {id: 11, icon: TbBrandFramerMotion, text: "Motion"},
+  {id: 12, icon: IoLogoNodejs, text: "NodeJS"},
+  {id: 13, icon: SiExpress, text: "ExpressJS"},
+  {id: 14, icon: SiMongodb, text: "MongoDB"},
+  {id: 15, icon: SiPostman, text: "Postman"},
+  {id: 16, icon: FaGitAlt, text: "Git"},
+  {id: 17, icon: FaGithub, text: "GitHub"},
+  {id: 18, icon: FaDocker, text: "Docker"},
+  {id: 19, icon: PiFigmaLogoBold, text: "Figma"},
 ];
 
 export const personalProjects: Project[] = [

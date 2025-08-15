@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div className="">
       <section className="mb-5">
-        <h2 className="text-lg font-bold mb-3 ">Proof-of-Work</h2>
+        <h2 className="text-lg font-bold mb-5">Proof-of-Work</h2>
 
         <div className="flex flex-col gap-5">
           {featuredProjects.map((project, i) => (
