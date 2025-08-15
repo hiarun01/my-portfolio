@@ -1,23 +1,11 @@
 import {skills} from "./Data/data";
 
-// const technologies: Technology[] = [
-//   {name: "Javascript", image: "/icons/js.svg"},
-//   {name: "Typescript", image: "/icons/ts.svg"},
-//   {name: "React", image: "/icons/react.png"},
-//   {name: "Nextjs", image: "/icons/nextjs.png"},
-//   {name: "Tailwindcss", image: "/icons/tailwindcss.png"},
-//   {name: "MongoDB", image: "/icons/mongodb.png"},
-//   {name: "Express", image: "/icons/expressjs.png"},
-//   {name: "Nodejs", image: "/icons/nodejs.png"},
-//   {name: "Git", image: "/icons/git.png"},
-// ];
-
 const Skills = () => {
   return (
     <section className="mb-5 mt-3">
       <div>
         <div className="flex flex-col gap-2 ">
-          <h2 className="text-lg font-bold mb-2"> Skills & Tools</h2>
+          <h2 className="text-lg font-bold mb-2">Skills & Tools</h2>
           <div className="flex flex-wrap gap-1.5 ">
             {skills.map((skill) => (
               <a
