@@ -70,6 +70,16 @@ export const personalProjects: Project[] = [
     category: "fullstack",
   },
   {
+    title: "Codalyzer",
+    description:
+      "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
+    techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
+    github: "https://github.com/hiarun01/codalyzer",
+    live: "https://codalyzer.hiarun.me/",
+    image: "/Projects-image/codalyzer.png",
+    category: "ai",
+  },
+  {
     title: "impactList",
     description:
       "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
@@ -130,15 +140,16 @@ export const personalProjects: Project[] = [
     image: "/Projects-image/chattx.png",
     category: "fullstack",
   },
+
   {
-    title: "Codalyzer",
+    title: "PaletteCraft",
     description:
-      "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
-    techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
-    github: "https://github.com/hiarun01/codalyzer",
-    live: "https://codalyzer.hiarun.me/",
-    image: "/Projects-image/codalyzer.png",
-    category: "ai",
+      "PaletteCraft is an official Adobe Express add-on that helps you create, explore, and apply beautiful, human-inspired color palettes directly in your designs.",
+    techStack: ["Javascript", "React", "Gen ai", "Adobe/ccWeb"],
+    github: "https://github.com/hiarun01/palettecraft",
+    live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
+    image: "/Projects-image/paletteCraft.png",
+    category: "plugins",
   },
 ];
 
