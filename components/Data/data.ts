@@ -28,7 +28,7 @@ type Project = {
   category: string;
 };
 
-const skills = [
+export const skills = [
   {id: 1, icon: RiReactjsLine, text: "ReactJs"},
   {id: 2, icon: RiNextjsLine, text: "NextJs"},
   {id: 3, icon: DiJavascript, text: "JavaScript"},
@@ -151,6 +151,24 @@ export const personalProjects: Project[] = [
     image: "/Projects-image/paletteCraft.png",
     category: "plugins",
   },
+  {
+    title: "Rapid Report",
+    description:
+      "Rapid Report is a web application designed to streamline the process of reporting and managing incidents, making it easier for users to submit reports and for administrators to manage them efficiently.",
+    techStack: [
+      "TypeScript",
+      "Javascript",
+      "React",
+      "tailwindcss",
+      "Shadcn-ui",
+      "redux",
+      "MongoDB",
+      "Express",
+      "Jwt Auth",
+    ],
+    github: "hiarun.me",
+    live: "hiarun.me",
+    image: "",
+    category: "full stack",
+  },
 ];
-
-export {skills};

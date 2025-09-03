@@ -2,7 +2,6 @@ import {personalProjects} from "./Data/data";
 import Link from "next/link";
 
 export default function Projects() {
-  // Show only first 3 projects on home page
   const featuredProjects = personalProjects.slice(0, 2);
 
   return (
