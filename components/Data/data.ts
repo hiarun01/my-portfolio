@@ -49,6 +49,42 @@ export const skills = [
   {id: 19, icon: PiFigmaLogoBold, text: "Figma"},
 ];
 
+type Hackathon = {
+  title: string;
+  description: string;
+  date: string;
+
+  organizer: string;
+  logo: string;
+
+  github?: string;
+  live?: string;
+  teamSize?: number;
+};
+
+export const hackathons: Hackathon[] = [
+  {
+    title: "Code with Kiro Hackathon",
+    description:
+      "Developed a website that Rank Content creators based on their content and engagement using AI.",
+    date: "Aug 1rd - Sep 15th, 2025",
+    organizer: "Auraflix",
+    logo: "K",
+    github: "https://github.com/hiarun01/auraflix-hackathon",
+    live: "https://auraflix-demo.com",
+  },
+  {
+    title: "Adobe Express Add-ons Hackathon",
+    description:
+      "Developed a chrome extension that check fake and propaganda content using AI.",
+    date: "May 19rd - Jul 21th, 2025",
+    organizer: "Hakoona Matata",
+    logo: "HM",
+    github: "https://github.com/hiarun01/fake-news-detector",
+    live: "https://auraflix-demo.com",
+  },
+];
+
 export const personalProjects: Project[] = [
   {
     title: "Jobify",
