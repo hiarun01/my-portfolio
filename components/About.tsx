@@ -58,7 +58,9 @@ export default function About() {
         {/* Profile Info */}
         <div className="flex-1">
           <div className="mb-1">
-            <h1 className="text-3xl font-bold text-white">Arun Kumar</h1>
+            <h1 className="lg:text-3xl  text-2xl font-bold text-white">
+              Arun Kumar
+            </h1>
           </div>
 
           <p className="text-zinc-300 text-sm mb-4">@hiarun01</p>
