@@ -24,9 +24,7 @@ export default function HackathonSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-semibold text-white mb-1">
-                  {hackathon.title}
-                </h3>
+                <h3 className="font-bold text-white mb-1">{hackathon.title}</h3>
 
                 {/* Description */}
                 <p className="text-zinc-300 text-sm leading-relaxed mb-3">
