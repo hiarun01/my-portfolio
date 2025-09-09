@@ -41,7 +41,7 @@ export default function About() {
   return (
     <div className="">
       {/* Profile Header */}
-      <div className="flex items-center gap-6 mb-5 p-3 bg-zinc-900 border border-zinc-700 rounded-lg">
+      <div className="flex items-center gap-6 mb-5 lg:p-4 p-1 bg-zinc-900 border border-zinc-700 rounded-lg">
         {/* Profile Image */}
         <div className="flex-shrink-0">
           <div className="w-30 h-30 rounded-lg overflow-hidden border-2 border-zinc-600">
