@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import {JSX} from "react";
+import Image from "next/image";
 import Skills from "./Skills";
 
-import {MdOutgoingMail} from "react-icons/md";
 import {FaXTwitter} from "react-icons/fa6";
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
+import {SiGmail} from "react-icons/si";
 
 type Social = {
   href: string;
@@ -17,7 +18,7 @@ const socials: Social[] = [
   {
     href: "mailto:hiarun.works@gmail.com",
     label: "Email",
-    icon: <MdOutgoingMail />,
+    icon: <SiGmail />,
   },
   {
     href: "https://x.com/hiarun01",
@@ -39,41 +40,61 @@ const socials: Social[] = [
 export default function About() {
   return (
     <div className="">
-      <h1 className="text-2xl font-bold ">Hey👋, I'm Arun kumar</h1>
-      <div className="flex gap-4 mt-4 w-fit sm:font-normal">
-        {socials.map((s) => (
-          <a
-            key={s.label}
-            href={s.href}
-            className="social-card"
-            aria-label={s.label}
-          >
-            {s.icon}
-          </a>
-        ))}
+      {/* Profile Header */}
+      <div className="flex items-center gap-6 mb-5 p-3 bg-zinc-900 border border-zinc-700 rounded-lg">
+        {/* Profile Image */}
+        <div className="flex-shrink-0">
+          <div className="w-30 h-30 rounded-lg overflow-hidden border-2 border-zinc-600">
+            <Image
+              src="/ProfileImage.jpg"
+              alt="Arun Kumar Profile"
+              width={100}
+              height={100}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Profile Info */}
+        <div className="flex-1">
+          <div className="mb-1">
+            <h1 className="text-3xl font-bold text-white">Arun Kumar</h1>
+          </div>
+
+          <p className="text-zinc-300 text-sm mb-4">@hiarun01</p>
+
+          {/* Social Links */}
+          <div className="flex gap-3">
+            {socials.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                className="w-8 h-8 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-zinc-400 hover:text-[#ffdb70] hover:bg-zinc-700 transition-all duration-200"
+                aria-label={social.label}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
-      <div className="mt-5">
-        <p className="mt-1 text-1xl ">
-          A web dev, I love building things that solves real world problems.
-          which is why most of what I build is open source.
+
+      {/* About Content */}
+      <div className="mb-6">
+        <h2 className="text-lg font-bold mb-2">About</h2>
+        <p className="text-zinc-300 text-base leading-relaxed mb-4">
+          A web developer who loves building things that solve real world
+          problems. Most of what I build is open source because I believe in
+          sharing knowledge and contributing to the developer community.
         </p>
 
-        <div>
-          <p className="mt-1">
-            I’m currently available for internships, full-time opportunities,
-            and freelance projects. If you’re looking for someone passionate,
-            skilled, and ready to contribute, I’m here to help bring your ideas
-            to life!
-          </p>
-          {/* <a
-            href="mailto:hiarun.works@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn"
-          >
-            <span>Hire Me</span>
-          </a> */}
-        </div>
+        <p className="text-zinc-300 text-base leading-relaxed">
+          I'm currently available for internships, full-time opportunities, and
+          freelance projects. If you're looking for someone passionate, skilled,
+          and ready to contribute, I'm here to help bring your ideas to life!
+        </p>
       </div>
 
       <Skills />

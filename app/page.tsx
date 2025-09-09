@@ -4,7 +4,7 @@ import About from "@/components/About";
 // import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-// import HackathonSection from "@/components/HackathonSection";
+import HackathonSection from "@/components/HackathonSection";
 // import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
 // import {SupportMe} from "@/components/SupportMe";
@@ -16,16 +16,16 @@ export default function Home() {
       <About />
       {/* Projects */}
       <Projects />
-      {/* <HackathonSection /> */}
+      <HackathonSection />
       {/* Blogs */}
       {/* <Blogs /> */}
       {/* Github States */}
       {/* <GitHubState /> */}
+      {/* SupprtME */}
+      {/* <SupportMe /> */}
       {/* Contact Section */}
       <Contact />
 
-      {/* SupprtME */}
-      {/* <SupportMe /> */}
       {/* Footer */}
       <Footer />
     </div>

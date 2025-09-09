@@ -34,28 +34,6 @@ export default function HackathonSection() {
                 </p>
 
                 {/* Links */}
-                <div className="flex gap-3">
-                  {hackathon.github && (
-                    <a
-                      href={hackathon.github}
-                      className="text-xs text-zinc-400 hover:text-[#ffdb70] transition-colors duration-200"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Code →
-                    </a>
-                  )}
-                  {hackathon.live && (
-                    <a
-                      href={hackathon.live}
-                      className="text-xs text-zinc-400 hover:text-[#ffdb70] transition-colors duration-200"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Demo →
-                    </a>
-                  )}
-                </div>
               </div>
             </div>
           ))}

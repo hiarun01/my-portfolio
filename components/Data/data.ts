@@ -54,34 +54,33 @@ type Hackathon = {
   description: string;
   date: string;
 
-  organizer: string;
+  // organizer: string;
   logo: string;
 
-  github?: string;
-  live?: string;
-  teamSize?: number;
+  // github?: string;
+  // live?: string;
 };
 
 export const hackathons: Hackathon[] = [
   {
     title: "Code with Kiro Hackathon",
     description:
-      "Developed a website that Rank Content creators based on their content and engagement using AI.",
+      "Built Rapid Report platform that lets people quickly and securely report emergencies. It ensures fast response, protects user privacy, and offers full anonymity whenever needed",
     date: "Aug 1rd - Sep 15th, 2025",
-    organizer: "Auraflix",
+    // organizer: "Auraflix",
     logo: "K",
-    github: "https://github.com/hiarun01/auraflix-hackathon",
-    live: "https://auraflix-demo.com",
+    // github: "https://github.com/hiarun01/auraflix-hackathon",
+    // live: "https://auraflix-demo.com",
   },
   {
     title: "Adobe Express Add-ons Hackathon",
     description:
-      "Developed a chrome extension that check fake and propaganda content using AI.",
+      "Developed a color palette generator for Adobe Express. It helps users quickly generate beautiful, ready-to-use color palettes based on user Prompt.",
     date: "May 19rd - Jul 21th, 2025",
-    organizer: "Hakoona Matata",
-    logo: "HM",
-    github: "https://github.com/hiarun01/fake-news-detector",
-    live: "https://auraflix-demo.com",
+    // organizer:"",
+    logo: "A",
+    // github: "",
+    // live: "",
   },
 ];
 
@@ -131,6 +130,26 @@ export const personalProjects: Project[] = [
     live: "https://impactlist.hiarun.me/",
     image: "/Projects-image/impactList.png",
     category: "fullstack",
+  },
+  {
+    title: "Rapid Report",
+    description:
+      "Rapid Report is a web application designed to streamline the process of reporting and managing incidents, making it easier for users to submit reports and for administrators to manage them efficiently.",
+    techStack: [
+      "TypeScript",
+      "Javascript",
+      "React",
+      "tailwindcss",
+      "Shadcn-ui",
+      "redux",
+      "MongoDB",
+      "Express",
+      "Jwt Auth",
+    ],
+    github: "hiarun.me",
+    live: "hiarun.me",
+    image: "/Projects-image/rapidReport.png",
+    category: "full stack",
   },
   {
     title: "TwiFake",
@@ -186,25 +205,5 @@ export const personalProjects: Project[] = [
     live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
     image: "/Projects-image/paletteCraft.png",
     category: "plugins",
-  },
-  {
-    title: "Rapid Report",
-    description:
-      "Rapid Report is a web application designed to streamline the process of reporting and managing incidents, making it easier for users to submit reports and for administrators to manage them efficiently.",
-    techStack: [
-      "TypeScript",
-      "Javascript",
-      "React",
-      "tailwindcss",
-      "Shadcn-ui",
-      "redux",
-      "MongoDB",
-      "Express",
-      "Jwt Auth",
-    ],
-    github: "hiarun.me",
-    live: "hiarun.me",
-    image: "",
-    category: "full stack",
   },
 ];
