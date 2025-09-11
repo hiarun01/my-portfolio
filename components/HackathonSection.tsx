@@ -5,6 +5,7 @@ export default function HackathonSection() {
     <div className="">
       <section className="mb-8 mt-5">
         <h2 className="text-lg font-bold mb-5">Hackathons</h2>
+        
 
         <div className="flex flex-col gap-6">
           {hackathons.map((hackathon, i) => (

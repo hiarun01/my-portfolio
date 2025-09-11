@@ -111,7 +111,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-[#ffdb70] hover:bg-[#ffdb70]/90 text-black px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[#ffdb70]/20"
+                    className="flex-1 bg-[#ffdb70] hover:bg-[#ffdb70]/90 text-black px-4 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[#ffdb70]/20"
                   >
                     <FiExternalLink className="w-4 h-4" />
                     Live
