@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arun Kumar",
+  title: "Arun's Portfolio",
   description:
     "Hi, I'm Arun Kumar, a web developer who enjoys turning ideas into interactive websites.",
   icons: {
