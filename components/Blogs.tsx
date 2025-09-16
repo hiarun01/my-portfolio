@@ -22,14 +22,11 @@ export const blogPosts: blogPosts[] = [
 
 const Blogs = () => {
   return (
-    <section className="mb-8">
+    <section className="mb-5">
       {/* Header Section */}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-3">
         <div>
-          <h2 className="text-2xl font-bold text-white mb-2">Latest Blogs</h2>
-          <p className="text-zinc-400 text-sm">
-            Thoughts on development, tutorials, and tech insights
-          </p>
+          <h2 className="text-lg font-bold text-white mb-3">Latest Blogs</h2>
         </div>
         <div className="flex items-center gap-2 text-sm text-zinc-400">
           <FiBookOpen className="text-[#ffdb70]" />

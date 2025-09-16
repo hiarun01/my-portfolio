@@ -57,8 +57,8 @@ type Hackathon = {
   // organizer: string;
   logo: string;
 
-  // github?: string;
-  // live?: string;
+  github?: string;
+  live?: string;
 };
 
 export const hackathons: Hackathon[] = [
@@ -69,8 +69,8 @@ export const hackathons: Hackathon[] = [
     date: "Aug 1rd - Sep 15th, 2025",
     // organizer: "Auraflix",
     logo: "K",
-    // github: "https://github.com/hiarun01/auraflix-hackathon",
-    // live: "https://auraflix-demo.com",
+    github: "https://github.com/hiarun01/auraflix-hackathon",
+    live: "https://auraflix-demo.com",
   },
   {
     title: "Adobe Express Add-ons Hackathon",
@@ -79,8 +79,8 @@ export const hackathons: Hackathon[] = [
     date: "May 19rd - Jul 21th, 2025",
     // organizer:"",
     logo: "A",
-    // github: "",
-    // live: "",
+    github: "",
+    live: "",
   },
 ];
 
@@ -88,7 +88,7 @@ export const personalProjects: Project[] = [
   {
     title: "Jobify",
     description:
-      "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design, making the job search and hiring process easy for everyone.",
+      "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design.",
     techStack: [
       "Javascript",
       "React",
@@ -148,7 +148,6 @@ export const personalProjects: Project[] = [
   //   ],
   //   github: "hiarun.me",
   //   live: "hiarun.me",
-  //   image: "/Projects-image/rapidReport.png",
   //   category: "full stack",
   // },
   {

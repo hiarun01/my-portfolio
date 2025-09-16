@@ -5,7 +5,6 @@ export default function HackathonSection() {
     <div className="">
       <section className="mb-8 mt-5">
         <h2 className="text-lg font-bold mb-5">Hackathons</h2>
-        
 
         <div className="flex flex-col gap-6">
           {hackathons.map((hackathon, i) => (
@@ -31,8 +30,6 @@ export default function HackathonSection() {
                 <p className="text-zinc-300 text-sm leading-relaxed mb-3">
                   {hackathon.description}
                 </p>
-
-                {/* Links */}
               </div>
             </div>
           ))}

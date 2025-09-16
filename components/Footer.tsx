@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="mt-8">
       <div className="py-6 border-t border-zinc-700">
-        <div className="flex flex-col items-center gap-3">
+        <div className="flex flex-col items-center gap-2">
           <p className="text-center text-sm text-zinc-400 flex items-center gap-2">
             Made with <FiHeart className="text-red-500 animate-pulse" /> by{" "}
             <a
