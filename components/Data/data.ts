@@ -61,6 +61,8 @@ type Hackathon = {
   live?: string;
 };
 
+// hackathon data
+
 export const hackathons: Hackathon[] = [
   {
     title: "Code with Kiro Hackathon",
@@ -86,6 +88,26 @@ export const hackathons: Hackathon[] = [
 
 export const personalProjects: Project[] = [
   {
+    title: "Rapid Report",
+    description:
+      "Rapid Report is a platform that enables users to quickly and securely report emergencies, ensuring fast response times while protecting user privacy with options for full anonymity.",
+    techStack: [
+      "TypeScript",
+      "Javascript",
+      "React",
+      "tailwindcss",
+      "Shadcn-ui",
+      "redux",
+      "MongoDB",
+      "Express",
+      "Jwt-Auth",
+    ],
+    github: "hiarun.me",
+    live: "hiarun.me",
+    image: "/Projects-image/rapidReport.png",
+    category: "full stack",
+  },
+  {
     title: "Jobify",
     description:
       "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design.",
@@ -97,7 +119,7 @@ export const personalProjects: Project[] = [
       "redux",
       "MongoDB",
       "Express",
-      "Jwt Auth",
+      "JwtAuth",
     ],
     github: "https://github.com/hiarun01/Jobify",
     live: "https://jobify.hiarun.me/",
@@ -115,66 +137,14 @@ export const personalProjects: Project[] = [
     category: "ai",
   },
   {
-    title: "impactList",
+    title: "PaletteCraft",
     description:
-      "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
-    techStack: [
-      "React",
-      "tailwindcss",
-      "MagicUI",
-      "Shadcn-ui",
-      "MongoDB",
-      "Express",
-    ],
-    github: "https://github.com/hiarun01/impactList",
-    live: "https://impactlist.hiarun.me/",
-    image: "/Projects-image/impactList.png",
-    category: "fullstack",
-  },
-  // {
-  //   title: "Rapid Report",
-  //   description:
-  //     "Rapid Report is a web application designed to streamline the process of reporting and managing incidents, making it easier for users to submit reports and for administrators to manage them efficiently.",
-  //   techStack: [
-  //     "TypeScript",
-  //     "Javascript",
-  //     "React",
-  //     "tailwindcss",
-  //     "Shadcn-ui",
-  //     "redux",
-  //     "MongoDB",
-  //     "Express",
-  //     "Jwt Auth",
-  //   ],
-  //   github: "hiarun.me",
-  //   live: "hiarun.me",
-  //   category: "full stack",
-  // },
-  {
-    title: "TwiFake",
-    description:
-      "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
-    techStack: [
-      "React",
-      "tailwindcss",
-      "framer-motion",
-      "Shadcn-ui",
-      "html2canvas",
-    ],
-    github: "https://github.com/hiarun01/TwiFake",
-    live: "https://twifake.hiarun.me/",
-    image: "/Projects-image/twifale.png",
-    category: "frontend",
-  },
-  {
-    title: "CodeSnippet",
-    description:
-      "CodeSnippet is a simple tool that lets you create and download beautiful images of your code.",
-    techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
-    github: "https://github.com/hiarun01/CodeSnippet",
-    live: "https://codesnippet.hiarun.me/",
-    image: "/Projects-image/codeSnippet.png",
-    category: "frontend",
+      "PaletteCraft is an official Adobe Express add-on that helps you create, explore, and apply beautiful, human-inspired color palettes directly in your designs.",
+    techStack: ["Javascript", "React", "Gen ai", "Adobe/ccWeb"],
+    github: "https://github.com/hiarun01/palettecraft",
+    live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
+    image: "/Projects-image/paletteCraft.png",
+    category: "plugins",
   },
   {
     title: "Chattx",
@@ -194,15 +164,47 @@ export const personalProjects: Project[] = [
     image: "/Projects-image/chattx.png",
     category: "fullstack",
   },
-
   {
-    title: "PaletteCraft",
+    title: "impactList",
     description:
-      "PaletteCraft is an official Adobe Express add-on that helps you create, explore, and apply beautiful, human-inspired color palettes directly in your designs.",
-    techStack: ["Javascript", "React", "Gen ai", "Adobe/ccWeb"],
-    github: "https://github.com/hiarun01/palettecraft",
-    live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
-    image: "/Projects-image/paletteCraft.png",
-    category: "plugins",
+      "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
+    techStack: [
+      "React",
+      "tailwindcss",
+      "MagicUI",
+      "Shadcn-ui",
+      "MongoDB",
+      "Express",
+    ],
+    github: "https://github.com/hiarun01/impactList",
+    live: "https://impactlist.hiarun.me/",
+    image: "/Projects-image/impactList.png",
+    category: "fullstack",
+  },
+  {
+    title: "TwiFake",
+    description:
+      "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
+    techStack: [
+      "React",
+      "tailwindcss",
+      "framer-motion",
+      "Shadcn-ui",
+      "html2canvas",
+    ],
+    github: "https://github.com/hiarun01/TwiFake",
+    live: "https://twifake.hiarun.me/",
+    image: "/Projects-image/twifale.png",
+    category: "frontend",
+  },
+  {
+    title: "CodeSnippet",
+    description:
+      "CodeSnippet is a simple tool that lets you create and download beautiful images of your code. Perfect for sharing on social media, blogs, or just for fun.",
+    techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
+    github: "https://github.com/hiarun01/CodeSnippet",
+    live: "https://codesnippet.hiarun.me/",
+    image: "/Projects-image/codeSnippet.png",
+    category: "frontend",
   },
 ];
