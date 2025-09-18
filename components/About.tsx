@@ -46,7 +46,7 @@ export default function About() {
         <div className="flex-shrink-0">
           <div className="w-30 h-30 rounded-lg overflow-hidden border-2 border-zinc-600">
             <Image
-              src="/ProfileImage.jpg"
+              src="/pic-2.jpg"
               alt="Arun Kumar Profile"
               width={100}
               height={100}
