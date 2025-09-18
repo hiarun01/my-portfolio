@@ -15,21 +15,21 @@ const Projects = () => {
       <section className="mb-10">
         <h2 className="text-lg font-bold mb-3 ">Proof-of-Work</h2>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4">
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
             <div
               key={i}
-              className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-3 py-3 rounded-md"
+              className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-3 py-5 rounded-md"
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 ">
                 <div className="flex-1">
-                  <h2 className="text-lg font-medium mb-1 flex items-center gap-2">
+                  <h2 className="text-lg font-medium mb-2 flex items-center gap-2">
                     {project.title}
                   </h2>
                   <p className="mb-2">{project.description}</p>
                   {/* Tech Stack */}
                   {project.techStack && (
-                    <div className="flex flex-wrap gap-2 mb-2">
+                    <div className="flex flex-wrap gap-2 mt-4">
                       {project.techStack.map((tech, idx) => (
                         <span
                           key={idx}
