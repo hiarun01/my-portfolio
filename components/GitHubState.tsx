@@ -1,34 +1,34 @@
 import GitHubCalendar from "react-github-calendar";
-import {ExternalLink, GitFork, Star} from "lucide-react";
+// import {ExternalLink, GitFork, Star} from "lucide-react";
 
 // Add your contributed repositories here
-const contributedRepos = [
-  {
-    name: "facebook/react",
-    description: "The library for web and native user interfaces",
-    url: "https://github.com/facebook/react",
-    language: "JavaScript",
-    stars: "228k",
-    contribution: "Bug fixes and documentation improvements",
-  },
-  {
-    name: "vercel/next.js",
-    description: "The React Framework for the Web",
-    url: "https://github.com/vercel/next.js",
-    language: "TypeScript",
-    stars: "125k",
-    contribution: "Feature development and testing",
-  },
-  {
-    name: "tailwindlabs/tailwindcss",
-    description: "A utility-first CSS framework for rapid UI development",
-    url: "https://github.com/tailwindlabs/tailwindcss",
-    language: "CSS",
-    stars: "82k",
-    contribution: "Documentation and examples",
-  },
-  // Add more repositories where you've contributed
-];
+// const contributedRepos = [
+//   {
+//     name: "facebook/react",
+//     description: "The library for web and native user interfaces",
+//     url: "https://github.com/facebook/react",
+//     language: "JavaScript",
+//     stars: "228k",
+//     contribution: "Bug fixes and documentation improvements",
+//   },
+//   {
+//     name: "vercel/next.js",
+//     description: "The React Framework for the Web",
+//     url: "https://github.com/vercel/next.js",
+//     language: "TypeScript",
+//     stars: "125k",
+//     contribution: "Feature development and testing",
+//   },
+//   {
+//     name: "tailwindlabs/tailwindcss",
+//     description: "A utility-first CSS framework for rapid UI development",
+//     url: "https://github.com/tailwindlabs/tailwindcss",
+//     language: "CSS",
+//     stars: "82k",
+//     contribution: "Documentation and examples",
+//   },
+//   // Add more repositories where you've contributed
+// ];
 
 const GitHubState = () => {
   return (
@@ -40,7 +40,7 @@ const GitHubState = () => {
       </div>
 
       {/* Contributed Repositories */}
-      <div className="my-8">
+      {/* <div className="my-8">
         <h2 className="text-lg font-bold mb-5">Open Source Contributions</h2>
         <div className="grid gap-4">
           {contributedRepos.map((repo, index) => (
@@ -92,7 +92,7 @@ const GitHubState = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

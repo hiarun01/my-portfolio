@@ -5,7 +5,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
-// import GitHubState from "@/components/GitHubState";
+import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
 // import {SupportMe} from "@/components/SupportMe";
 
@@ -16,11 +16,14 @@ export default function Home() {
       <About />
       {/* Projects */}
       <Projects />
+      {/* GitHub State */}
+      <GitHubState />
+      {/* Hackathons */}
       <HackathonSection />
       {/* Blogs */}
       {/* <Blogs /> */}
       {/* Github States */}
-      {/* <GitHubState /> */}
+
       {/* SupprtME */}
       {/* <SupportMe /> */}
       {/* Contact Section */}

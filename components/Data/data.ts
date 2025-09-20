@@ -38,7 +38,7 @@ export const skills = [
   {id: 8, icon: SiRedux, text: "Redux"},
   {id: 9, icon: SiReactquery, text: "Tanstack Query"},
   {id: 10, icon: SiShadcnui, text: "shadcn"},
-  {id: 11, icon: TbBrandFramerMotion, text: "Motion"},
+  {id: 11, icon: TbBrandFramerMotion, text: "Framer-Motion"},
   {id: 12, icon: IoLogoNodejs, text: "NodeJS"},
   {id: 13, icon: SiExpress, text: "ExpressJS"},
   {id: 14, icon: SiMongodb, text: "MongoDB"},
@@ -46,7 +46,7 @@ export const skills = [
   {id: 16, icon: FaGitAlt, text: "Git"},
   {id: 17, icon: FaGithub, text: "GitHub"},
   {id: 18, icon: FaDocker, text: "Docker"},
-  {id: 19, icon: PiFigmaLogoBold, text: "Figma"},
+  // {id: 19, icon: PiFigmaLogoBold, text: "Figma"},
 ];
 
 type Hackathon = {
