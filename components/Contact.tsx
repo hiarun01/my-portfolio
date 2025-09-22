@@ -3,11 +3,11 @@
 
 /* eslint-disable react/no-unescaped-entities */
 
-import {MdOutgoingMail} from "react-icons/md";
 import {FaXTwitter} from "react-icons/fa6";
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {JSX} from "react";
+import {SiGmail} from "react-icons/si";
 
 type Social = {
   href: string;
@@ -19,7 +19,7 @@ const socials: Social[] = [
   {
     href: "mailto:hiarun.works@gmail.com",
     label: "Email",
-    icon: <MdOutgoingMail />,
+    icon: <SiGmail />,
   },
   {
     href: "https://x.com/hiarun01",
@@ -53,7 +53,7 @@ export default function Contact() {
           <a
             key={s.label}
             href={s.href}
-            className="select-none bg-zinc-950 border border-zinc-700 rounded-md px-1.5 py-1.5 text-[1.35rem] hover:bg-zinc-900 transition-all duration-100"
+            className="w-8 h-8 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-zinc-400 hover:text-[#ffdb70] hover:bg-zinc-700 transition-all duration-200"
             aria-label={s.label}
           >
             {s.icon}
