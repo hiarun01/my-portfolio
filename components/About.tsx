@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import {JSX} from "react";
 import Image from "next/image";
 import Skills from "./Skills";
@@ -86,19 +85,17 @@ export default function About() {
       {/* About Content */}
       <div className="mb-6">
         <h2 className="text-lg font-bold mb-2">About</h2>
-        <p className="text-zinc-300 text-base leading-relaxed mb-4">
-          A web developer who loves building things that solve real world
-          problems. Most of what I build is open source because I believe in
-          sharing knowledge and contributing to the developer community.
+        <p className="text-zinc-300 text-base leading-relaxed mb-2">
+          I’m a Full-stack Developer with expertise in ReactJS, NextJS
+          ExpressJS, passionate about building projects that deliver real impact
+          and value to users.
         </p>
 
         <p className="text-zinc-300 text-base leading-relaxed">
-          I'm currently available for internships, full-time opportunities, and
-          freelance projects. If you're looking for someone passionate, skilled,
-          and ready to contribute, I'm here to help bring your ideas to life!
+          Always open to internships, collaborations, and opportunities where I
+          can contribute, learn, and create meaningful solutions together.
         </p>
       </div>
-
       <Skills />
     </div>
   );

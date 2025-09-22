@@ -1,7 +1,6 @@
 import {DiJavascript} from "react-icons/di";
 import {FaDocker, FaGitAlt, FaGithub} from "react-icons/fa";
 import {IoLogoNodejs} from "react-icons/io";
-import {PiFigmaLogoBold} from "react-icons/pi";
 import {
   RiNextjsLine,
   RiReactjsLine,
@@ -18,16 +17,9 @@ import {
 import {TbBrandFramerMotion, TbBrandTypescript} from "react-icons/tb";
 import {SiRedux} from "react-icons/si";
 
-type Project = {
-  title: string;
-  description: string;
-  techStack: string[];
-  github: string;
-  live: string;
-  image: string;
-  category: string;
-};
 
+
+// skills data
 export const skills = [
   {id: 1, icon: RiReactjsLine, text: "ReactJs"},
   {id: 2, icon: RiNextjsLine, text: "NextJs"},
@@ -49,19 +41,16 @@ export const skills = [
   // {id: 19, icon: PiFigmaLogoBold, text: "Figma"},
 ];
 
+// hackathon data
+
 type Hackathon = {
   title: string;
   description: string;
   date: string;
-
-  // organizer: string;
   logo: string;
-
   github?: string;
   live?: string;
 };
-
-// hackathon data
 
 export const hackathons: Hackathon[] = [
   {
@@ -86,6 +75,18 @@ export const hackathons: Hackathon[] = [
   },
 ];
 
+// personal projects data
+
+type Project = {
+  title: string;
+  description: string;
+  techStack: string[];
+  github: string;
+  live: string;
+  image: string;
+  category: string;
+};
+
 export const personalProjects: Project[] = [
   {
     title: "Rapid Report",
@@ -97,13 +98,13 @@ export const personalProjects: Project[] = [
       "React",
       "tailwindcss",
       "Shadcn-ui",
-      "redux",
+      "Zustand",
       "MongoDB",
       "Express",
       "Jwt-Auth",
     ],
-    github: "hiarun.me",
-    live: "hiarun.me",
+    github: "https://github.com/hiarun01/rapidReport",
+    live: "https://rapidreport.hiarun.me/",
     image: "/Projects-image/rapidReport.png",
     category: "full stack",
   },
@@ -147,6 +148,23 @@ export const personalProjects: Project[] = [
     category: "plugins",
   },
   {
+    title: "impactList",
+    description:
+      "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
+    techStack: [
+      "React",
+      "tailwindcss",
+      "MagicUI",
+      "Shadcn-ui",
+      "MongoDB",
+      "Express",
+    ],
+    github: "https://github.com/hiarun01/impactList",
+    live: "https://impactlist.hiarun.me/",
+    image: "/Projects-image/impactList.png",
+    category: "fullstack",
+  },
+  {
     title: "Chattx",
     description:
       "Chattx is a real-time chat app. I've built a basic version for now, and I'll definitely be adding lots of features in the future.",
@@ -162,23 +180,6 @@ export const personalProjects: Project[] = [
     github: "https://github.com/hiarun01/chattx",
     live: "https://chattx.hiarun.me/",
     image: "/Projects-image/chattx.png",
-    category: "fullstack",
-  },
-  {
-    title: "impactList",
-    description:
-      "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
-    techStack: [
-      "React",
-      "tailwindcss",
-      "MagicUI",
-      "Shadcn-ui",
-      "MongoDB",
-      "Express",
-    ],
-    github: "https://github.com/hiarun01/impactList",
-    live: "https://impactlist.hiarun.me/",
-    image: "/Projects-image/impactList.png",
     category: "fullstack",
   },
   {
