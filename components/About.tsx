@@ -86,7 +86,7 @@ export default function About() {
       <div className="mb-6">
         <h2 className="text-lg font-bold mb-2">About</h2>
         <p className="text-zinc-300 text-base leading-relaxed mb-2">
-          I’m a Full-stack Developer with expertise in ReactJS, NextJS
+          I’m a Full-stack Developer with expertise in ReactJS, mongoDB, and
           ExpressJS, passionate about building projects that deliver real impact
           and value to users.
         </p>
