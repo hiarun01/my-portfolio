@@ -40,7 +40,7 @@ export default function About() {
   return (
     <div className="">
       {/* Profile Header */}
-      <div className="flex items-center lg:gap-6 gap-3 mb-5 lg:p-4 p-1 bg-zinc-900 border border-zinc-700 rounded-lg">
+      <div className="flex items-center lg:gap-6 gap-5 mb-5">
         {/* Profile Image */}
         <div className="flex-shrink-0">
           <div className="w-30 h-30 rounded-lg overflow-hidden border-2 border-zinc-600">
@@ -55,14 +55,14 @@ export default function About() {
         </div>
 
         {/* Profile Info */}
-        <div className="flex-1">
+        <div className="">
           <div className="mb-1">
-            <h1 className="lg:text-3xl  text-2xl font-bold text-white">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white">
               Arun Kumar
-            </h1>
+            </h2>
           </div>
 
-          <p className="text-zinc-300 text-sm mb-4">@hiarun01</p>
+          <p className="text-zinc-300 text-sm mb-2">@hiarun01</p>
 
           {/* Social Links */}
           <div className="flex gap-3">
@@ -84,11 +84,10 @@ export default function About() {
 
       {/* About Content */}
       <div className="mb-6">
-        <h2 className="text-lg font-bold mb-2">About</h2>
         <p className="text-zinc-300 text-base leading-relaxed mb-2">
-          I’m a Full-stack Developer with expertise in ReactJS, mongoDB, and
-          ExpressJS, passionate about building projects that deliver real impact
-          and value to users.
+          I’m a Full-stack Developer with expertise in ReactJS, NextJS, mongoDB,
+          Prisma and ExpressJS, passionate about building projects that deliver
+          real impact and value to users.
         </p>
 
         <p className="text-zinc-300 text-base leading-relaxed">
