@@ -17,8 +17,6 @@ import {
 import {TbBrandFramerMotion, TbBrandTypescript} from "react-icons/tb";
 import {SiRedux} from "react-icons/si";
 
-
-
 // skills data
 export const skills = [
   {id: 1, icon: RiReactjsLine, text: "ReactJs"},
@@ -182,6 +180,17 @@ export const personalProjects: Project[] = [
     image: "/Projects-image/chattx.png",
     category: "fullstack",
   },
+
+  {
+    title: "CodeSnippet",
+    description:
+      "CodeSnippet is a simple tool that lets you create and download beautiful images of your code. Perfect for sharing on social media, blogs, or just for fun.",
+    techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
+    github: "https://github.com/hiarun01/CodeSnippet",
+    live: "https://codesnippet.hiarun.me/",
+    image: "/Projects-image/codeSnippet.png",
+    category: "frontend",
+  },
   {
     title: "TwiFake",
     description:
@@ -199,12 +208,12 @@ export const personalProjects: Project[] = [
     category: "frontend",
   },
   {
-    title: "CodeSnippet",
+    title: "Clarify",
     description:
-      "CodeSnippet is a simple tool that lets you create and download beautiful images of your code. Perfect for sharing on social media, blogs, or just for fun.",
-    techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
-    github: "https://github.com/hiarun01/CodeSnippet",
-    live: "https://codesnippet.hiarun.me/",
+      "Clarify is a image enhancer web application powered by (PicWish API) that enhances and upscales your images with just one click",
+    techStack: ["React", "tailwindcss", "PicWish Api"],
+    github: "https://github.com/hiarun01/Clarify",
+    live: "https://clarify.hiarun.me/",
     image: "/Projects-image/codeSnippet.png",
     category: "frontend",
   },
