@@ -4,7 +4,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import {FaXTwitter} from "react-icons/fa6";
-import {FaLinkedin} from "react-icons/fa";
+// import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {JSX} from "react";
 import {SiGmail} from "react-icons/si";
@@ -26,11 +26,11 @@ const socials: Social[] = [
     label: "X",
     icon: <FaXTwitter />,
   },
-  {
-    href: "https://www.linkedin.com/in/hiarun01/",
-    label: "LinkedIn",
-    icon: <FaLinkedin />,
-  },
+  // {
+  //   href: "https://www.linkedin.com/in/hiarun01/",
+  //   label: "LinkedIn",
+  //   icon: <FaLinkedin />,
+  // },
   {
     href: "https://github.com/hiarun01",
     label: "GitHub",
@@ -40,7 +40,7 @@ const socials: Social[] = [
 
 export default function Contact() {
   return (
-    <section className="mb-4">
+    <section className="mb-4 border-t border-zinc-700 pt-5">
       <h2 className="text-lg font-bold mb-2">Reach out to me.</h2>
 
       <p className="mt-2 ">
@@ -48,7 +48,7 @@ export default function Contact() {
         roles. let’s chat if you’ve got something in mind!
       </p>
 
-      <div className="flex gap-4 mt-4 w-fit sm:font-normal">
+      <div className="flex gap-4 mt-4 w-fit itme sm:font-normal">
         {socials.map((s) => (
           <a
             key={s.label}
@@ -59,17 +59,17 @@ export default function Contact() {
             {s.icon}
           </a>
         ))}
+        <div className="">
+          <a
+            href="https://cal.com/hiarun01/15min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md"
+          >
+            <span> Schedule a meet</span>
+          </a>
+        </div>
       </div>
-      {/* <div className="mt-2 mb-5">
-        <a
-          href="https://cal.com/hiarun01/15min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md"
-        >
-          <span> Schedule a meet</span>
-        </a>
-      </div> */}
     </section>
   );
 }

@@ -26,7 +26,7 @@ const Blogs = () => {
       {/* Header Section */}
       <div className="flex items-center justify-between mb-3">
         <div>
-          <h2 className="text-lg font-bold text-white mb-3">Latest Blogs</h2>
+          <h2 className="text-lg font-bold text-white mb-3">Blogs</h2>
         </div>
         <div className="flex items-center gap-2 text-sm text-zinc-400">
           <FiBookOpen className="text-[#ffdb70]" />
@@ -41,7 +41,7 @@ const Blogs = () => {
         {blogPosts.map((post, index) => (
           <article
             key={index}
-            className="group bg-zinc-900 border border-zinc-700 rounded-lg overflow-hidden hover:border-[#ffdb70] hover:shadow-lg hover:shadow-[#ffdb70]/10 transition-all duration-300"
+            className="group rounded-lg overflow-hidden bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 transition-all duration-300"
           >
             <a
               href={post.link}
@@ -54,7 +54,6 @@ const Blogs = () => {
                 <h3 className="text-lg font-semibold text-white group-hover:text-[#ffdb70] transition-colors duration-300 leading-tight">
                   {post.title}
                 </h3>
-                <FiExternalLink className="text-zinc-500 group-hover:text-[#ffdb70] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0 mt-1" />
               </div>
 
               {/* Excerpt */}

@@ -3,7 +3,7 @@ import {SiBuymeacoffee} from "react-icons/si";
 
 export const SupportMe = () => {
   return (
-    <section className="mb-5">
+    <section className="mb-5 py-5 ">
       <h2 className="text-lg font-bold mb-3">Support Me</h2>
       <p className="text-zinc-400 mb-4">
         If you find my work helpful, consider supporting me. Your support helps
