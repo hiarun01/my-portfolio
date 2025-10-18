@@ -11,10 +11,11 @@ import {
   SiExpress,
   SiMongodb,
   SiPostman,
-  SiReactquery,
+  SiPostgresql,
+  // SiReactquery,
   SiShadcnui,
 } from "react-icons/si";
-import {TbBrandFramerMotion, TbBrandTypescript} from "react-icons/tb";
+import {TbBrandTypescript} from "react-icons/tb";
 import {SiRedux} from "react-icons/si";
 
 // skills data
@@ -26,16 +27,17 @@ export const skills = [
   {id: 5, icon: RiTailwindCssFill, text: "Tailwind"},
   {id: 6, icon: RiBearSmileLine, text: "Zustand"},
   {id: 8, icon: SiRedux, text: "Redux"},
-  {id: 9, icon: SiReactquery, text: "Tanstack Query"},
-  {id: 10, icon: SiShadcnui, text: "shadcn"},
-  {id: 11, icon: TbBrandFramerMotion, text: "Framer-Motion"},
+  // {id: 9, icon: SiReactquery, text: "Tanstack Query"},
+  {id: 10, icon: SiShadcnui, text: "shadcnUi"},
+  // {id: 11, icon: TbBrandFramerMotion, text: "Framer-Motion"},
   {id: 12, icon: IoLogoNodejs, text: "NodeJS"},
   {id: 13, icon: SiExpress, text: "ExpressJS"},
-  {id: 14, icon: SiMongodb, text: "MongoDB"},
-  {id: 15, icon: SiPostman, text: "Postman"},
-  {id: 16, icon: FaGitAlt, text: "Git"},
-  {id: 17, icon: FaGithub, text: "GitHub"},
-  {id: 18, icon: FaDocker, text: "Docker"},
+  {id: 14, icon: SiPostgresql, text: "PostgreSQL"},
+  {id: 15, icon: SiMongodb, text: "MongoDB"},
+  {id: 16, icon: SiPostman, text: "Postman"},
+  {id: 17, icon: FaGitAlt, text: "Git"},
+  {id: 18, icon: FaGithub, text: "GitHub"},
+  {id: 19, icon: FaDocker, text: "Docker"},
   // {id: 19, icon: PiFigmaLogoBold, text: "Figma"},
 ];
 
