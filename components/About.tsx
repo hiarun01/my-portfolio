@@ -37,16 +37,16 @@ export default function About() {
   return (
     <div className="">
       {/* Profile Header */}
-      <div className="flex items-center lg:gap-6 gap-5 mb-5 border bg-zinc-900  border-zinc-700 lg:p-3 p-2 rounded-lg">
+      <div className="flex items-center lg:gap-6 gap-5 mb-5  rounded-lg">
         {/* Profile Image */}
         <div className="flex-shrink-0">
-          <div className="w-20 h-20 rounded-lg overflow-hidden border-2 border-zinc-600">
+          <div className="w-20 h-20 overflow-hidden rounded-full border-2 border-zinc-600">
             <Image
               src="/ProfileImage.jpg"
               alt="Arun Kumar Profile"
               width={100}
               height={100}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-full"
             />
           </div>
         </div>
@@ -88,10 +88,10 @@ export default function About() {
           can check it out in my projects.
         </p>
 
-        <p className="text-zinc-300 text-base leading-relaxed">
+        {/* <p className="text-zinc-300 text-base leading-relaxed">
           Always open to internships, collaborations, and opportunities where I
           can contribute, learn, and create meaningful solutions together.
-        </p>
+        </p> */}
       </div>
       <Skills />
     </div>

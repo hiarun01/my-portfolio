@@ -1,4 +1,4 @@
-import {FiExternalLink, FiCalendar, FiClock, FiBookOpen} from "react-icons/fi";
+import {FiExternalLink, FiCalendar, FiClock} from "react-icons/fi";
 
 type blogPosts = {
   title: string;
@@ -10,44 +10,35 @@ type blogPosts = {
 };
 
 export const blogPosts: blogPosts[] = [
-  {
-    title: "Redux vs Zustand: Which State Management Tool is the GOAT ?",
-    date: "Jun 5, 2025",
-    readTime: "3 min read",
-    link: "https://medium.com/@hiarun01/redux-vs-zustand-which-state-management-tool-is-the-goat-6686573bca26",
-    excerpt:
-      "A comprehensive comparison between Redux and Zustand for React state management, exploring their pros, cons, and use cases.",
-  },
+  // {
+  //   title: "Redux vs Zustand: Which State Management Tool is the GOAT ?",
+  //   date: "Jun 5, 2025",
+  //   readTime: "3 min read",
+  //   link: "https://medium.com/@hiarun01/redux-vs-zustand-which-state-management-tool-is-the-goat-6686573bca26",
+  //   excerpt:
+  //     "A comprehensive comparison between Redux and Zustand for React state management, exploring their pros, cons, and use cases.",
+  // },
 ];
 
 const Blogs = () => {
   return (
     <section className="mb-5">
       {/* Header Section */}
-      <div className="flex items-center justify-between mb-3">
+      <div className="flex items-center mb-3">
         <div>
           <h2 className="text-lg font-bold text-white mb-3">Blogs</h2>
-        </div>
-        <div className="flex items-center gap-2 text-sm text-zinc-400">
-          <FiBookOpen className="text-[#ffdb70]" />
-          <span>
-            {blogPosts.length} article{blogPosts.length !== 1 ? "s" : ""}
-          </span>
         </div>
       </div>
 
       {/* Blog Posts */}
       <div className="space-y-4">
         {blogPosts.map((post, index) => (
-          <article
-            key={index}
-            className="group rounded-lg overflow-hidden bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 transition-all duration-300"
-          >
+          <article key={index} className="group rounded-lg overflow-hidden ">
             <a
               href={post.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block p-5"
+              className="block"
             >
               {/* Blog Header */}
               <div className="flex items-start justify-between gap-4 mb-3">
@@ -61,25 +52,6 @@ const Blogs = () => {
                 <p className="text-zinc-400 text-sm mb-4 leading-relaxed line-clamp-2">
                   {post.excerpt}
                 </p>
-              )}
-
-              {/* Tags */}
-              {post.tags && (
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {post.tags.slice(0, 3).map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-2.5 py-1 bg-zinc-800 text-[#ffdb70] rounded-full text-xs font-medium border border-zinc-600"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                  {post.tags.length > 3 && (
-                    <span className="px-2.5 py-1 bg-zinc-800 text-zinc-400 rounded-full text-xs border border-zinc-600">
-                      +{post.tags.length - 3}
-                    </span>
-                  )}
-                </div>
               )}
 
               {/* Meta Information */}
@@ -100,8 +72,7 @@ const Blogs = () => {
 
       {/* Empty State or Call to Action */}
       {blogPosts.length === 0 ? (
-        <div className="text-center py-12 bg-zinc-900 border border-zinc-700 rounded-lg">
-          <FiBookOpen className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
+        <div className="text-center rounded-lg">
           <h3 className="text-lg font-medium text-zinc-400 mb-2">
             No blogs yet
           </h3>

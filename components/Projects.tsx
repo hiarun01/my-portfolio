@@ -1,7 +1,9 @@
 import {useState} from "react";
 import {personalProjects} from "./Data/data";
-import {ExternalLink} from "lucide-react";
+
 import {BsGithub} from "react-icons/bs";
+
+import {ExternalLinkIcon} from "lucide-react";
 
 const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(2);
@@ -13,13 +15,13 @@ const Projects = () => {
   return (
     <div>
       <section className="mb-10">
-        <h2 className="text-lg font-bold mb-3 ">Proof-of-Work</h2>
+        <h2 className="text-lg font-bold mt-3 ">Proof-of-Work</h2>
 
         <div className="flex flex-col gap-4">
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
             <div
               key={i}
-              className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-3 py-3 rounded-md"
+              className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center border-t border-zinc-700 pt-4"
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 ">
                 <div className="flex-1">
@@ -33,7 +35,7 @@ const Projects = () => {
                       {project.techStack.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="border border-[#ffdb70] text-[#ffdb70] px-1 rounded-full text-xs font-mono"
+                          className="border border-[#ffdb70] text-[#ffdb70] px-1 rounded-full text-xs"
                         >
                           {tech}
                         </span>
@@ -44,7 +46,7 @@ const Projects = () => {
                     <a href={project.live} className="btn">
                       <span className="flex items-center gap-3">
                         Live
-                        <ExternalLink width={16} height={16} />
+                        <ExternalLinkIcon width={16} height={16} />
                       </span>
                     </a>
                     <a href={project.github} className="btn">

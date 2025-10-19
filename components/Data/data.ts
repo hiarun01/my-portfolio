@@ -78,6 +78,7 @@ export const hackathons: Hackathon[] = [
 // personal projects data
 
 type Project = {
+  id: number;
   title: string;
   description: string;
   techStack: string[];
@@ -89,6 +90,7 @@ type Project = {
 
 export const personalProjects: Project[] = [
   {
+    id: 1,
     title: "Rapid Report",
     description:
       "Rapid Report is a platform that enables users to quickly and securely report emergencies, ensuring fast response times while protecting user privacy with options for full anonymity.",
@@ -109,6 +111,7 @@ export const personalProjects: Project[] = [
     category: "full stack",
   },
   {
+    id: 2,
     title: "Jobify",
     description:
       "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design.",
@@ -128,6 +131,7 @@ export const personalProjects: Project[] = [
     category: "fullstack",
   },
   {
+    id: 3,
     title: "Codalyzer",
     description:
       "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
@@ -138,6 +142,7 @@ export const personalProjects: Project[] = [
     category: "ai",
   },
   {
+    id: 4,
     title: "PaletteCraft",
     description:
       "PaletteCraft is an official Adobe Express add-on that helps you create, explore, and apply beautiful, human-inspired color palettes directly in your designs.",
@@ -148,6 +153,7 @@ export const personalProjects: Project[] = [
     category: "plugins",
   },
   {
+    id: 5,
     title: "impactList",
     description:
       "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
@@ -165,6 +171,7 @@ export const personalProjects: Project[] = [
     category: "fullstack",
   },
   {
+    id: 6,
     title: "Chattx",
     description:
       "Chattx is a real-time chat app. I've built a basic version for now, and I'll definitely be adding lots of features in the future.",
@@ -184,6 +191,7 @@ export const personalProjects: Project[] = [
   },
 
   {
+    id: 7,
     title: "CodeSnippet",
     description:
       "CodeSnippet is a simple tool that lets you create and download beautiful images of your code. Perfect for sharing on social media, blogs, or just for fun.",
@@ -194,6 +202,7 @@ export const personalProjects: Project[] = [
     category: "frontend",
   },
   {
+    id: 8,
     title: "TwiFake",
     description:
       "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
@@ -210,6 +219,7 @@ export const personalProjects: Project[] = [
     category: "frontend",
   },
   {
+    id: 9,
     title: "Clarify",
     description:
       "Clarify is a image enhancer web application powered by (PicWish API) that enhances and upscales your images with just one click",
