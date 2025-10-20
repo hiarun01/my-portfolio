@@ -43,13 +43,23 @@ const Projects = () => {
                     </div>
                   )}
                   <div className="flex gap-5 mt-2">
-                    <a href={project.live} className="btn">
+                    <a
+                      href={project.live}
+                      className="btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <span className="flex items-center gap-3">
                         Live
                         <ExternalLinkIcon width={16} height={16} />
                       </span>
                     </a>
-                    <a href={project.github} className="btn">
+                    <a
+                      href={project.github}
+                      className="btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <span className="flex items-center gap-3">
                         Code
                         <BsGithub width={16} height={16} />

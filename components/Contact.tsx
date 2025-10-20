@@ -64,7 +64,7 @@ export default function Contact() {
             href="https://cal.com/hiarun01/15min"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-2  py-1 rounded-md"
+            className="cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-800 border border-zinc-700 hover:bg-zinc-700 px-2  py-1 rounded-md"
           >
             <span> Schedule a meet</span>
           </a>
