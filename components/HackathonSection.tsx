@@ -2,7 +2,7 @@ import {hackathons} from "./Data/data";
 
 export default function HackathonSection() {
   return (
-    <div className=" border-b border-zinc-700 pb-5 mb-8">
+    <div className=" border-b border-zinc-700 mb-5">
       <section className="mb-8 mt-5">
         <h2 className="text-lg font-bold mb-5">Hackathons</h2>
 

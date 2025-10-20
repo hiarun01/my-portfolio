@@ -13,7 +13,7 @@ body {
 }
 
 .btn {
-  @apply  mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 px-4 py-0.5 rounded-md;
+  @apply  mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5  px-4 py-0.5 rounded-md bg-zinc-800 border border-zinc-700  items-center justify-center text-zinc-400 hover:text-[#ffdb70] hover:bg-zinc-700 ;
   
 }
 

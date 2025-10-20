@@ -36,17 +36,28 @@ import Skills from "./Skills";
 export default function About() {
   return (
     <div className="">
+      {/* Available Tag */}
+      <div className="inline-flex items-center gap-2 mb-3">
+        <span className="relative flex h-3 w-3">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+        </span>
+        <span className="text-green-400 text-sm font-medium">
+          Available for work
+        </span>
+      </div>
+
       {/* Profile Header */}
-      <div className="flex items-center lg:gap-6 gap-5 mb-5  rounded-lg">
+      <div className="flex items-center lg:gap-6 gap-5 mb-5 rounded-lg">
         {/* Profile Image */}
-        <div className="flex-shrink-0">
-          <div className="w-20 h-20 overflow-hidden rounded-full border-2 border-zinc-600">
+        <div className="flex-shrink-0 ">
+          <div className="w-20 h-20 overflow-hidden rounded-lg border-3 border-zinc-600">
             <Image
               src="/ProfileImage.jpg"
               alt="Arun Kumar Profile"
               width={100}
               height={100}
-              className="w-full h-full object-cover rounded-full"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
