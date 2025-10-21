@@ -42,13 +42,13 @@ export default function About() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
         </span>
-        <span className="text-green-400 text-sm font-medium">
+        <span className="text-green-400 text-sm font-bold">
           Available for work
         </span>
       </div>
 
       {/* Profile Header */}
-      <div className="flex items-center lg:gap-6 gap-5 mb-5 rounded-lg">
+      <div className="flex items-center lg:gap-6 gap-5 rounded-lg border border-zinc-700 lg:p-2 p-2 mb-5">
         {/* Profile Image */}
         <div className="flex-shrink-0 ">
           <div className="w-20 h-20 overflow-hidden rounded-lg border-3 border-zinc-600">
@@ -92,11 +92,22 @@ export default function About() {
 
       {/* About Content */}
       <div className="mb-6">
-        <p className="text-zinc-300 text-base leading-relaxed mb-2">
-          Hi, Arun here! I'm a Full Stack Developer with hands-on experience in
+        <p className="text-zinc-300  text-base leading-relaxed mb-2">
+          Hi, I'm <span className="text-white font-bold"> Arun Kumar.</span> I'm
+          a a{" "}
+          <span className="text-white font-bold">full stack web Developer</span>
+          , i build things using technologies like{" "}
+          <span className="text-white font-bold">
+            JS, TS, React, Express.js, Prisma.
+          </span>
+          <br />
+          currently learning Next.js, and bulding things with it. and i am
+          looking for oppurtunities to work and grow.
+          <br />
+          {/* Hi, Arun here! I'm a Full Stack Developer with hands-on experience in
           building web applications using technologies like React, Next.js,
           Express.js, PostgreSQL, and MongoDB. I also have a good UI sense you
-          can check it out in my projects.
+          can check it out in my projects. */}
         </p>
 
         {/* <p className="text-zinc-300 text-base leading-relaxed">

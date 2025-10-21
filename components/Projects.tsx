@@ -14,14 +14,14 @@ const Projects = () => {
 
   return (
     <div>
-      <section className="mb-10">
-        <h2 className="text-lg font-bold mt-3 ">Proof-of-Work</h2>
+      <section className="mb-5">
+        <h2 className="text-lg font-bold mt-3">Proof-of-Work</h2>
 
-        <div className="flex flex-col gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 rounded-lg mt-3">
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
             <div
               key={i}
-              className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center border-t border-zinc-700 pt-4"
+              className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center border pt-4 border-b border-zinc-700 pb-4 px-3 hover:bg-zinc-800 rounded-lg"
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 ">
                 <div className="flex-1">
