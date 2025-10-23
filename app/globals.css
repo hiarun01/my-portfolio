@@ -61,3 +61,12 @@ p {
 .font-semibold {
   font-weight: 600;
 }
+
+@keyframes fadeOutOverlay {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.02); }
+}
+
+.animate-fade-out {
+  animation: fadeOutOverlay 650ms ease-in-out forwards;
+}
