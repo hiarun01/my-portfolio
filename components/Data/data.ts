@@ -86,11 +86,32 @@ type Project = {
   live: string;
   image: string;
   category: string;
+  status?: string;
 };
 
 export const personalProjects: Project[] = [
   {
     id: 1,
+    title: "Feedlyz",
+    description:
+      "Feedlyz is a feedback collection tool that helps you gather insights from your users effortlessly. analyze responses, and improve your product based on real user input.",
+    techStack: [
+      "NextJS",
+      "TailwindCSS",
+      "Shadcn-ui",
+      "Prisma",
+      "PostgreSQL",
+      "Express",
+      "Jwt-Auth",
+    ],
+    github: "https://github.com/hiarun01/feedlyze",
+    live: "https://feedlyze-swart.vercel.app/",
+    image: "/Projects-image/Feedlyz.png",
+    category: "fullstack",
+    status: "In Progress",
+  },
+  {
+    id: 2,
     title: "Rapid Report",
     description:
       "Rapid Report is a platform that enables users to quickly and securely report emergencies, ensuring fast response times while protecting user privacy with options for full anonymity.",
@@ -111,7 +132,7 @@ export const personalProjects: Project[] = [
     category: "full stack",
   },
   {
-    id: 2,
+    id: 3,
     title: "Jobify",
     description:
       "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design.",
@@ -131,7 +152,7 @@ export const personalProjects: Project[] = [
     category: "fullstack",
   },
   {
-    id: 3,
+    id: 4,
     title: "Codalyzer",
     description:
       "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
@@ -142,7 +163,7 @@ export const personalProjects: Project[] = [
     category: "ai",
   },
   {
-    id: 4,
+    id: 5,
     title: "PaletteCraft",
     description:
       "PaletteCraft is an official Adobe Express add-on that helps you create, explore, and apply beautiful, human-inspired color palettes directly in your designs.",
@@ -153,7 +174,7 @@ export const personalProjects: Project[] = [
     category: "plugins",
   },
   {
-    id: 5,
+    id: 6,
     title: "impactList",
     description:
       "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
@@ -171,7 +192,7 @@ export const personalProjects: Project[] = [
     category: "fullstack",
   },
   {
-    id: 6,
+    id: 7,
     title: "Chattx",
     description:
       "Chattx is a real-time chat app. I've built a basic version for now, and I'll definitely be adding lots of features in the future.",
@@ -191,7 +212,7 @@ export const personalProjects: Project[] = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "CodeSnippet",
     description:
       "CodeSnippet is a simple tool that lets you create and download beautiful images of your code. Perfect for sharing on social media, blogs, or just for fun.",
@@ -202,7 +223,7 @@ export const personalProjects: Project[] = [
     category: "frontend",
   },
   {
-    id: 8,
+    id: 9,
     title: "TwiFake",
     description:
       "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
@@ -219,7 +240,7 @@ export const personalProjects: Project[] = [
     category: "frontend",
   },
   {
-    id: 9,
+    id: 10,
     title: "Clarify",
     description:
       "Clarify is a image enhancer web application powered by (PicWish API) that enhances and upscales your images with just one click",

@@ -1,4 +1,4 @@
-import {FiExternalLink, FiCalendar, FiClock} from "react-icons/fi";
+import {FiCalendar, FiClock} from "react-icons/fi";
 
 type blogPosts = {
   title: string;
@@ -10,14 +10,14 @@ type blogPosts = {
 };
 
 export const blogPosts: blogPosts[] = [
-  // {
-  //   title: "Redux vs Zustand: Which State Management Tool is the GOAT ?",
-  //   date: "Jun 5, 2025",
-  //   readTime: "3 min read",
-  //   link: "https://medium.com/@hiarun01/redux-vs-zustand-which-state-management-tool-is-the-goat-6686573bca26",
-  //   excerpt:
-  //     "A comprehensive comparison between Redux and Zustand for React state management, exploring their pros, cons, and use cases.",
-  // },
+  {
+    title: "Redux vs Zustand: Which State Management Tool is the GOAT ?",
+    date: "Jun 5, 2025",
+    readTime: "3 min read",
+    link: "https://medium.com/@hiarun01/redux-vs-zustand-which-state-management-tool-is-the-goat-6686573bca26",
+    excerpt:
+      "A comprehensive comparison between Redux and Zustand for React state management, exploring their pros, cons, and use cases.",
+  },
 ];
 
 const Blogs = () => {
@@ -33,7 +33,10 @@ const Blogs = () => {
       {/* Blog Posts */}
       <div className="space-y-4">
         {blogPosts.map((post, index) => (
-          <article key={index} className="group rounded-lg overflow-hidden ">
+          <article
+            key={index}
+            className="group border border-zinc-700 p-5 rounded-lg overflow-hidden "
+          >
             <a
               href={post.link}
               target="_blank"
@@ -41,7 +44,7 @@ const Blogs = () => {
               className="block"
             >
               {/* Blog Header */}
-              <div className="flex items-start justify-between gap-4 mb-3">
+              <div className="flex items-start justify-between gap-4 mb-2">
                 <h3 className="text-lg font-semibold text-white group-hover:text-[#ffdb70] transition-colors duration-300 leading-tight">
                   {post.title}
                 </h3>
@@ -49,7 +52,7 @@ const Blogs = () => {
 
               {/* Excerpt */}
               {post.excerpt && (
-                <p className="text-zinc-400 text-sm mb-4 leading-relaxed line-clamp-2">
+                <p className="text-zinc-400 text-sm mb-2 leading-relaxed line-clamp-2">
                   {post.excerpt}
                 </p>
               )}
@@ -71,7 +74,7 @@ const Blogs = () => {
       </div>
 
       {/* Empty State or Call to Action */}
-      {blogPosts.length === 0 ? (
+      {blogPosts.length === 0 && (
         <div className="text-center rounded-lg">
           <h3 className="text-lg font-medium text-zinc-400 mb-2">
             No blogs yet
@@ -79,18 +82,6 @@ const Blogs = () => {
           <p className="text-zinc-500 text-sm">
             I&apos;m working on some exciting content. Check back soon!
           </p>
-        </div>
-      ) : (
-        <div className="mt-6 text-center">
-          <a
-            href="https://medium.com/@hiarun01"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-[#ffdb70] transition-colors duration-200"
-          >
-            <span>Read more on Medium</span>
-            <FiExternalLink className="w-4 h-4" />
-          </a>
         </div>
       )}
     </section>

@@ -28,6 +28,9 @@ const Projects = () => {
                   <h2 className="text-lg font-medium mb-2 flex items-center gap-2">
                     {project.title}
                   </h2>
+                  <span className="text-xs text-zinc-400 ">
+                    {project.status}
+                  </span>
                   <p className="mb-2">{project.description}</p>
                   {/* Tech Stack */}
                   {project.techStack && (
