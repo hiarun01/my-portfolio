@@ -7,32 +7,46 @@ export default function HackathonSection() {
         <h2 className="text-lg font-bold mb-5">Hackathons</h2>
 
         <div className="flex flex-col gap-6">
-          {hackathons.map((hackathon, i) => (
-            <div key={i} className="flex gap-4 group">
-              {/* Logo/Icon */}
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-sm font-bold text-[#ffdb70] group-hover:bg-zinc-700 transition-colors duration-200">
-                  {hackathon.logo}
+          {hackathons.map((hackathon, i) => {
+            const isWinner = hackathon.title.includes("Kiro");
+            return (
+              <div key={i} className="flex gap-4 group relative">
+                {/* Winner Badge */}
+                {isWinner && (
+                  <div className="absolute -top-2 -right-2 z-10">
+                    <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-2 py-1 rounded-full shadow-lg animate-pulse">
+                      🏆 WINNER
+                    </div>
+                  </div>
+                )}
+
+                {/* Logo/Icon */}
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-sm font-bold text-[#ffdb70] group-hover:bg-zinc-700 transition-colors duration-200">
+                    {hackathon.logo}
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  {/* Date */}
+                  <div className="text-sm text-zinc-400 mb-1">
+                    {hackathon.date}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="font-bold text-white mb-1">
+                    {hackathon.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-zinc-300 text-sm leading-relaxed mb-3">
+                    {hackathon.description}
+                  </p>
                 </div>
               </div>
-
-              {/* Content */}
-              <div className="flex-1 min-w-0">
-                {/* Date */}
-                <div className="text-sm text-zinc-400 mb-1">
-                  {hackathon.date}
-                </div>
-
-                {/* Title */}
-                <h3 className="font-bold text-white mb-1">{hackathon.title}</h3>
-
-                {/* Description */}
-                <p className="text-zinc-300 text-sm leading-relaxed mb-3">
-                  {hackathon.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
     </div>
