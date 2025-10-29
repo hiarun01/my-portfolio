@@ -94,7 +94,7 @@ export default function About() {
       <div className="mb-6">
         <p className="text-zinc-300  text-base leading-relaxed mb-2">
           Hi, I'm <span className="text-white font-bold"> Arun Kumar.</span> I'm
-          a a{" "}
+          a{" "}
           <span className="text-white font-bold">full stack web Developer</span>
           , i build things using technologies like{" "}
           <span className="text-white font-bold">
