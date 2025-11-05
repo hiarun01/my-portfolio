@@ -191,25 +191,25 @@ export const personalProjects: Project[] = [
     image: "/Projects-image/impactList.png",
     category: "fullstack",
   },
-  {
-    id: 7,
-    title: "Chattx",
-    description:
-      "Chattx is a real-time chat app. I've built a basic version for now, and I'll definitely be adding lots of features in the future.",
-    techStack: [
-      "React",
-      "tailwindcss",
-      "Shadcn-ui",
-      "Zustand",
-      "Socket.io",
-      "MongoDB",
-      "Express",
-    ],
-    github: "https://github.com/hiarun01/chattx",
-    live: "https://chattx.hiarun.me/",
-    image: "/Projects-image/chattx.png",
-    category: "fullstack",
-  },
+  // {
+  //   id: 7,
+  //   title: "Chattx",
+  //   description:
+  //     "Chattx is a real-time chat app. I've built a basic version for now, and I'll definitely be adding lots of features in the future.",
+  //   techStack: [
+  //     "React",
+  //     "tailwindcss",
+  //     "Shadcn-ui",
+  //     "Zustand",
+  //     "Socket.io",
+  //     "MongoDB",
+  //     "Express",
+  //   ],
+  //   github: "https://github.com/hiarun01/chattx",
+  //   live: "https://chattx.hiarun.me/",
+  //   image: "/Projects-image/chattx.png",
+  //   category: "fullstack",
+  // },
 
   {
     id: 8,
