@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
 import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
-import {SupportMe} from "@/components/SupportMe";
+// import {SupportMe} from "@/components/SupportMe";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
       <Contact />
 
       {/* SupprtME */}
-      <SupportMe />
+      {/* <SupportMe /> */}
 
       {/* Footer */}
       <Footer />

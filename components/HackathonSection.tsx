@@ -10,12 +10,12 @@ export default function HackathonSection() {
           {hackathons.map((hackathon, i) => {
             const isWinner = hackathon.title.includes("Kiro");
             return (
-              <div key={i} className="flex gap-4 group relative">
+              <div key={i} className="flex gap-4 group relative select-none">
                 {/* Winner Badge */}
                 {isWinner && (
                   <div className="absolute -top-2 -right-2 z-10">
                     <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-2 py-1 rounded-full shadow-lg animate-pulse">
-                      🏆 WINNER
+                      WINNER
                     </div>
                   </div>
                 )}

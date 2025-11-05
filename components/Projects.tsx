@@ -21,7 +21,7 @@ const Projects = () => {
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
             <div
               key={i}
-              className="mt-3 cursor-pointer w-fit select-none transition-colors duration-100 flex flex-row gap-1.5 items-center border pt-4 border-b border-zinc-700 pb-4 px-3 hover:bg-zinc-800 rounded-lg"
+              className="mt-3 select-none w-fit transition-colors duration-100 flex flex-row gap-1.5 items-center border pt-4 border-b border-zinc-700 pb-4 px-3 hover:bg-zinc-800 rounded-lg"
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 ">
                 <div className="flex-1">

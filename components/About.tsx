@@ -51,7 +51,10 @@ export default function About() {
       <div className="flex items-center lg:gap-6 gap-5 rounded-lg border border-zinc-700 lg:p-2 p-2 mb-5">
         {/* Profile Image */}
         <div className="flex-shrink-0 ">
-          <div className="w-20 h-20 overflow-hidden rounded-lg border-3 border-zinc-600">
+          <div
+            className="w-20 h-20 overflow-hidden rounded-lg border-3
+           border-zinc-600"
+          >
             <Image
               src="/ProfileImage.jpg"
               alt="Arun Kumar Profile"
@@ -92,7 +95,7 @@ export default function About() {
 
       {/* About Content */}
       <div className="mb-6">
-        <p className="text-zinc-300  text-base leading-relaxed mb-2">
+        <p className="text-zinc-300  text-base leading-relaxed mb-2 select-none">
           Hi, I'm <span className="text-white font-bold"> Arun Kumar.</span> I'm
           a{" "}
           <span className="text-white font-bold">full stack web Developer</span>
