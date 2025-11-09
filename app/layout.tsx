@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "Hi, I'm Arun Kumar, a web developer who enjoys turning ideas into interactive websites.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/pfp.png",
   },
 };
 

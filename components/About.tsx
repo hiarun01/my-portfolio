@@ -56,7 +56,7 @@ export default function About() {
            border-zinc-600"
           >
             <Image
-              src="/ProfileImage.jpg"
+              src="/pfp.png"
               alt="Arun Kumar Profile"
               width={100}
               height={100}
