@@ -11,26 +11,44 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen max-w-3xl font-sans mx-auto px-5 pt-15 pb-10 overflow-x-hidden animate-fadein">
-      {/* About Section */}
-      <About />
-      {/* Projects */}
-      <Projects />
-      {/* GitHub State */}
-      <GitHubState />
-      {/* Hackathons */}
-      <HackathonSection />
-      {/* Blogs */}
-      <Blogs />
+    <main className="relative min-h-screen max-w-3xl font-sans mx-auto px-5 pt-15 pb-10 overflow-x-hidden animate-fadein">
+      <article>
+        {/* About Section */}
+        <section aria-label="About Arun Kumar">
+          <About />
+        </section>
 
-      {/* Contact Section */}
-      <Contact />
+        {/* Projects */}
+        <section aria-label="Projects">
+          <Projects />
+        </section>
 
-      {/* SupprtME */}
-      {/* <SupportMe /> */}
+        {/* GitHub State */}
+        <section aria-label="GitHub Activity">
+          <GitHubState />
+        </section>
+
+        {/* Hackathons */}
+        <section aria-label="Hackathons">
+          <HackathonSection />
+        </section>
+
+        {/* Blogs */}
+        <section aria-label="Blog Posts">
+          <Blogs />
+        </section>
+
+        {/* Contact Section */}
+        <section aria-label="Contact Information">
+          <Contact />
+        </section>
+
+        {/* SupprtME */}
+        {/* <SupportMe /> */}
+      </article>
 
       {/* Footer */}
       <Footer />
-    </div>
+    </main>
   );
 }
