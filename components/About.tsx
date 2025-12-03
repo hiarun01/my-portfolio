@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 // import {JSX} from "react";
 import Image from "next/image";
 import Skills from "./Skills";
@@ -96,27 +95,10 @@ export default function About() {
       {/* About Content */}
       <div className="mb-6">
         <p className="text-zinc-300  text-base leading-relaxed mb-2 select-none">
-          Hi, I'm <span className="text-white font-bold"> Arun Kumar.</span> I'm
-          a{" "}
-          <span className="text-white font-bold">full stack web Developer</span>
-          , i build things using technologies like{" "}
-          <span className="text-white font-bold">
-            JS, TS, React, Express.js, Prisma.
-          </span>
-          <br />
-          currently learning Next.js, and bulding things with it. and i am
-          looking for oppurtunities to work and grow.
-          <br />
-          {/* Hi, Arun here! I'm a Full Stack Developer with hands-on experience in
-          building web applications using technologies like React, Next.js,
-          Express.js, PostgreSQL, and MongoDB. I also have a good UI sense you
-          can check it out in my projects. */}
+          I’m a full-stack developer who loves building things that feel smooth,
+          work fast, and look good. I specialize in React, Next.js, and
+          Expressjs.
         </p>
-
-        {/* <p className="text-zinc-300 text-base leading-relaxed">
-          Always open to internships, collaborations, and opportunities where I
-          can contribute, learn, and create meaningful solutions together.
-        </p> */}
       </div>
       <Skills />
     </div>
