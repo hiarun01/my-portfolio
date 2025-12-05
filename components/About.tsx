@@ -52,14 +52,14 @@ export default function About() {
         <div className="flex-shrink-0 ">
           <div
             className="w-20 h-20 overflow-hidden rounded-lg border-3
-           border-zinc-600"
+           border-zinc-600 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-zinc-800/50 hover:border-zinc-500 cursor-pointer group"
           >
             <Image
-              src="/pfp.png"
+              src="/pfp.jpg"
               alt="Arun Kumar Profile"
               width={100}
               height={100}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </div>
         </div>

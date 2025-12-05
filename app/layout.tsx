@@ -60,8 +60,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/pfp.png",
-    apple: "/pfp.png",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     type: "website",
