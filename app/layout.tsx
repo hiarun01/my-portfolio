@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import {Inter, Poppins, JetBrains_Mono} from "next/font/google";
-import "./globals.css";
-import InitialBlur from "../components/InitialBlur";
+import "../styles/globals.css";
 import Schema from "./schema";
 
 // Main font for body text
@@ -107,7 +106,6 @@ export default function RootLayout({
         className={`${poppins.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
         <Schema />
-        <InitialBlur />
         {children}
       </body>
     </html>
