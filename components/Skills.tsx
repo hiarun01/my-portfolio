@@ -1,4 +1,4 @@
-import {skills} from "@/Data/SkillsData";
+import {skills} from "../Data/SkillsData";
 
 const Skills = () => {
   return (
