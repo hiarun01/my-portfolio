@@ -72,7 +72,7 @@ export default function About() {
             </h2>
           </div>
 
-          <p className="text-zinc-300 text-sm mb-2">@hiarun01</p>
+          <p className="text-zinc-300 text-sm mb-2">@hiarun02</p>
 
           {/* Social Links */}
           {/* <div className="flex gap-3">

@@ -1,4 +1,4 @@
-import {hackathons} from "./Data/data";
+import {hackathons} from "../Data/HackathonData";
 
 export default function HackathonSection() {
   return (
