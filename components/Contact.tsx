@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import {socials} from "@/Data/SocialData";
+import {socials} from "../Data/SocialData";
 
 export default function Contact() {
   return (
