@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {personalProjects} from "../Data/ProjectsData";
+import {personalProjects} from "./Data/ProjectsData";
 
 import {BsGithub} from "react-icons/bs";
 
