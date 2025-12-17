@@ -25,12 +25,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hiarun.me"),
   title: {
-    default:
-      "Arun Kumar - Full Stack Web Developer | React, Next.js, TypeScript",
+    default: "Arun's Portfolio",
     template: "%s | Arun Kumar",
   },
   description:
-    "Full Stack Web Developer specializing in React, Next.js, TypeScript, Express.js, and Prisma. Available for hire. Building modern web applications with clean UI/UX.",
+    "Full Stack Web Developer specializing in React, Next.js, TypeScript, Express.js, and Prisma. Available for hire. Building modern web applications.",
   keywords: [
     "Arun Kumar",
     "Full Stack Developer",
