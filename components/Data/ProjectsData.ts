@@ -44,6 +44,7 @@ export const personalProjects: Project[] = [
       "Shadcn-ui",
       "Zustand",
       "MongoDB",
+      "Cloudinary",
       "Express",
       "Jwt-Auth",
     ],
@@ -51,6 +52,7 @@ export const personalProjects: Project[] = [
     live: "https://rapidreport.hiarun.me/",
     image: "/Projects-image/rapidReport.png",
     category: "full stack",
+    status: "Live",
   },
   {
     id: 3,
@@ -65,24 +67,27 @@ export const personalProjects: Project[] = [
       "redux",
       "MongoDB",
       "Express",
+      "Redis",
+      "Cloudinary",
       "JwtAuth",
     ],
     github: "https://github.com/hiarun02/Jobify",
     live: "https://jobify.hiarun.me/",
     image: "/Projects-image/jobify.png",
     category: "fullstack",
+    status: "Live",
   },
-  {
-    id: 4,
-    title: "Codalyzer",
-    description:
-      "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
-    techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
-    github: "https://github.com/hiarun02/codalyzer",
-    live: "https://codalyzer.hiarun.me/",
-    image: "/Projects-image/codalyzer.png",
-    category: "ai",
-  },
+  // {
+  //   id: 4,
+  //   title: "Codalyzer",
+  //   description:
+  //     "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
+  //   techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
+  //   github: "https://github.com/hiarun02/codalyzer",
+  //   live: "https://codalyzer.hiarun.me/",
+  //   image: "/Projects-image/codalyzer.png",
+  //   category: "ai",
+  // },
   {
     id: 5,
     title: "PaletteCraft",
@@ -93,6 +98,7 @@ export const personalProjects: Project[] = [
     live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
     image: "/Projects-image/paletteCraft.png",
     category: "plugins",
+    status: "Live",
   },
   {
     id: 6,
@@ -111,6 +117,7 @@ export const personalProjects: Project[] = [
     live: "https://impactlist.hiarun.me/",
     image: "/Projects-image/impactList.png",
     category: "fullstack",
+    status: "Live",
   },
   {
     id: 8,
@@ -122,6 +129,7 @@ export const personalProjects: Project[] = [
     live: "https://codesnippet.hiarun.me/",
     image: "/Projects-image/codeSnippet.png",
     category: "frontend",
+    status: "Live",
   },
   {
     id: 9,
@@ -139,6 +147,7 @@ export const personalProjects: Project[] = [
     live: "https://twifake.hiarun.me/",
     image: "/Projects-image/twifale.png",
     category: "frontend",
+    status: "Live",
   },
   {
     id: 10,
@@ -150,5 +159,6 @@ export const personalProjects: Project[] = [
     live: "https://clarify.hiarun.me/",
     image: "/Projects-image/codeSnippet.png",
     category: "frontend",
+    status: "Live",
   },
 ];

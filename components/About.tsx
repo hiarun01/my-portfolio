@@ -1,36 +1,4 @@
-// import {JSX} from "react";
 import Image from "next/image";
-import Skills from "./Skills";
-
-// import {FaXTwitter} from "react-icons/fa6";
-// import {FaLinkedin} from "react-icons/fa";
-// import {FaGithub} from "react-icons/fa";
-// import {SiGmail} from "react-icons/si";
-
-// type Social = {
-//   href: string;
-//   label: string;
-//   icon: JSX.Element;
-// };
-
-// const socials: Social[] = [
-//   {
-//     href: "mailto:hiarun.works@gmail.com",
-//     label: "Email",
-//     icon: <SiGmail />,
-//   },
-//   {
-//     href: "https://x.com/hiarun01",
-//     label: "X",
-//     icon: <FaXTwitter />,
-//   },
-
-//   {
-//     href: "https://github.com/hiarun01",
-//     label: "GitHub",
-//     icon: <FaGithub />,
-//   },
-// ];
 
 export default function About() {
   return (
@@ -100,7 +68,6 @@ export default function About() {
           Expressjs.
         </p>
       </div>
-      <Skills />
     </div>
   );
 }
