@@ -4,9 +4,10 @@ import {personalProjects} from "./Data/ProjectsData";
 import {BsGithub} from "react-icons/bs";
 
 import {ExternalLinkIcon} from "lucide-react";
+import {Button} from "./ui/button";
 
 const Projects = () => {
-  const [visibleProjects, setVisibleProjects] = useState(2);
+  const [visibleProjects, setVisibleProjects] = useState(4);
 
   const loadMore = () => {
     setVisibleProjects((prev) => Math.min(prev + 2, personalProjects.length));
@@ -25,12 +26,19 @@ const Projects = () => {
             >
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 ">
                 <div className="flex-1">
-                  <h2 className="text-lg font-medium mb-2 flex items-center gap-2">
-                    {project.title}
-                  </h2>
-                  <span className="text-xs text-zinc-400 ">
-                    {project.status}
-                  </span>
+                  <div className="flex justify-between items-center mb-2">
+                    <h2 className="text-lg font-medium  flex items-center gap-2">
+                      {project.title}
+                    </h2>
+                    <div>
+                      {project.status && (
+                        <span className="text-xs text-zinc-400 border border-zinc-600 px-2 py-0.5 rounded-full">
+                          {project.status ? project.status : null}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
                   <p className="mb-2">{project.description}</p>
                   {/* Tech Stack */}
                   {project.techStack && (
@@ -77,9 +85,9 @@ const Projects = () => {
 
         {visibleProjects < personalProjects.length && (
           <div className="flex justify-center mt-10">
-            <button onClick={loadMore} className="load-more">
-              <span>Load More</span>
-            </button>
+            <Button onClick={loadMore} className="load-more text-white">
+              Load More
+            </Button>
           </div>
         )}
       </section>

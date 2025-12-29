@@ -8,14 +8,16 @@ export default function HackathonSection() {
 
         <div className="flex flex-col gap-6">
           {hackathons.map((hackathon, i) => {
-            const isWinner = hackathon.title.includes("Kiro");
+            const isWinner = hackathon.title.includes(
+              "Code with Kiro Hackathon"
+            );
             return (
               <div key={i} className="flex gap-4 group relative select-none">
                 {/* Winner Badge */}
                 {isWinner && (
                   <div className="absolute -top-2 -right-2 z-10">
-                    <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-2 py-1 rounded-full shadow-lg animate-pulse">
-                      WINNER
+                    <div className="text-yellow-400 text-sm from-neutral-200 animate-pulse ">
+                      Winner
                     </div>
                   </div>
                 )}

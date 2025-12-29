@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
 import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+
 // import {SupportMe} from "@/components/SupportMe";
 
 export default function Home() {
@@ -14,8 +16,13 @@ export default function Home() {
     <main className="relative min-h-screen max-w-3xl font-sans mx-auto px-5 pt-15 pb-10 overflow-x-hidden animate-fadein">
       <article>
         {/* About Section */}
-        <section aria-label="About Arun Kumar">
+        <section aria-label="About">
           <About />
+        </section>
+
+        {/* skills  */}
+        <section aria-label="Skills">
+          <Skills />
         </section>
 
         {/* Projects */}

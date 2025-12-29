@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import {Inter, Poppins, JetBrains_Mono} from "next/font/google";
-import "../styles/globals.css";
+import "./globals.css";
 import Schema from "./schema";
 
 // Main font for body text
@@ -96,7 +96,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="canonical" href="https://hiarun.me" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
