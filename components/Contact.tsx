@@ -3,7 +3,7 @@ import {socials} from "./Data/SocialData";
 
 export default function Contact() {
   return (
-    <section className="mb-4 border-t border-zinc-700 pt-5">
+    <section className="mb-4 ">
       <h2 className="text-lg font-bold mb-2">Reach out to me.</h2>
 
       <p className="mt-2 ">
