@@ -23,7 +23,7 @@ export default function About() {
            border-zinc-600 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-zinc-800/50 hover:border-zinc-500 cursor-pointer group"
           >
             <Image
-              src="/pfp.jpg"
+              src="/pfp.jpeg"
               alt="Arun Kumar Profile"
               width={100}
               height={100}
