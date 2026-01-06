@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+// import {socials} from "./Data/SocialData";
 export default function About() {
   return (
     <div className="">
@@ -53,7 +53,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {social.icon}
+                {social.icon && <social.icon />}
               </a>
             ))}
           </div> */}
