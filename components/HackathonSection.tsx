@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {hackathons} from "./Data/HackathonData";
 
 export default function HackathonSection() {
@@ -11,6 +12,7 @@ export default function HackathonSection() {
             const isWinner = hackathon.title.includes(
               "Code with Kiro Hackathon"
             );
+            const hasImageLogo = hackathon.logo?.startsWith("/");
             return (
               <div key={i} className="flex gap-4 group relative select-none">
                 {/* Winner Badge */}
@@ -24,8 +26,20 @@ export default function HackathonSection() {
 
                 {/* Logo/Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-sm font-bold text-[#ffdb70] group-hover:bg-zinc-700 transition-colors duration-200">
-                    {hackathon.logo}
+                  <div className="w-12 h-12 bg-zinc-800 border-zinc-700 rounded-lg flex items-center justify-center text-sm font-bold text-[#ffdb70] group-hover:bg-zinc-700 transition-colors duration-200">
+                    {hasImageLogo ? (
+                      <Image
+                        src={hackathon.logo}
+                        alt={hackathon.title + " Logo"}
+                        width={48}
+                        height={48}
+                        className="w-10 h-10 object-contain rounded-full"
+                      />
+                    ) : (
+                      <span className="text-base font-semibold">
+                        {hackathon.logo || "?"}
+                      </span>
+                    )}
                   </div>
                 </div>
 
