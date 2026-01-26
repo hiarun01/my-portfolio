@@ -13,9 +13,21 @@ export type Project = {
 export const personalProjects: Project[] = [
   {
     id: 1,
+    title: "Snippify",
+    description:
+      "Snippify helps you create clean, beautiful images of your code ready to download and share in seconds.",
+    techStack: ["NextJS", "TailwindCSS", "Shadcn-ui", "canvas"],
+    github: "https://github.com/hiarun02/Snippify",
+    live: "https://snippify.hiarun.me/",
+    image: "",
+    category: "",
+    status: "Live",
+  },
+  {
+    id: 1,
     title: "Feedlyz",
     description:
-      "Feedlyz is a feedback collection tool that helps you gather insights from your users effortlessly. analyze responses, and improve your product based on real user input.",
+      "Feedlyz is a feedback collection tool that helps you gather insights from your users effortlessly.",
     techStack: [
       "NextJS",
       "TailwindCSS",
@@ -77,17 +89,6 @@ export const personalProjects: Project[] = [
     category: "fullstack",
     status: "Live",
   },
-  // {
-  //   id: 4,
-  //   title: "Codalyzer",
-  //   description:
-  //     "Codalyzer – A smart code reviewer powered by GenAI that helps you analyze, review, and improve your code with AI-driven insights.",
-  //   techStack: ["React", "tailwindcss", "Shadcn-ui", "GenAi api", "Express"],
-  //   github: "https://github.com/hiarun02/codalyzer",
-  //   live: "https://codalyzer.hiarun.me/",
-  //   image: "/Projects-image/codalyzer.png",
-  //   category: "ai",
-  // },
   {
     id: 5,
     title: "PaletteCraft",
@@ -98,37 +99,6 @@ export const personalProjects: Project[] = [
     live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
     image: "/Projects-image/paletteCraft.png",
     category: "plugins",
-    status: "Live",
-  },
-  {
-    id: 6,
-    title: "impactList",
-    description:
-      "mpactList is a community platform where people around the world share the top things that changed their lives from books and habits to tools and podcasts.",
-    techStack: [
-      "React",
-      "tailwindcss",
-      "MagicUI",
-      "Shadcn-ui",
-      "MongoDB",
-      "Express",
-    ],
-    github: "https://github.com/hiarun02/impactList",
-    live: "https://impactlist.hiarun.me/",
-    image: "/Projects-image/impactList.png",
-    category: "fullstack",
-    status: "Live",
-  },
-  {
-    id: 8,
-    title: "CodeSnippet",
-    description:
-      "CodeSnippet is a simple tool that lets you create and download beautiful images of your code. Perfect for sharing on social media, blogs, or just for fun.",
-    techStack: ["React", "tailwindcss", "Shadcn-ui", "html2canvas"],
-    github: "https://github.com/hiarun02/CodeSnippet",
-    live: "https://codesnippet.hiarun.me/",
-    image: "/Projects-image/codeSnippet.png",
-    category: "frontend",
     status: "Live",
   },
   {
