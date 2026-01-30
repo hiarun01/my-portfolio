@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import {socials} from "./Data/SocialData";
+import {socials} from "./Data/SocialData";
 export default function About() {
   return (
     <div className="">
@@ -19,7 +19,7 @@ export default function About() {
         {/* Profile Image */}
         <div className="flex-shrink-0 ">
           <div
-            className="w-20 h-20 overflow-hidden rounded-lg border-3
+            className="w-25 h-25 overflow-hidden rounded-lg border-3
            border-zinc-600 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-zinc-800/50 hover:border-zinc-500 cursor-pointer group"
           >
             <Image
@@ -43,12 +43,12 @@ export default function About() {
           <p className="text-zinc-300 text-sm mb-2">@hiarun02</p>
 
           {/* Social Links */}
-          {/* <div className="flex gap-3">
+          <div className="flex gap-3">
             {socials.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
-                className="w-8 h-8 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-zinc-400 hover:text-[#ffdb70] hover:bg-zinc-700 transition-all duration-200"
+                className="w-7 h-7 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-zinc-400 hover:text-[#ffdb70] hover:bg-zinc-700 transition-all duration-200"
                 aria-label={social.label}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -56,7 +56,7 @@ export default function About() {
                 {social.icon && <social.icon />}
               </a>
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
 
