@@ -41,7 +41,7 @@ export const personalProjects: Project[] = [
     live: "",
     image: "/Projects-image/Feedlyz.png",
     category: "fullstack",
-    status: "In Progress",
+    status: "Paused",
   },
   {
     id: 2,
