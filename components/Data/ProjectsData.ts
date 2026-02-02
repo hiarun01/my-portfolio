@@ -13,12 +13,12 @@ export type Project = {
 export const personalProjects: Project[] = [
   {
     id: 1,
-    title: "Snippify",
+    title: "Snipture",
     description:
-      "Snippify helps you create clean, beautiful images of your code ready to download and share in seconds.",
+      "Snipture helps you create clean, beautiful images of your code ready to download and share in seconds.",
     techStack: ["NextJS", "TailwindCSS", "Shadcn-ui", "canvas"],
-    github: "https://github.com/hiarun02/Snippify",
-    live: "https://snippify.hiarun.me/",
+    github: "https://github.com/hiarun02/Sniputre",
+    live: "https://snipture.hiarun.me/",
     image: "",
     category: "",
     status: "Live",
