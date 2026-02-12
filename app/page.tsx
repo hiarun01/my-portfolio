@@ -9,7 +9,7 @@ import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 
-// import {SupportMe} from "@/components/SupportMe";
+import {SupportMe} from "@/components/SupportMe";
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
         </section>
 
         {/* SupprtME */}
-        {/* <SupportMe /> */}
+        <SupportMe />
       </article>
 
       {/* Footer */}

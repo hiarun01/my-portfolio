@@ -3,14 +3,14 @@ import {hackathons} from "./Data/HackathonData";
 
 export default function HackathonSection() {
   return (
-    <div className=" border-b border-zinc-700 mb-5">
+    <div className=" border-b border-zinc-700 mb-3">
       <section className="mb-8 mt-5">
         <h2 className="text-lg font-bold mb-5">Hackathons</h2>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3">
           {hackathons.map((hackathon, i) => {
             const isWinner = hackathon.title.includes(
-              "Code with Kiro Hackathon"
+              "Code with Kiro Hackathon",
             );
             const hasImageLogo = hackathon.logo?.startsWith("/");
             return (
@@ -56,7 +56,7 @@ export default function HackathonSection() {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-zinc-300 text-sm leading-relaxed mb-3">
+                  <p className="text-zinc-300 text-sm leading-relaxed mb-2">
                     {hackathon.description}
                   </p>
                 </div>
