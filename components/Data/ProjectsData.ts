@@ -43,7 +43,7 @@ export const personalProjects: Project[] = [
     live: "https://feedora.hiarun.me/",
     image: "",
     category: "fullstack",
-    status: "dev stage",
+    status: "live",
   },
   {
     id: 2,
