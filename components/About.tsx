@@ -62,7 +62,7 @@ export default function About() {
 
       {/* About Content */}
       <div className="mb-6">
-        <p className="text-zinc-300  text-base leading-relaxed mb-2">
+        <p className="text-zinc-300  text-base leading-relaxed mb-4">
           Full stack developer who loves building things that feel smooth, work
           fast, and look good. I specialize in{" "}
           <span className="font-medium underline underline-offset-4  text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
