@@ -5,7 +5,11 @@ export default function HackathonSection() {
   return (
     <div className=" border-b border-zinc-700 mb-3">
       <section className="mb-8 mt-5">
-        <h2 className="text-lg font-bold mb-5">Hackathons</h2>
+        <h2 className="text-lg font-bold ">Hackathons</h2>
+        <p className="mb-5 mt-2 text-zinc-300 text-sm leading-relaxed">
+          I like building under pressure and tight constraints. Some of the
+          hackathons I&apos;ve shipped for
+        </p>
 
         <div className="flex flex-col gap-3">
           {hackathons.map((hackathon, i) => {

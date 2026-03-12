@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
 import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+// import Skills from "@/components/Skills";
 
 import {SupportMe} from "@/components/SupportMe";
 
@@ -21,9 +21,9 @@ export default function Home() {
         </section>
 
         {/* skills  */}
-        <section aria-label="Skills">
+        {/* <section aria-label="Skills">
           <Skills />
-        </section>
+        </section> */}
 
         {/* Projects */}
         <section aria-label="Projects">
