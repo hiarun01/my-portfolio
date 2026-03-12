@@ -62,10 +62,40 @@ export default function About() {
 
       {/* About Content */}
       <div className="mb-6">
-        <p className="text-zinc-300  text-base leading-relaxed mb-2 select-none">
-          I’m a full-stack developer who loves building things that feel smooth,
-          work fast, and look good. I specialize in React, Next.js, and
-          Expressjs.
+        <p className="text-zinc-300  text-base leading-relaxed mb-2">
+          Full stack developer who loves building things that feel smooth, work
+          fast, and look good. I specialize in{" "}
+          <span className="font-medium underline underline-offset-4  text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+            Typescript
+          </span>{" "}
+          ,{" "}
+          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+            ReactJS
+          </span>{" "}
+          ,{" "}
+          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+            NextJS
+          </span>{" "}
+          ,{" "}
+          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+            ExpressJS
+          </span>{" "}
+          and{" "}
+          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+            PostgreSQL
+          </span>{" "}
+        </p>
+        <p className="text-zinc-300  text-base leading-relaxed mb-2">
+          I’m also the founder of{" "}
+          <a
+            className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200"
+            href="https://aurevixlabs.com/"
+            target="_blank"
+          >
+            AurevixLabs
+          </a>{" "}
+          my personal internet lab where I build experimental products and
+          developer tools
         </p>
       </div>
     </div>

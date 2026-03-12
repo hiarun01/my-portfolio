@@ -16,7 +16,7 @@ export const personalProjects: Project[] = [
     title: "Snippify",
     description:
       "Snippify helps you create clean, beautiful images of your code ready to download and share in seconds.",
-    techStack: ["NextJS", "TailwindCSS", "Shadcn-ui", "canvas"],
+    techStack: ["TypeScript", "NextJS", "TailwindCSS", "Shadcn-ui", "canvas"],
     github: "https://github.com/hiarun02/snippify",
     live: "https://snippify.live/",
     image: "",
