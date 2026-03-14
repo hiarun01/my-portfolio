@@ -13,18 +13,6 @@ export type Project = {
 export const personalProjects: Project[] = [
   {
     id: 1,
-    title: "Snippify",
-    description:
-      "Snippify helps you create clean, beautiful images of your code ready to download and share in seconds.",
-    techStack: ["TypeScript", "NextJS", "TailwindCSS", "Shadcn-ui", "canvas"],
-    github: "https://github.com/hiarun02/snippify",
-    live: "https://snippify.live/",
-    image: "",
-    category: "",
-    status: "Live",
-  },
-  {
-    id: 1,
     title: "Feedora",
     description:
       "Feedora is a feedback collection tool that helps you gather insights from your users effortlessly.",
@@ -43,10 +31,22 @@ export const personalProjects: Project[] = [
     live: "https://feedora.hiarun.me/",
     image: "",
     category: "fullstack",
-    status: "live",
+    status: "Live",
   },
   {
     id: 2,
+    title: "Snippify",
+    description:
+      "Snippify helps you create clean, beautiful images of your code ready to download and share in seconds.",
+    techStack: ["TypeScript", "NextJS", "TailwindCSS", "Shadcn-ui", "canvas"],
+    github: "https://github.com/hiarun02/snippify",
+    live: "https://snippify.live/",
+    image: "",
+    category: "",
+    status: "Live",
+  },
+  {
+    id: 3,
     title: "Rapid Report",
     description:
       "Rapid Report is a platform that enables users to quickly and securely report emergencies, ensuring fast response times while protecting user privacy with options for full anonymity.",
@@ -69,7 +69,7 @@ export const personalProjects: Project[] = [
     status: "Live",
   },
   {
-    id: 3,
+    id: 4,
     title: "Jobify",
     description:
       "Jobify is a job portal where people can find and apply for jobs, and companies can post job openings. It's built with a clean and user-friendly design.",
@@ -104,7 +104,7 @@ export const personalProjects: Project[] = [
     status: "Live",
   },
   {
-    id: 9,
+    id: 6,
     title: "TwiFake",
     description:
       "TwiFake is a simple tool that lets you create realistic-looking fake tweets for design mockups, social media content, or fun creative projects.",
@@ -122,7 +122,7 @@ export const personalProjects: Project[] = [
     status: "Live",
   },
   {
-    id: 10,
+    id: 7,
     title: "Clarify",
     description:
       "Clarify is a image enhancer web application powered by (PicWish API) that enhances and upscales your images with just one click",
