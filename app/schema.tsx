@@ -4,7 +4,7 @@ export default function Schema() {
     "@type": "Person",
     name: "Arun Kumar",
     url: "https://hiarun.me",
-    image: "https://hiarun.me/pfp.png",
+    image: "https://hiarun.me/preview.png",
     sameAs: ["https://github.com/hiarun01", "https://x.com/hiarun01"],
     jobTitle: "Full Stack Web Developer",
     description:

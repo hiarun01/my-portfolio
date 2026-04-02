@@ -85,7 +85,19 @@ export default function About() {
             PostgreSQL
           </span>{" "}
         </p>
+
         <p className="text-zinc-300  text-base leading-relaxed mb-2">
+          I build real products. SaaS, and developer utilities, shipped
+          end-to-end. No tutorials, just learning by doing and iterating in
+          production.
+        </p>
+
+        <p className="text-zinc-300  text-base leading-relaxed mb-2">
+          I’ve spent the past year shipping production apps and learning by
+          building, not by watching tutorials.
+        </p>
+
+        {/* <p className="text-zinc-300  text-base leading-relaxed mb-2">
           I’m also the founder of{" "}
           <a
             className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200"
@@ -96,7 +108,7 @@ export default function About() {
           </a>{" "}
           my personal internet lab where I build experimental products and
           developer tools
-        </p>
+        </p> */}
       </div>
     </div>
   );

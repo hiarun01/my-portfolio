@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     siteName: "Arun Kumar Portfolio",
     images: [
       {
-        url: "/pfp.jpg",
+        url: "/preview.png",
         width: 1200,
         height: 630,
         alt: "Arun Kumar - Full Stack Web Developer",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     description:
       "Full Stack Web Developer specializing in React, Next.js, TypeScript, Express.js, and Prisma. Available for hire.",
     creator: "@hiarun01",
-    images: ["/pfp.jpg"],
+    images: ["/preview.png"],
   },
 };
 
