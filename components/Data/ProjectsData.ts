@@ -40,7 +40,7 @@ export const personalProjects: Project[] = [
     id: 3,
     title: "Rapid Report",
     description:
-      "Rapid Report is a platform that enables users to quickly and securely report emergencies, ensuring fast response times while protecting user privacy with options for full anonymity.",
+      "A modern platform that lets people quickly report incidents and track their progress, powered by AI for faster and more accurate reporting.",
     techStack: [
       "React",
       "TypeScript",

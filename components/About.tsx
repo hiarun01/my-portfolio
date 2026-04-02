@@ -87,14 +87,9 @@ export default function About() {
         </p>
 
         <p className="text-zinc-300  text-base leading-relaxed mb-2">
-          I build real products. SaaS, and developer utilities, shipped
-          end-to-end. No tutorials, just learning by doing and iterating in
-          production.
-        </p>
-
-        <p className="text-zinc-300  text-base leading-relaxed mb-2">
-          I’ve spent the past year shipping production apps and learning by
-          building, not by watching tutorials.
+          I’ve spent the past year building SaaS tools, AI features, and
+          developer utilities. start to finish. No tutorials, just learning by
+          doing and improving things in production.
         </p>
 
         {/* <p className="text-zinc-300  text-base leading-relaxed mb-2">
