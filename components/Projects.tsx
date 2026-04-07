@@ -76,15 +76,20 @@ const Projects = () => {
                       </p>
 
                       {project.techStack && (
-                        <div className="mt-3 flex flex-wrap gap-1.5">
-                          {project.techStack.map((tech) => (
+                        <div className="mt-3 flex items-center gap-1.5 overflow-hidden whitespace-nowrap">
+                          {project.techStack.slice(0, 4).map((tech) => (
                             <span
                               key={tech}
-                              className="rounded-full border border-zinc-700 bg-zinc-900/80 px-2.5 py-0.5 text-[11px] text-zinc-200 transition-colors duration-200 group-hover:border-[#ffdb70]/30 group-hover:text-[#ffdb70]"
+                              className="inline-flex rounded-full border border-zinc-700 bg-zinc-900/80 px-2.5 py-0.5 text-[11px] text-zinc-200 transition-colors duration-200 group-hover:border-[#ffdb70]/30 group-hover:text-[#ffdb70]"
                             >
                               {tech}
                             </span>
                           ))}
+                          {project.techStack.length > 4 && (
+                            <span className="inline-flex rounded-full border border-zinc-700 bg-zinc-900/80 px-2.5 py-0.5 text-[11px] text-zinc-200 transition-colors duration-200 group-hover:border-[#ffdb70]/30 group-hover:text-[#ffdb70]">
+                              more +
+                            </span>
+                          )}
                         </div>
                       )}
                     </div>

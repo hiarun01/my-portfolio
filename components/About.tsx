@@ -1,109 +1,108 @@
 import Image from "next/image";
-import {socials} from "./Data/SocialData";
+import UpdatedDate from "./UpdatedDate";
+import IndiaTime from "./IndiaTime";
+import AvailableTag from "./AvailableTag";
+// import {socials} from "./Data/SocialData";
+// rounded-lg border border-zinc-700
+
 export default function About() {
   return (
     <div className="">
-      {/* Available Tag */}
-      <div className="inline-flex items-center gap-2 mb-3">
-        <span className="relative flex h-3 w-3">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ffdb70] opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-[#ffdb70]"></span>
-        </span>
-        <span className="text-[#ffdb70] text-sm font-bold">
-          Available for work
-        </span>
-      </div>
-
       {/* Profile Header */}
-      <div className="flex items-center lg:gap-6 gap-5 rounded-lg border border-zinc-700 lg:p-2 p-2 mb-5">
-        {/* Profile Image */}
-        <div className="flex-shrink-0 ">
-          <div
-            className="w-25 h-25 overflow-hidden rounded-lg border-3
-           border-zinc-600 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-zinc-800/50 hover:border-zinc-500 cursor-pointer group"
-          >
-            <Image
-              src="/pfp.jpeg"
-              alt="Arun Kumar Profile"
-              width={100}
-              height={100}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-        </div>
-
-        {/* Profile Info */}
-        <div className="">
-          <div className="mb-1">
-            <h2 className="lg:text-2xl text-lg font-extrabold text-white">
-              Arun Kumar
-            </h2>
+      <AvailableTag />
+      <div className="mb-5 rounded-xl border border-zinc-800/80 bg-gradient-to-r from-zinc-900/60 via-zinc-900/30 to-transparent px-2 py-3">
+        {/* Profile Content */}
+        <div className="flex items-center gap-5">
+          {/* Profile Image */}
+          <div className="flex-shrink-0 ">
+            <div
+              className="w-15 h-15 overflow-hidden rounded-xl border-2
+             border-zinc-600 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-zinc-800/50 hover:border-zinc-500 cursor-pointer group"
+            >
+              <Image
+                src="/pfp.jpeg"
+                alt="Arun Kumar Profile"
+                width={100}
+                height={100}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
           </div>
 
-          <p className="text-zinc-300 text-sm mb-2">@hiarun02</p>
+          {/* Profile Info */}
+          <div className="">
+            <div className="">
+              <h2 className="lg:text-xl text-lg font-extrabold text-white">
+                Arun Kumar
+              </h2>
+            </div>
 
-          {/* Social Links */}
-          <div className="flex gap-3">
-            {socials.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                className="w-7 h-7 bg-zinc-800 border border-zinc-700 rounded-lg flex items-center justify-center text-zinc-400 hover:text-[#ffdb70] hover:bg-zinc-700 transition-all duration-200"
-                aria-label={social.label}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {social.icon && <social.icon />}
-              </a>
-            ))}
+            <p className="text-zinc-300 text-sm mb-2 flex items-center">
+              <span className="inline-flex" />
+              @hiarun02
+            </p>
           </div>
         </div>
       </div>
 
       {/* About Content */}
       <div className="mb-6">
+        {/* Date and Time Display */}
+        <div className=" flex items-center gap-2 mb-2">
+          <UpdatedDate />
+          <IndiaTime />
+        </div>
         <p className="text-zinc-300  text-base leading-relaxed mb-4">
           Full stack developer who loves building things that feel smooth, work
           fast, and look good. I specialize in{" "}
-          <span className="font-medium underline underline-offset-4  text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+          <span className="text-[#ffdb70] hover:text-[#ffd100] underline underline-offset-4 transition-colors duration-200">
             Typescript
           </span>{" "}
           ,{" "}
-          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+          <span className="text-[#ffdb70] hover:text-[#ffd100] underline underline-offset-4 transition-colors duration-200">
             ReactJS
           </span>{" "}
           ,{" "}
-          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+          <span className=" text-[#ffdb70] hover:text-[#ffd100] underline underline-offset-4 transition-colors duration-200">
             NextJS
           </span>{" "}
           ,{" "}
-          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+          <span className=" text-[#ffdb70] hover:text-[#ffd100] underline underline-offset-4 transition-colors duration-200">
             ExpressJS
           </span>{" "}
           and{" "}
-          <span className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200">
+          <span className="text-[#ffdb70] hover:text-[#ffd100] underline underline-offset-4 transition-colors duration-200">
             PostgreSQL
           </span>{" "}
         </p>
 
         <p className="text-zinc-300  text-base leading-relaxed mb-2">
-          I’ve spent the past year building SaaS tools, AI features, and
-          developer utilities. start to finish. No tutorials, just learning by
-          doing and improving things in production.
+          I build full stack web apps, AI features, and developer tools learning
+          by shipping and iterating. spent the past year improving in
+          production, not tutorials.
         </p>
 
-        {/* <p className="text-zinc-300  text-base leading-relaxed mb-2">
-          I’m also the founder of{" "}
+        <p className="text-zinc-300  text-base leading-relaxed mb-2"></p>
+
+        <p className="text-zinc-300 leading-relaxed mt-4">
+          You can find me on{" "}
           <a
-            className="font-medium underline underline-offset-4 text-[#ffdb70] hover:text-[#ffd100] transition-colors duration-200"
-            href="https://aurevixlabs.com/"
+            href="https://x.com/hiarun02"
             target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#ffdb70] hover:text-[#ffd100] underline underline-offset-4 transition-colors duration-200"
           >
-            AurevixLabs
+            X
           </a>{" "}
-          my personal internet lab where I build experimental products and
-          developer tools
-        </p> */}
+          , or reach me via{" "}
+          <a
+            href="mailto:hiarun.works@gmail.com"
+            className="text-[#ffdb70] hover:text-[#ffd100] underline underline-offset-4 transition-colors duration-200"
+          >
+            email
+          </a>
+          .
+        </p>
       </div>
     </div>
   );
