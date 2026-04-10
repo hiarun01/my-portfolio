@@ -1,7 +1,7 @@
 import Image from "next/image";
 import UpdatedDate from "./UpdatedDate";
 import IndiaTime from "./IndiaTime";
-import AvailableTag from "./AvailableTag";
+// import AvailableTag from "./AvailableTag";
 // import {socials} from "./Data/SocialData";
 // rounded-lg border border-zinc-700
 
@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="">
       {/* Profile Header */}
-      <AvailableTag />
+      {/* <AvailableTag /> */}
       <div className="mb-5 rounded-xl border border-zinc-800/80 bg-gradient-to-r from-zinc-900/60 via-zinc-900/30 to-transparent px-2 py-3">
         {/* Profile Content */}
         <div className="flex items-center gap-5">
