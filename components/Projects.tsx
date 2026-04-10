@@ -26,7 +26,7 @@ const Projects = () => {
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
             <Card
               key={i}
-              className="group overflow-hidden border-zinc-800/80 bg-gradient-to-br from-zinc-950 via-zinc-950 to-zinc-900/70 shadow-[0_10px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#ffdb70]/35 hover:shadow-[0_14px_42px_rgba(255,219,112,0.08)]"
+              className="group overflow-hidden border-zinc-800/80 bg-gradient-to-br from-zinc-950 via-zinc-950 to-zinc-900/70 shadow-[0_10px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#ffdb70]/35"
             >
               <CardHeader className="p-0">
                 <div className="grid gap-0 md:grid-cols-[280px_minmax(0,1fr)]">

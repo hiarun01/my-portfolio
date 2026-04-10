@@ -79,18 +79,18 @@ export const personalProjects: Project[] = [
     status: "Live",
   },
 
-  // {
-  //   id: 5,
-  //   title: "PaletteCraft",
-  //   description:
-  //     "PaletteCraft is an official Adobe Express add-on that helps you create, explore, and apply beautiful, human-inspired color palettes directly in your designs.",
-  //   techStack: ["Javascript", "React", "Gen ai", "Adobe/ccWeb"],
-  //   github: "https://github.com/hiarun02/palettecraft",
-  //   live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
-  //   image: "/Projects-image/paletteCraft.png",
-  //   category: "plugins",
-  //   status: "Live",
-  // },
+  {
+    id: 5,
+    title: "PaletteCraft",
+    description:
+      "PaletteCraft is an official Adobe Express add-on that helps you create, explore, and apply beautiful, human-inspired color palettes directly in your designs.",
+    techStack: ["Javascript", "React", "Gen ai", "Adobe/ccWeb"],
+    github: "https://github.com/hiarun02/palettecraft",
+    live: "https://new.express.adobe.com/add-ons?addOnId=wim1m902m",
+    image: "/PaletteCraft.png",
+    category: "plugins",
+    status: "Live",
+  },
   // {
   //   id: 6,
   //   title: "TwiFake",

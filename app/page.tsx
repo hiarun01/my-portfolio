@@ -5,7 +5,7 @@ import About from "@/components/About";
 // import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
-// import GitHubState from "@/components/GitHubState";
+import GitHubState from "@/components/GitHubState";
 import Projects from "@/components/Projects";
 // import Skills from "@/components/Skills";
 
@@ -31,9 +31,9 @@ export default function Home() {
         </section>
 
         {/* GitHub State */}
-        {/* <section aria-label="GitHub Activity">
+        <section aria-label="GitHub Activity">
           <GitHubState />
-        </section> */}
+        </section>
 
         {/* Hackathons */}
         <section aria-label="Hackathons">
