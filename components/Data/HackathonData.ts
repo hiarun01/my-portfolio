@@ -7,11 +7,11 @@ export type Hackathon = {
 
 export const hackathons: Hackathon[] = [
   {
-    title: "Kiroween Hackathon",
+    title: "Adobe Express Add-ons Hackathon",
     description:
-      "i built KiroCore is a universal AI agent platform that transforms a single codebase into multiple specialized applications through configuration files.",
-    date: "Oct 31st - Dec 6th, 2025",
-    logo: "/kiro.png",
+      "Developed a color palette generator for Adobe Express. It helps users quickly generate beautiful, ready-to-use color palettes based on user Prompt.",
+    date: "May 19rd - Jul 21th, 2025",
+    logo: "/adobe.jpg",
   },
   {
     title: "Code with Kiro Hackathon",
@@ -21,10 +21,10 @@ export const hackathons: Hackathon[] = [
     logo: "/kiro.png",
   },
   {
-    title: "Adobe Express Add-ons Hackathon",
+    title: "Kiroween Hackathon",
     description:
-      "Developed a color palette generator for Adobe Express. It helps users quickly generate beautiful, ready-to-use color palettes based on user Prompt.",
-    date: "May 19rd - Jul 21th, 2025",
-    logo: "/adobe.jpg",
+      "i built KiroCore is a universal AI agent platform that transforms a single codebase into multiple specialized applications through configuration files.",
+    date: "Oct 31st - Dec 6th, 2025",
+    logo: "/kiro.png",
   },
 ];

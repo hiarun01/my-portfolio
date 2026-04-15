@@ -30,14 +30,14 @@ export default function About() {
           </div>
 
           {/* Profile Info */}
-          <div className="">
-            <div className="">
+          <div className="flex flex-col justify-center">
+            <div>
               <h2 className="lg:text-xl text-lg font-extrabold text-white">
                 Arun Kumar
               </h2>
             </div>
 
-            <p className="text-zinc-300 text-sm mb-2 flex items-center">
+            <p className="mt-0.5 flex items-center text-sm text-zinc-300">
               <span className="inline-flex" />
               @hiarun02
             </p>

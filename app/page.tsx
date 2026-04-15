@@ -1,7 +1,7 @@
 "use client";
 
 import About from "@/components/About";
-// import Blogs from "@/components/Blogs";
+import Blogs from "@/components/Blogs";
 // import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
@@ -30,6 +30,11 @@ export default function Home() {
           <Projects />
         </section>
 
+        {/* Blogs */}
+        <section aria-label="Blog Posts">
+          <Blogs />
+        </section>
+
         {/* GitHub State */}
         <section aria-label="GitHub Activity">
           <GitHubState />
@@ -39,11 +44,6 @@ export default function Home() {
         <section aria-label="Hackathons">
           <HackathonSection />
         </section>
-
-        {/* Blogs */}
-        {/* <section aria-label="Blog Posts">
-          <Blogs />
-        </section> */}
 
         {/* Contact Section */}
         {/* <section id="contact" aria-label="Contact Information">

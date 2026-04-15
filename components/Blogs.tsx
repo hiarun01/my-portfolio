@@ -1,61 +1,72 @@
-import {FiCalendar, FiClock} from "react-icons/fi";
-import {blogPosts} from "./Data/BlogsData";
+import Link from "next/link";
+import {sortedBlogPosts} from "./Data/BlogsData";
+
+function formatDate(date: string) {
+  return new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
 
 const Blogs = () => {
+  const posts = sortedBlogPosts.slice(0, 3);
+
   return (
-    <section className="mb-5">
-      {/* Header Section */}
-      <div className="flex items-center mb-3">
-        <div>
-          <h2 className="text-lg font-bold text-white mb-3">Blogs</h2>
+    <section className="mb-6 mt-6">
+      <div className="mb-6">
+        <div className="flex items-center gap-3">
+          <h2 className="text-lg font-semibold tracking-[-0.02em] text-white">
+            Blog
+          </h2>
         </div>
+        <p className="mt-2 text-base text-zinc-400">
+          My thoughts on software development, life, and more.
+        </p>
       </div>
 
-      {/* Blog Posts */}
-      <div className="space-y-4">
-        {blogPosts.map((post, index) => (
+      <div className="space-y-6">
+        {posts.map((post, index) => (
           <article
-            key={index}
-            className="group border border-zinc-700 p-5 rounded-lg overflow-hidden "
+            key={post.slug}
+            className="rounded-2xl p-2 transition-colors duration-200 hover:bg-zinc-900/30"
           >
-            <a
-              href={post.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              {/* Blog Header */}
-              <div className="flex items-start justify-between gap-4 mb-2">
-                <h3 className="text-lg font-semibold text-white group-hover:text-[#ffdb70] transition-colors duration-300 leading-tight">
-                  {post.title}
-                </h3>
-              </div>
-
-              {/* Excerpt */}
-              {post.excerpt && (
-                <p className="text-zinc-400 text-sm mb-2 leading-relaxed line-clamp-2">
-                  {post.excerpt}
-                </p>
-              )}
-
-              {/* Meta Information */}
-              <div className="flex items-center gap-4 text-sm text-zinc-500">
-                <div className="flex items-center gap-1.5">
-                  <FiCalendar className="w-4 h-4" />
-                  <span>{post.date}</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <FiClock className="w-4 h-4" />
-                  <span>{post.readTime}</span>
+            <Link href={`/blog/${post.slug}`} className="group block">
+              <div className="flex items-start gap-4 sm:gap-6">
+                <span className="mt-1 text-lg font-medium tabular-nums text-zinc-400">
+                  {String(index + 1).padStart(2, "0")}.
+                </span>
+                <div className="min-w-0">
+                  <h3 className="text-lg leading-tight font-medium text-white transition-colors duration-200 group-hover:text-[#ffdb70]">
+                    {post.title}
+                  </h3>
                 </div>
               </div>
-            </a>
+            </Link>
+
+            <p className="pl-[2.5rem] text-sm text-zinc-500 sm:pl-[3rem]">
+              {formatDate(post.publishedAt)} · By{" "}
+              <Link
+                href="/"
+                className="text-zinc-400 transition-colors hover:text-[#ffdb70]"
+              >
+                {post.author}
+              </Link>
+            </p>
           </article>
         ))}
       </div>
 
-      {/* Empty State or Call to Action */}
-      {blogPosts.length === 0 && (
+      <div className="mt-7">
+        <Link
+          href="/blog"
+          className="inline-flex items-center rounded-full border border-zinc-700 bg-zinc-900/60 px-4 py-2 text-sm font-medium text-zinc-200 transition-colors duration-200 hover:border-[#ffdb70]/40 hover:text-[#ffdb70]"
+        >
+          View all posts
+        </Link>
+      </div>
+
+      {posts.length === 0 && (
         <div className="text-center rounded-lg">
           <h3 className="text-lg font-medium text-zinc-400 mb-2">
             No blogs yet
