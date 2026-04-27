@@ -2,9 +2,8 @@ import Image from "next/image";
 import {useState} from "react";
 import {personalProjects} from "./Data/ProjectsData";
 
-import {ExternalLink, Github} from "lucide-react";
+import {Github, Link2} from "lucide-react";
 import {Button} from "./ui/button";
-import {Card, CardContent, CardHeader, CardTitle} from "./ui/card";
 
 const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(2);
@@ -22,117 +21,85 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="space-y-3 rounded-lg mt-3">
+        <div className="mt-3 space-y-5 rounded-lg">
           {personalProjects.slice(0, visibleProjects).map((project, i) => (
-            <Card
+            <article
               key={i}
-              className="group overflow-hidden border-zinc-800/80 bg-gradient-to-br from-zinc-950 via-zinc-950 to-zinc-900/70 shadow-[0_10px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#ffdb70]/35"
+              className="group mx-auto w-full rounded-3xl border border-zinc-800 bg-zinc-900/50 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/80 sm:w-full sm:max-w-none"
             >
-              <CardHeader className="p-0">
-                <div className="grid gap-0 md:grid-cols-[280px_minmax(0,1fr)]">
-                  <div className="relative h-44 overflow-hidden border-b border-zinc-800 md:h-auto md:min-h-[190px] md:border-b-0 md:border-r">
-                    {project.image ? (
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, 320px"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,219,112,0.35),_transparent_45%),linear-gradient(135deg,_rgba(39,39,42,1),_rgba(9,9,11,1))]">
-                        <div className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.05),transparent)]" />
-                        <div className="relative flex h-full items-end p-6">
-                          <div>
-                            <p className="text-xs uppercase tracking-[0.35em] text-[#ffdb70]/80">
-                              Featured build
-                            </p>
-                            <h3 className="mt-3 max-w-xs text-2xl font-semibold text-white">
-                              {project.title}
-                            </h3>
-                          </div>
-                        </div>
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex min-w-0 items-center gap-3">
+                      <div className="relative h-7 w-7 shrink-0 overflow-hidden rounded-md border border-zinc-700 bg-zinc-950">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          className="object-cover"
+                          sizes="28px"
+                        />
                       </div>
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/30 via-transparent to-transparent" />
-                  </div>
-
-                  <div className="flex flex-col justify-between p-4 sm:p-5">
-                    <div>
-                      <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
-                        <CardTitle className="text-xl font-semibold text-white">
-                          {project.title}
-                        </CardTitle>
-                        {project.status && (
-                          <span className="inline-flex items-center gap-2 rounded-full border border-[#ffdb70]/30 bg-[#ffdb70]/12 px-3 py-1 text-sm text-[#ffdb70]">
-                            <span className="h-2 w-2 rounded-full bg-[#ffdb70]" />
-                            {project.status}
-                          </span>
-                        )}
-                      </div>
-
-                      <p className="line-clamp-3 max-w-2xl text-sm leading-6 text-zinc-300">
-                        {project.description}
-                      </p>
-
-                      {project.techStack && (
-                        <div className="mt-3 flex items-center gap-1.5 overflow-hidden whitespace-nowrap">
-                          {project.techStack.slice(0, 4).map((tech) => (
-                            <span
-                              key={tech}
-                              className="inline-flex rounded-full border border-zinc-700 bg-zinc-900/80 px-2.5 py-0.5 text-[11px] text-zinc-200 transition-colors duration-200 group-hover:border-[#ffdb70]/30 group-hover:text-[#ffdb70]"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                          {project.techStack.length > 4 && (
-                            <span className="inline-flex rounded-full border border-zinc-700 bg-zinc-900/80 px-2.5 py-0.5 text-[11px] text-zinc-200 transition-colors duration-200 group-hover:border-[#ffdb70]/30 group-hover:text-[#ffdb70]">
-                              more +
-                            </span>
-                          )}
-                        </div>
-                      )}
+                      <h3 className="min-w-0 text-base font-semibold text-white sm:text-lg">
+                        {project.title}
+                      </h3>
                     </div>
 
-                    <CardContent className="p-0 pt-4">
-                      <div className="flex flex-wrap gap-3">
-                        <a
-                          href={project.live}
-                          className="btn"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <span className="flex items-center gap-2 uppercase text-sm">
-                            Live
-                            <ExternalLink width={16} height={16} />
-                          </span>
-                        </a>
-                        <a
-                          href={project.github}
-                          className="btn"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <span className="flex items-center gap-2 uppercase text-sm">
-                            Github
-                            <Github width={16} height={16} />
-                          </span>
-                        </a>
-                      </div>
-                    </CardContent>
+                    <div className="flex shrink-0 items-center gap-2 self-start pt-0.5">
+                      <a
+                        href={project.live}
+                        className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-600 bg-zinc-900/70 text-zinc-200 transition-colors duration-200 hover:border-[#ffdb70]/40 hover:text-[#ffdb70]"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${project.title} live link`}
+                      >
+                        <Link2 className="h-3.5 w-3.5" />
+                      </a>
+                      <a
+                        href={project.github}
+                        className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-600 bg-zinc-900/70 text-zinc-200 transition-colors duration-200 hover:border-[#ffdb70]/40 hover:text-[#ffdb70]"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${project.title} GitHub repository`}
+                      >
+                        <Github className="h-3.5 w-3.5" />
+                      </a>
+                    </div>
                   </div>
+
+                  <p className="mt-3 text-sm leading-6 text-zinc-300">
+                    {project.description}
+                  </p>
+
+                  {project.techStack && project.techStack.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      {project.techStack.slice(0, 4).map((tech) => (
+                        <span
+                          key={tech}
+                          className="inline-flex rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-[10px] uppercase tracking-[0.1em] text-zinc-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                      {project.techStack.length > 5 && (
+                        <span className="inline-flex rounded-full border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-[10px] uppercase tracking-[0.1em] text-zinc-300">
+                          +{project.techStack.length - 5}
+                        </span>
+                      )}
+                    </div>
+                  )}
                 </div>
-              </CardHeader>
-            </Card>
+              </div>
+            </article>
           ))}
         </div>
 
         {visibleProjects < personalProjects.length && (
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-5">
             <Button
               variant="outline"
               onClick={loadMore}
-              className="w-full border-zinc-700 bg-zinc-950 text-zinc-200 hover:border-[#ffdb70]/40 hover:bg-zinc-900 hover:text-[#ffdb70]"
+              className="w-full border-zinc-700 bg-zinc-900/50 p-4 hover:bg-zinc-900/80"
             >
               Load More
             </Button>

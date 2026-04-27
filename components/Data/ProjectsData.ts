@@ -52,7 +52,7 @@ export const personalProjects: Project[] = [
     ],
     github: "https://github.com/hiarun02/rapidReport",
     live: "https://rapidreport.hiarun.me/",
-    image: "/RapidReport.png",
+    image: "/rapidReport.png",
     category: "full stack",
     status: "Live",
   },
