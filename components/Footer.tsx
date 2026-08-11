@@ -7,11 +7,11 @@ const Footer = () => {
             Designed & Developed by
             <a
               className="text-[#ffdb70] hover:text-[#ffdb70]/80 transition-colors duration-200 font-medium"
-              href="https://x.com/hiarun01"
+              href="https://x.com/hiarun02"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @hiarun01
+              @hiarun02
             </a>
           </p>
         </div>
