@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
 import GitHubState from "@/components/GitHubState";
+import OpenSource from "@/components/OpenSource";
 import Projects from "@/components/Projects";
 // import Skills from "@/components/Skills";
 
@@ -35,6 +36,13 @@ export default function Home() {
           <Blogs />
         </section> */}
 
+       
+
+        {/* Open Source */}
+        <section aria-label="Open Source Contributions">
+          <OpenSource />
+        </section> 
+        
         {/* GitHub State */}
         <section aria-label="GitHub Activity">
           <GitHubState />
