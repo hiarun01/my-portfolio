@@ -18,9 +18,7 @@ const pullRequestStatusColor: Record<OpenSourcePullRequest["status"], string> = 
 };
 
 export default function OpenSource() {
-  const [activeRepository, setActiveRepository] = useState(
-    openSourceRepositories[0]?.name ?? "",
-  );
+  const [activeRepository, setActiveRepository] = useState("");
 
   const totalPullRequests = openSourceRepositories.reduce(
     (total, repository) => total + repository.pullRequests,
