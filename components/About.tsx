@@ -20,7 +20,7 @@ export default function About() {
              border-zinc-600 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-zinc-800/50 hover:border-zinc-500 cursor-pointer group"
             >
               <Image
-                src="/pfp.jpeg"
+                src="/pfp2.jpeg"
                 alt="Arun Kumar Profile"
                 width={100}
                 height={100}
@@ -33,7 +33,7 @@ export default function About() {
           <div className="flex flex-col justify-center">
             <div>
               <h2 className="lg:text-xl text-lg font-extrabold text-white">
-                Arun Kumar
+                Arun
               </h2>
             </div>
 
