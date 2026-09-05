@@ -11,7 +11,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              @hiarun01
+              @hiarun02
             </a>
           </p>
         </div>

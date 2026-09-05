@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     siteName: "Arun Kumar Portfolio",
     images: [
       {
-        url: "/preview.png",
+        url: "/preview.webp",
         width: 1200,
         height: 630,
         alt: "Arun Kumar - Full Stack Web Developer",

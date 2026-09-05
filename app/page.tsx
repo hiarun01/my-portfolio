@@ -2,13 +2,13 @@
 
 import About from "@/components/About";
 // import Blogs from "@/components/Blogs";
-// import Contact from "@/components/Contact";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import HackathonSection from "@/components/HackathonSection";
 import GitHubState from "@/components/GitHubState";
 import OpenSource from "@/components/OpenSource";
 import Projects from "@/components/Projects";
-// import Skills from "@/components/Skills";
+import Skills from "@/components/Skills";
 
 // import {SupportMe} from "@/components/SupportMe";
 
@@ -21,10 +21,7 @@ export default function Home() {
           <About />
         </section>
 
-        {/* skills  */}
-        {/* <section aria-label="Skills">
-          <Skills />
-        </section> */}
+
 
         {/* Projects */}
         <section aria-label="Projects">
@@ -53,14 +50,23 @@ export default function Home() {
           <HackathonSection />
         </section>
 
-        {/* Contact Section */}
-        {/* <section id="contact" aria-label="Contact Information">
-          <Contact />
-        </section> */}
+      
 
         {/* SupprtME */}
         {/* <SupportMe /> */}
       </article>
+
+        {/* skills  */}
+        <section aria-label="Skills">
+          <Skills />
+        </section>
+
+
+          {/* Contact Section */}
+        <section id="contact" aria-label="Contact Information">
+          <Contact />
+        </section>
+
 
       {/* Footer */}
       <Footer />
