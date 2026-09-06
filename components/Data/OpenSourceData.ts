@@ -20,7 +20,7 @@ export const openSourceRepositories: OpenSourceRepository[] = [
       {
         title: "fix(vscode): improve composer mode selector layout",
         url: "https://github.com/Nano-Collective/nanocoder/pull/1106",
-        status: "open",
+        status: "merged",
       },
       {
         title: "Fix/atomic deletion boundary",
